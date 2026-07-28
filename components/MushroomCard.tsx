@@ -1,4 +1,11 @@
-type MushroomRecord = {
+"use client";
+
+import { useState } from "react";
+
+// ต้องตรงกับชื่อ repo ของคุณ (จากที่ตั้งไว้ใน next.config.ts)
+const BASE_PATH = process.env.NODE_ENV === "production" ? "/oh-no" : "";
+
+type Mushroom = {
   scientificName: string;
   localName: string;
   family: string;
@@ -12,79 +19,124 @@ type MushroomRecord = {
   images: string[];
 };
 
-function getEdibilityClass(edibility: string) {
-  if (edibility.includes("กินได้")) {
-    return "bg-emerald-100 text-emerald-800";
-  }
-  if (edibility.includes("กินไม่ได้")) {
-    return "bg-rose-100 text-rose-800";
-  }
-  return "bg-stone-100 text-stone-700";
+function withBasePath(path: string) {
+  if (!path) return path;
+  return `${BASE_PATH}${path}`;
 }
 
-export function MushroomCard({ mushroom }: { mushroom: MushroomRecord }) {
-  const imageSrc = mushroom.images?.[0] ?? "/images/placeholder-mushroom.png";
+function edibilityStyle(edibility: string) {
+  if (edibility.includes("กินได้") && !edibility.includes("ไม่")) {
+    return "bg-emerald-100 text-emerald-800 border-emerald-200";
+  }
+  if (edibility.includes("กินไม่ได้")) {
+    return "bg-rose-100 text-rose-800 border-rose-200";
+  }
+  return "bg-stone-100 text-stone-600 border-stone-200";
+}
+
+export function MushroomCard({ mushroom }: { mushroom: Mushroom }) {
+  const [showPoints, setShowPoints] = useState(false);
+  const [imageIndex, setImageIndex] = useState(0);
+
+  const images = mushroom.images.length > 0
+    ? mushroom.images
+    : ["/images/placeholder-mushroom.png"];
 
   return (
-    <article className="overflow-hidden rounded-[1.5rem] border border-stone-200 bg-white shadow-sm">
-      <div className="h-48 overflow-hidden bg-stone-100">
+    <div className="flex flex-col overflow-hidden rounded-[1.75rem] border border-stone-200 bg-white/95 shadow-sm transition hover:shadow-md">
+      {/* รูปภาพ */}
+      <div className="relative aspect-[4/3] w-full overflow-hidden bg-stone-100">
         <img
-          src={imageSrc}
+          src={withBasePath(images[imageIndex])}
           alt={mushroom.scientificName}
           className="h-full w-full object-cover"
-          loading="lazy"
-          onError={(event) => {
-            const target = event.currentTarget as HTMLImageElement;
-            target.src = "/images/placeholder-mushroom.png";
-          }}
         />
+
+        {images.length > 1 && (
+          <div className="absolute bottom-2 right-2 flex gap-1">
+            {images.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setImageIndex(i)}
+                className={`h-2 w-2 rounded-full border border-white/80 ${
+                  i === imageIndex ? "bg-white" : "bg-white/40"
+                }`}
+                aria-label={`รูปที่ ${i + 1}`}
+              />
+            ))}
+          </div>
+        )}
       </div>
-      <div className="space-y-3 p-5">
-        <div className="space-y-1">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-700">
+
+      {/* เนื้อหา */}
+      <div className="flex flex-1 flex-col gap-3 p-5">
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-wide text-emerald-700">
             {mushroom.family}
           </p>
-          <h3 className="text-lg font-semibold text-stone-900">
-            <em>{mushroom.scientificName}</em>
+          <h3 className="mt-1 text-lg font-semibold italic text-stone-900">
+            {mushroom.scientificName}
           </h3>
           <p className="text-sm text-stone-600">{mushroom.localName}</p>
         </div>
 
-        <div className="flex flex-wrap gap-2">
-          <span className="rounded-full bg-amber-100 px-3 py-1 text-xs font-medium text-amber-800">
+        <div className="flex flex-wrap gap-2 text-xs">
+          <span className="rounded-full border border-stone-200 bg-stone-50 px-3 py-1 text-stone-700">
             {mushroom.group}
           </span>
-          <span className={`rounded-full px-3 py-1 text-xs font-medium ${getEdibilityClass(mushroom.edibility)}`}>
+          <span
+            className={`rounded-full border px-3 py-1 font-medium ${edibilityStyle(
+              mushroom.edibility
+            )}`}
+          >
             {mushroom.edibility}
           </span>
         </div>
 
-        <div className="grid gap-2 rounded-2xl bg-stone-50 p-3 text-sm text-stone-700">
-          <div className="flex items-center justify-between">
-            <span>พบทั้งหมด</span>
-            <span className="font-semibold text-stone-900">{mushroom.totalFound} ครั้ง</span>
+        <div className="grid grid-cols-2 gap-3 rounded-2xl bg-stone-50 p-3 text-sm">
+          <div>
+            <p className="text-stone-500">พบทั้งหมด</p>
+            <p className="font-semibold text-stone-900">
+              {mushroom.totalFound} ครั้ง
+            </p>
           </div>
-          <div className="flex items-center justify-between">
-            <span>พบในจุด</span>
-            <span className="font-semibold text-stone-900">{mushroom.pointsFoundCount} จุด</span>
+          <div>
+            <p className="text-stone-500">พบในจุด</p>
+            <p className="font-semibold text-stone-900">
+              {mushroom.pointsFoundCount} จุด
+            </p>
           </div>
-          <div className="text-xs text-stone-500">แหล่งกำเนิด: {mushroom.habitat}</div>
-          <div className="text-xs text-stone-500">บทบาท: {mushroom.ecologicalRole}</div>
         </div>
 
-        {mushroom.pointsFoundCount > 0 ? (
-          <details className="rounded-2xl border border-stone-200 p-3 text-sm text-stone-600">
-            <summary className="cursor-pointer font-medium text-stone-800">ดูรายชื่อจุดที่พบ</summary>
-            <ul className="mt-2 space-y-1">
-              {mushroom.pointsFound.map((point) => (
-                <li key={point} className="text-xs leading-5 text-stone-600">
-                  • {point}
-                </li>
-              ))}
-            </ul>
-          </details>
-        ) : null}
+        <div className="space-y-1 text-sm text-stone-600">
+          <p>
+            <span className="font-medium text-stone-800">แหล่งกำเนิด:</span>{" "}
+            {mushroom.habitat}
+          </p>
+          <p>
+            <span className="font-medium text-stone-800">บทบาท:</span>{" "}
+            {mushroom.ecologicalRole}
+          </p>
+        </div>
+
+        <button
+          onClick={() => setShowPoints((v) => !v)}
+          className="mt-auto text-left text-sm font-medium text-emerald-700 hover:text-emerald-900"
+        >
+          {showPoints ? "ซ่อนรายชื่อจุดที่พบ ▲" : "ดูรายชื่อจุดที่พบ ▼"}
+        </button>
+
+        {showPoints && (
+          <ul className="space-y-1 rounded-xl border border-stone-200 bg-stone-50 p-3 text-sm text-stone-700">
+            {mushroom.pointsFound.map((point) => (
+              <li key={point} className="flex gap-2">
+                <span>•</span>
+                <span>{point}</span>
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
-    </article>
+    </div>
   );
 }
