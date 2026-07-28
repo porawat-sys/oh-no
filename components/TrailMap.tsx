@@ -1,108 +1,117 @@
 "use client";
 
-import { useMemo, useState } from "react";
-
-type TrailPoint = {
-  id: string;
-  label: string;
-  distance: string;
-  x: number;
-  y: number;
-};
-
-const trailPoints: TrailPoint[] = [
-  { id: "start", label: "ศูนย์บริการนักท่องเที่ยว", distance: "0 กม.", x: 160, y: 70 },
-  { id: "pradu", label: "ประดู่ใหญ่", distance: "1 กม.", x: 180, y: 125 },
-  { id: "moeiok", label: "มออีหก", distance: "1.4 กม.", x: 150, y: 180 },
-  { id: "viewpoint", label: "จุดชมวิว", distance: "1.6 กม.", x: 195, y: 230 },
-  { id: "takian", label: "ตะเคียนคู่", distance: "1.9 กม.", x: 155, y: 285 },
-  { id: "namdibh", label: "น้ำดิบผามะหาด", distance: "2.3 กม.", x: 205, y: 335 },
-  { id: "chan", label: "ชานเบิกภัย", distance: "2.7 กม.", x: 165, y: 385 },
-  { id: "sairang", label: "ไทรงาม", distance: "3 กม.", x: 205, y: 440 },
-  { id: "plong", label: "ปล่องนางนาค", distance: "3.3 กม.", x: 150, y: 495 },
-  { id: "phra", label: "พระยาแล่นเรือ", distance: "3.5 กม.", x: 195, y: 545 },
-  { id: "camp", label: "ค่ายพักแรม", distance: "3.7 กม.", x: 165, y: 600 },
+// จุดบนเส้นทางหลัก (เส้นทึบ) เรียงจากจุดเริ่มต้น -> ค่ายพักแรม
+// ระยะทางเป็น "ระยะสะสม" จากจุดเริ่มต้น (กม.) ตรงตามป้ายในภาพต้นฉบับ
+const TRAIL_POINTS = [
+  { name: "ศูนย์บริการนักท่องเที่ยว", distanceKm: 0 },
+  { name: "ประดู่ใหญ่", distanceKm: 1 },
+  { name: "มออีหก", distanceKm: 1.4 },
+  { name: "จุดชมวิว", distanceKm: 1.6 },
+  { name: "ตะเคียนคู่", distanceKm: 1.9 },
+  { name: "น้ำดิบผามะหาด", distanceKm: 2.3 },
+  { name: "ชานเบิกภัย", distanceKm: 2.7 },
+  { name: "ไทรงาม", distanceKm: 3 },
+  { name: "ปล่องนางนาค", distanceKm: 3.3 },
+  { name: "พระยาแล่นเรือ", distanceKm: 3.5 },
+  { name: "ค่ายพักแรม", distanceKm: 3.7 },
 ];
 
-export function TrailMap() {
-  const [activePoint, setActivePoint] = useState<TrailPoint | null>(null);
+// ตำแหน่ง x เยื้องซ้าย-ขวาเล็กน้อยของแต่ละจุด เพื่อให้เส้นดูโค้งแบบทางเดินป่า (ไม่ตรงดิ่งจนน่าเบื่อ)
+// ค่าเป็น offset จากกึ่งกลาง (0 = กึ่งกลางเป๊ะ)
+const X_OFFSETS = [0, -15, 10, -8, 12, -12, 8, -10, 14, -6, 4];
 
-  const pathD = useMemo(
-    () =>
-      [
-        "M 160 70",
-        "C 180 95, 190 115, 180 125",
-        "C 155 145, 150 165, 150 180",
-        "C 160 210, 180 225, 195 230",
-        "C 170 255, 160 275, 155 285",
-        "C 180 315, 205 325, 205 335",
-        "C 190 360, 175 375, 165 385",
-        "C 185 410, 195 430, 205 440",
-        "C 175 470, 155 485, 150 495",
-        "C 175 520, 190 535, 195 545",
-        "C 180 575, 170 590, 165 600",
-      ].join(" "),
-    [],
-  );
+const VIEW_WIDTH = 300;
+const VIEW_HEIGHT = 620;
+const TOP_MARGIN = 40;
+const BOTTOM_MARGIN = 40;
+const CENTER_X = VIEW_WIDTH / 2;
+
+function buildPoints() {
+  const totalDistance = TRAIL_POINTS[TRAIL_POINTS.length - 1].distanceKm;
+  const usableHeight = VIEW_HEIGHT - TOP_MARGIN - BOTTOM_MARGIN;
+
+  return TRAIL_POINTS.map((point, index) => {
+    // จุดเริ่มต้นอยู่ล่างสุด (เหมือนภาพต้นฉบับ) ไล่ระยะทางขึ้นไปด้านบน
+    const ratio = point.distanceKm / totalDistance;
+    const y = VIEW_HEIGHT - BOTTOM_MARGIN - ratio * usableHeight;
+    const x = CENTER_X + X_OFFSETS[index];
+    return { ...point, x, y };
+  });
+}
+
+function buildPathD(points: ReturnType<typeof buildPoints>) {
+  if (points.length === 0) return "";
+  let d = `M ${points[0].x} ${points[0].y}`;
+  for (let i = 1; i < points.length; i++) {
+    const prev = points[i - 1];
+    const curr = points[i];
+    const midY = (prev.y + curr.y) / 2;
+    // เส้นโค้งนุ่มๆ ระหว่างจุด แบบทางเดินธรรมชาติ
+    d += ` C ${prev.x} ${midY}, ${curr.x} ${midY}, ${curr.x} ${curr.y}`;
+  }
+  return d;
+}
+
+export function TrailMap() {
+  const points = buildPoints();
+  const pathD = buildPathD(points);
 
   return (
-    <div className="rounded-[2rem] border border-emerald-900/10 bg-amber-50/70 p-4 shadow-sm sm:p-6">
-      <div className="mb-4 flex items-center justify-between">
-        <div>
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-emerald-700">
-            เส้นทางศึกษาธรรมชาติ
-          </p>
-          <h2 className="text-xl font-semibold text-stone-800">เขาหลวง — เส้นทางเดินป่าแบบสรุป</h2>
-        </div>
-        <div className="rounded-full border border-emerald-800/20 bg-white/80 px-3 py-1 text-sm text-stone-700">
-          จุดเริ่มต้น → จุดสิ้นสุด
-        </div>
-      </div>
+    <div className="rounded-[2rem] border border-stone-200 bg-white/90 p-6 shadow-sm">
+      <h2 className="text-2xl font-semibold text-stone-900">เส้นทางศึกษาธรรมชาติเขาหลวง</h2>
+      <p className="mt-2 text-sm text-stone-600">
+        ระยะทางสะสมจากศูนย์บริการนักท่องเที่ยวถึงค่ายพักแรม รวม {TRAIL_POINTS[TRAIL_POINTS.length - 1].distanceKm} กม.
+      </p>
 
-      <div className="relative overflow-hidden rounded-[1.5rem] border border-emerald-900/10 bg-gradient-to-b from-amber-100/70 via-emerald-50/60 to-stone-100/80 p-4">
-        <svg viewBox="0 0 320 650" className="w-full">
-          <path d={pathD} fill="none" stroke="#8b3d1f" strokeWidth="7" strokeLinecap="round" />
-          <path d={pathD} fill="none" stroke="#4b2e1f" strokeWidth="3" strokeLinecap="round" opacity="0.35" />
+      <svg
+        viewBox={`0 0 ${VIEW_WIDTH} ${VIEW_HEIGHT}`}
+        className="mx-auto mt-4 h-[560px] w-full max-w-sm"
+      >
+        {/* เส้นทางหลัก */}
+        <path
+          d={pathD}
+          fill="none"
+          stroke="#7c2d3e"
+          strokeWidth={4}
+          strokeLinecap="round"
+        />
 
-          {trailPoints.map((point) => (
-            <g key={point.id}>
-              <circle cx={point.x} cy={point.y} r="12" fill="#f5f2e8" stroke="#8b3d1f" strokeWidth="4" />
+        {/* จุดหมุดแต่ละจุด + ป้ายชื่อ/ระยะทาง */}
+        {points.map((point, index) => {
+          const isStart = index === 0;
+          const isEnd = index === points.length - 1;
+          const labelSide = index % 2 === 0 ? "right" : "left";
+
+          return (
+            <g key={point.name}>
               <circle
                 cx={point.x}
                 cy={point.y}
-                r="6"
-                fill={activePoint?.id === point.id ? "#1f5130" : "#d97706"}
-                className="cursor-pointer transition-colors"
-                onMouseEnter={() => setActivePoint(point)}
-                onFocus={() => setActivePoint(point)}
-                onMouseLeave={() => setActivePoint(null)}
-                onBlur={() => setActivePoint(null)}
+                r={isStart || isEnd ? 8 : 6}
+                fill="#ffffff"
+                stroke="#7c2d3e"
+                strokeWidth={3}
               />
+              <text
+                x={labelSide === "right" ? point.x + 14 : point.x - 14}
+                y={point.y - 6}
+                textAnchor={labelSide === "right" ? "start" : "end"}
+                className="fill-stone-800 text-[10px] font-semibold"
+              >
+                {point.name}
+              </text>
+              <text
+                x={labelSide === "right" ? point.x + 14 : point.x - 14}
+                y={point.y + 8}
+                textAnchor={labelSide === "right" ? "start" : "end"}
+                className="fill-stone-500 text-[9px]"
+              >
+                {point.distanceKm} กม.
+              </text>
             </g>
-          ))}
-        </svg>
-
-        <div className="pointer-events-none absolute inset-0">
-          {trailPoints.map((point) => (
-            <div
-              key={`${point.id}-label`}
-              className={`absolute rounded-full border border-stone-300/70 bg-white/90 px-3 py-1 text-xs font-medium text-stone-700 shadow-sm transition-all ${
-                activePoint?.id === point.id ? "scale-105" : ""
-              }`}
-              style={{ left: `${Math.min(point.x + 12, 240)}px`, top: `${Math.max(point.y - 28, 20)}px` }}
-            >
-              {point.label}
-            </div>
-          ))}
-        </div>
-
-        {activePoint ? (
-          <div className="absolute bottom-4 left-4 right-4 rounded-2xl border border-emerald-800/20 bg-white/90 px-4 py-3 text-sm text-stone-700 shadow-lg">
-            <div className="font-semibold text-stone-800">{activePoint.label}</div>
-            <div>ระยะทางสะสม {activePoint.distance}</div>
-          </div>
-        ) : null}
-      </div>
+          );
+        })}
+      </svg>
     </div>
   );
 }
