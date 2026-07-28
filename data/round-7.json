@@ -1,0 +1,347 @@
+{
+  "round": 7,
+  "date": "18 กรกฎาคม 2569",
+  "speciesCount": 19,
+  "mushrooms": [
+    {
+      "scientificName": "Amauroderma rugosum",
+      "localName": "เห็ดหลินจือดำป่า / เห็ดจวักงู",
+      "family": "Ganodermataceae",
+      "group": "เห็ดหิ้ง",
+      "habitat": "ต้นไม้/ตอไม้",
+      "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
+      "edibility": "กินได้",
+      "totalFound": 3,
+      "pointsFound": [
+        "จุดที่ 7 ชานเบิกภัย-ไทรงาม",
+        "จุดที่ 9 ปล่องนางนาค-พระยาแล่นเรือ"
+      ],
+      "images": [
+        "/images/placeholder-mushroom.png"
+      ],
+      "pointsFoundCount": 2
+    },
+    {
+      "scientificName": "clavaria fuscata",
+      "localName": "-",
+      "family": "Clavariaceae",
+      "group": "เห็ดปะการังและเห็ดกระบอง",
+      "habitat": "ต้นไม้/ตอไม้",
+      "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
+      "edibility": "ไม่มีข้อมูลว่ากินได้",
+      "totalFound": 2,
+      "pointsFound": [
+        "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่",
+        "จุดที่ 7 ชานเบิกภัย-ไทรงาม"
+      ],
+      "images": [
+        "/images/placeholder-mushroom.png"
+      ],
+      "pointsFoundCount": 2
+    },
+    {
+      "scientificName": "Coprinellus disseminatus",
+      "localName": "fairy inkcap",
+      "family": "Psathyrellaceae",
+      "group": "เห็ดครีบ",
+      "habitat": "ต้นไม้/ตอไม้",
+      "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
+      "edibility": "กินได้",
+      "totalFound": 3,
+      "pointsFound": [
+        "จุดที่ 7 ชานเบิกภัย-ไทรงาม",
+        "จุดที่ 8 ไทรงาม-ปล่องนางนาค"
+      ],
+      "images": [
+        "/images/placeholder-mushroom.png"
+      ],
+      "pointsFoundCount": 2
+    },
+    {
+      "scientificName": "Hapalopilus rutilans",
+      "localName": "เห็ดรูรังอ่อน",
+      "family": "Polyporaceae",
+      "group": "เห็ดหิ้ง",
+      "habitat": "ต้นไม้/ตอไม้",
+      "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
+      "edibility": "กินไม่ได้",
+      "totalFound": 2,
+      "pointsFound": [
+        "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่",
+        "จุดที่ 7 ชานเบิกภัย-ไทรงาม"
+      ],
+      "images": [
+        "/images/placeholder-mushroom.png"
+      ],
+      "pointsFoundCount": 2
+    },
+    {
+      "scientificName": "Hexagonia tenuis (Fr.) Fr.",
+      "localName": "เห็ดรังแตน",
+      "family": "Polyporaceae ",
+      "group": "เห็ดหิ้ง",
+      "habitat": "ต้นไม้/ตอไม้",
+      "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
+      "edibility": "กินไม่ได้",
+      "totalFound": 1,
+      "pointsFound": [
+        "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่"
+      ],
+      "images": [
+        "/images/placeholder-mushroom.png"
+      ],
+      "pointsFoundCount": 1
+    },
+    {
+      "scientificName": "Hydnum repandum",
+      "localName": "เห็ดเม่นแคระ / Hedgehog mushroom",
+      "family": "Hydnaceae",
+      "group": "เห็ดฟันเลื่อย",
+      "habitat": "ต้นไม้/ตอไม้",
+      "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
+      "edibility": "กินได้",
+      "totalFound": 1,
+      "pointsFound": [
+        "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่"
+      ],
+      "images": [
+        "/images/placeholder-mushroom.png"
+      ],
+      "pointsFoundCount": 1
+    },
+    {
+      "scientificName": "Hymenochaete cruenta",
+      "localName": "-",
+      "family": "Hymenochaetaceae",
+      "group": "เห็ดแผ่นหนัง",
+      "habitat": "ต้นไม้/ตอไม้",
+      "ecologicalRole": "เห็ดปรสิต (parasitic mushroom)",
+      "edibility": "กินได้",
+      "totalFound": 1,
+      "pointsFound": [
+        "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่"
+      ],
+      "images": [
+        "/images/placeholder-mushroom.png"
+      ],
+      "pointsFoundCount": 1
+    },
+    {
+      "scientificName": "Laetiporus speciosus",
+      "localName": "เห็ดไก่ป่า / chicken of the wood",
+      "family": "Laetiporaceae",
+      "group": "เห็ดหิ้ง",
+      "habitat": "ต้นไม้/ตอไม้",
+      "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
+      "edibility": "กินได้",
+      "totalFound": 1,
+      "pointsFound": [
+        "จุดที่ 6 น้ำดิบผามะหาด-ชานเบิกภัย"
+      ],
+      "images": [
+        "/images/placeholder-mushroom.png"
+      ],
+      "pointsFoundCount": 1
+    },
+    {
+      "scientificName": "Microporus xanthopus",
+      "localName": "เห็ดกรวยทองตะกู",
+      "family": "Polyporaceae",
+      "group": "เห็ดหิ้ง",
+      "habitat": "ต้นไม้/ตอไม้",
+      "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
+      "edibility": "ไม่มีข้อมูลว่ากินได้",
+      "totalFound": 1,
+      "pointsFound": [
+        "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่"
+      ],
+      "images": [
+        "/images/placeholder-mushroom.png"
+      ],
+      "pointsFoundCount": 1
+    },
+    {
+      "scientificName": "mycena galericulata",
+      "localName": "เห็ดฝากะโปรง / Bonnet",
+      "family": "Mycenaceae",
+      "group": "เห็ดครีบ",
+      "habitat": "ต้นไม้/ตอไม้",
+      "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
+      "edibility": "กินไม่ได้",
+      "totalFound": 4,
+      "pointsFound": [
+        "จุดที่ 6 น้ำดิบผามะหาด-ชานเบิกภัย",
+        "จุดที่ 8 ไทรงาม-ปล่องนางนาค",
+        "จุดที่ 9 ปล่องนางนาค-พระยาแล่นเรือ"
+      ],
+      "images": [
+        "/images/placeholder-mushroom.png"
+      ],
+      "pointsFoundCount": 3
+    },
+    {
+      "scientificName": "Omphalotus olearius",
+      "localName": "เห็ดแจ็คโอเลนเทิร์น",
+      "family": "Omphalotaceae",
+      "group": "เห็ดครีบ",
+      "habitat": "ต้นไม้/ตอไม้",
+      "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
+      "edibility": "กินไม่ได้",
+      "totalFound": 1,
+      "pointsFound": [
+        "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่"
+      ],
+      "images": [
+        "/images/placeholder-mushroom.png"
+      ],
+      "pointsFoundCount": 1
+    },
+    {
+      "scientificName": "Phellinus gilvus",
+      "localName": "เห็ดพิมาน",
+      "family": "Hymenochaetaceae",
+      "group": "เห็ดหิ้ง",
+      "habitat": "ต้นไม้/ตอไม้",
+      "ecologicalRole": "เห็ดปรสิต (parasitic mushroom)",
+      "edibility": "กินได้",
+      "totalFound": 10,
+      "pointsFound": [
+        "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่",
+        "จุดที่ 5 ตะเคียนคู่-น้ำดิบผามะหาด",
+        "จุดที่ 6 น้ำดิบผามะหาด-ชานเบิกภัย",
+        "จุดที่ 7 ชานเบิกภัย-ไทรงาม"
+      ],
+      "images": [
+        "/images/placeholder-mushroom.png"
+      ],
+      "pointsFoundCount": 4
+    },
+    {
+      "scientificName": "phellinus linteus",
+      "localName": "เห็ดพิมาน",
+      "family": "Hymenochaetaceae",
+      "group": "เห็ดหิ้ง",
+      "habitat": "ต้นไม้/ตอไม้",
+      "ecologicalRole": "เห็ดปรสิต (parasitic mushroom)",
+      "edibility": "กินได้",
+      "totalFound": 2,
+      "pointsFound": [
+        "จุดที่ 2 ประดู่ใหญ่-มออีหก",
+        "จุดที่ 6 น้ำดิบผามะหาด-ชานเบิกภัย"
+      ],
+      "images": [
+        "/images/placeholder-mushroom.png"
+      ],
+      "pointsFoundCount": 2
+    },
+    {
+      "scientificName": "phellinus tremulae",
+      "localName": "เห็ดพิมาน",
+      "family": "Hymenochaetaceae",
+      "group": "เห็ดหิ้ง",
+      "habitat": "ต้นไม้/ตอไม้",
+      "ecologicalRole": "เห็ดปรสิต (parasitic mushroom)",
+      "edibility": "กินได้",
+      "totalFound": 1,
+      "pointsFound": [
+        "จุดที่ 6 น้ำดิบผามะหาด-ชานเบิกภัย"
+      ],
+      "images": [
+        "/images/placeholder-mushroom.png"
+      ],
+      "pointsFoundCount": 1
+    },
+    {
+      "scientificName": "Stereum ostrea",
+      "localName": "เห็ดหางไก่งวงปลอม",
+      "family": "Stereaceae",
+      "group": "เห็ดแผ่นหนัง",
+      "habitat": "ต้นไม้/ตอไม้",
+      "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
+      "edibility": "ไม่มีข้อมูลว่ากินได้",
+      "totalFound": 3,
+      "pointsFound": [
+        "จุดที่ 2 ประดู่ใหญ่-มออีหก",
+        "จุดที่ 6 น้ำดิบผามะหาด-ชานเบิกภัย"
+      ],
+      "images": [
+        "/images/placeholder-mushroom.png"
+      ],
+      "pointsFoundCount": 2
+    },
+    {
+      "scientificName": "Termitomyces microcarpus",
+      "localName": "เห็ดปลวกไก่น้อย",
+      "family": "Lyophyllaceae",
+      "group": "เห็ดครีบ",
+      "habitat": "ต้นไม้/ตอไม้",
+      "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
+      "edibility": "กินได้",
+      "totalFound": 3,
+      "pointsFound": [
+        "จุดที่ 6 น้ำดิบผามะหาด-ชานเบิกภัย",
+        "จุดที่ 7 ชานเบิกภัย-ไทรงาม",
+        "จุดที่ 9 ปล่องนางนาค-พระยาแล่นเรือ"
+      ],
+      "images": [
+        "/images/placeholder-mushroom.png"
+      ],
+      "pointsFoundCount": 3
+    },
+    {
+      "scientificName": "Trametes versicolor",
+      "localName": "เห็ดหางไก่งวง",
+      "family": "Polyporaceae",
+      "group": "เห็ดหิ้ง",
+      "habitat": "ต้นไม้/ตอไม้",
+      "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
+      "edibility": "กินได้",
+      "totalFound": 1,
+      "pointsFound": [
+        "จุดที่ 7 ชานเบิกภัย-ไทรงาม"
+      ],
+      "images": [
+        "/images/placeholder-mushroom.png"
+      ],
+      "pointsFoundCount": 1
+    },
+    {
+      "scientificName": "xylaria filiformis",
+      "localName": "-",
+      "family": "Xylariaceae",
+      "group": "เห็ดปะการังและเห็ดกระบอง",
+      "habitat": "ดิน",
+      "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
+      "edibility": "ไม่มีข้อมูลว่ากินได้",
+      "totalFound": 3,
+      "pointsFound": [
+        "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่"
+      ],
+      "images": [
+        "/images/placeholder-mushroom.png"
+      ],
+      "pointsFoundCount": 1
+    },
+    {
+      "scientificName": "ระบุไม่ได้",
+      "localName": "ระบุไม่ได้",
+      "family": "ระบุไม่ได้",
+      "group": "-",
+      "habitat": "ดิน",
+      "ecologicalRole": "-",
+      "edibility": "ไม่มีข้อมูล",
+      "totalFound": 3,
+      "pointsFound": [
+        "จุดที่ 5 ตะเคียนคู่-น้ำดิบผามะหาด",
+        "จุดที่ 6 น้ำดิบผามะหาด-ชานเบิกภัย",
+        "จุดที่ 7 ชานเบิกภัย-ไทรงาม"
+      ],
+      "images": [
+        "/images/placeholder-mushroom.png"
+      ],
+      "pointsFoundCount": 3
+    }
+  ],
+  "avgTemperature": 30.5,
+  "avgHumidity": 57.8
+}
