@@ -24,7 +24,8 @@
       "airHumidity": 66.0,
       "soilPH": null,
       "soilTemperature": null,
-      "soilHumidity": null
+      "soilHumidity": null,
+      "generalCharacteristics": "เห็ดหิ้งรูปพัดแข็ง ผิวบนมีสีน้ำตาลถึงเทาเป็นวงสลับ ผิวด้านล่างมีรูพรุนหรือรอยแยกคล้ายเขาวงกต (daedaloid) เนื้อเห็ดเหนียวเป็นไม้ก๊อก ขึ้นติดกับลำต้นหรือกิ่งไม้ผุยืนต้น เป็นเห็ดย่อยสลายไม้ (wood decay fungus)"
     },
     {
       "scientificName": "Favolus sp.1",
@@ -48,7 +49,8 @@
       "airHumidity": 43.0,
       "soilPH": null,
       "soilTemperature": null,
-      "soilHumidity": null
+      "soilHumidity": null,
+      "generalCharacteristics": "เห็ดหิ้งในสกุล Favolus ผิวด้านล่างมีรูพรุนขนาดใหญ่คล้ายรังผึ้งเป็นเอกลักษณ์ของสกุลนี้ หมวกสีน้ำตาลอ่อนถึงครีม เนื้อเหนียว ขึ้นบนไม้ผุ"
     },
     {
       "scientificName": "Hapalopilus Rutilans",
@@ -79,7 +81,8 @@
       "airHumidity": 56.0,
       "soilPH": null,
       "soilTemperature": null,
-      "soilHumidity": null
+      "soilHumidity": null,
+      "generalCharacteristics": "เห็ดหิ้งเนื้อนุ่มคล้ายฟองน้ำเมื่อยังสด สีชมพูอมน้ำตาลถึงสีอบเชย เมื่อแห้งเนื้อจะแข็งกรอบ ผิวด้านล่างมีรูพรุนละเอียดสีเดียวกับหมวก ขึ้นบนไม้ผุ มีสารพิษหากรับประทาน"
     },
     {
       "scientificName": "Hexagonia tenuis (Fr.) Fr.",
@@ -106,7 +109,8 @@
       "airHumidity": 61.0,
       "soilPH": null,
       "soilTemperature": null,
-      "soilHumidity": null
+      "soilHumidity": null,
+      "generalCharacteristics": "เห็ดหิ้งบางแข็ง ผิวบนสีน้ำตาลอมเทามีขนสั้นปกคลุมเป็นวง ผิวด้านล่างมีรูพรุนรูปหกเหลี่ยมเรียงชัดเจน (ที่มาของชื่อ hexagonia) เนื้อเหนียวเป็นไม้ก๊อก ขึ้นติดกับไม้ผุ"
     },
     {
       "scientificName": "Lentinus Polychrous",
@@ -129,7 +133,8 @@
       "airHumidity": 65.0,
       "soilPH": null,
       "soilTemperature": null,
-      "soilHumidity": null
+      "soilHumidity": null,
+      "generalCharacteristics": "เห็ดขอนขาวหรือเห็ดตีนแรด หมวกสีน้ำตาลอ่อนถึงครีม ผิวแตกเป็นเกล็ดเล็กๆ ครีบสีขาวถี่ลามลงมาที่ก้าน ก้านแข็งมีเกล็ดคล้ายหมวก เนื้อเหนียว ขึ้นบนตอไม้หรือไม้ผุ เป็นเห็ดที่นิยมรับประทานในภาคอีสานและภาคเหนือ"
     },
     {
       "scientificName": "Lenzites elegans",
@@ -161,7 +166,8 @@
       "airHumidity": 64.8,
       "soilPH": null,
       "soilTemperature": null,
-      "soilHumidity": null
+      "soilHumidity": null,
+      "generalCharacteristics": "เห็ดหิ้งคล้ายเห็ดกระด้ง ผิวบนมีขนสั้นสีน้ำตาลอ่อนถึงเทาเป็นวง ผิวด้านล่างมีลักษณะเป็นแผ่นครีบเรียงถี่ แทนรูพรุนแบบเห็ดหิ้งทั่วไป เนื้อเหนียวเป็นไม้ก๊อก ขึ้นติดไม้ผุ"
     },
     {
       "scientificName": "Microporus vernicipes (Berk.) Ktz",
@@ -196,7 +202,8 @@
       "airHumidity": 51.7,
       "soilPH": null,
       "soilTemperature": null,
-      "soilHumidity": null
+      "soilHumidity": null,
+      "generalCharacteristics": "เห็ดหิ้งขนาดเล็ก ผิวบนเป็นมันวาวคล้ายเคลือบแล็กเกอร์ สีน้ำตาลแดงเป็นวงสลับสี ผิวด้านล่างมีรูพรุนละเอียดมาก เนื้อบางแข็ง ขึ้นติดกิ่งไม้ผุขนาดเล็ก"
     },
     {
       "scientificName": "Microporus xanthopus",
@@ -233,7 +240,8 @@
       "airHumidity": 60.8,
       "soilPH": null,
       "soilTemperature": null,
-      "soilHumidity": null
+      "soilHumidity": null,
+      "generalCharacteristics": "เห็ดหิ้งขนาดเล็กมีก้าน (ต่างจากเห็ดหิ้งทั่วไปที่ไม่มีก้าน) หมวกกลมแบนสีน้ำตาลเป็นวงสลับ ก้านสีดำเป็นมัน (xanthopus หมายถึงก้านสีเหลืองในบางสายพันธุ์ย่อย) ผิวด้านล่างมีรูพรุนละเอียด ขึ้นบนกิ่งไม้ผุที่ร่วงอยู่กับพื้น"
     },
     {
       "scientificName": "Omphalotus olearius",
@@ -256,7 +264,8 @@
       "airHumidity": 65.0,
       "soilPH": null,
       "soilTemperature": null,
-      "soilHumidity": null
+      "soilHumidity": null,
+      "generalCharacteristics": "เห็ดพิษเรืองแสงได้ในที่มืด (jack-o'-lantern mushroom) หมวกสีส้มสดถึงส้มอมเหลือง ครีบสีเดียวกับหมวกลามลงมาที่ก้าน ขึ้นเป็นกลุ่มใหญ่ที่โคนต้นไม้หรือตอไม้ มีสารพิษทำให้เกิดอาการทางเดินอาหารรุนแรง ห้ามรับประทาน"
     },
     {
       "scientificName": "Phellinus gilvus",
@@ -292,7 +301,8 @@
       "airHumidity": 52.7,
       "soilPH": null,
       "soilTemperature": null,
-      "soilHumidity": null
+      "soilHumidity": null,
+      "generalCharacteristics": "เห็ดหิ้งแข็งคล้ายไม้ ผิวบนสีน้ำตาลเข้มถึงดำขรุขระเป็นสะเก็ด ผิวด้านล่างสีน้ำตาลอมเหลือง มีรูพรุนละเอียด เนื้อแข็งเป็นไม้ อายุดอกอยู่ได้นานหลายปี ขึ้นติดลำต้นไม้ยืนต้นที่อ่อนแอหรือไม้ผุ"
     },
     {
       "scientificName": "Phellinus linteus",
@@ -317,7 +327,8 @@
       "airHumidity": 61.5,
       "soilPH": null,
       "soilTemperature": null,
-      "soilHumidity": null
+      "soilHumidity": null,
+      "generalCharacteristics": "เห็ดหิ้งแข็งคล้ายไม้ ผิวบนสีน้ำตาลเข้มถึงดำแตกเป็นรอยแยกเมื่อแก่ ผิวด้านล่างสีน้ำตาลอ่อน เนื้อแข็งเป็นไม้ อายุดอกอยู่ได้หลายปี เป็นเห็ดที่นิยมนำไปใช้ประโยชน์ทางสมุนไพรในบางวัฒนธรรม"
     },
     {
       "scientificName": "Phellinus tremulae",
@@ -344,7 +355,8 @@
       "airHumidity": 56.0,
       "soilPH": null,
       "soilTemperature": null,
-      "soilHumidity": null
+      "soilHumidity": null,
+      "generalCharacteristics": "เห็ดหิ้งแข็งในสกุล Phellinus รูปทรงคล้ายกีบม้า ผิวบนสีเทาถึงดำขรุขระ ผิวด้านล่างสีน้ำตาลอมเหลือง เนื้อแข็งเป็นไม้ ขึ้นติดลำต้นไม้ยืนต้น เป็นเชื้อราทำให้เกิดโรคเนื้อไม้ผุ"
     },
     {
       "scientificName": "Porostereum spadiceum",
@@ -368,7 +380,8 @@
       "airHumidity": 60.5,
       "soilPH": null,
       "soilTemperature": null,
-      "soilHumidity": null
+      "soilHumidity": null,
+      "generalCharacteristics": "เห็ดแผ่นบางแนบติดผิวไม้ (crust fungus) สีน้ำตาลอมเทาถึงน้ำตาลเข้ม ผิวมีลักษณะเป็นขนกำมะหยี่บางๆ ขอบดอกม้วนงอเล็กน้อยเมื่อแห้ง ไม่มีก้าน ขึ้นแผ่ปกคลุมผิวไม้ผุหรือกิ่งไม้ตาย"
     },
     {
       "scientificName": "Stereum ostrea",
@@ -397,7 +410,8 @@
       "airHumidity": 46.8,
       "soilPH": null,
       "soilTemperature": null,
-      "soilHumidity": null
+      "soilHumidity": null,
+      "generalCharacteristics": "เห็ดครีบเทียมรูปพัดซ้อนกันเป็นชั้น (false turkey tail) ผิวบนมีลายเป็นวงสีน้ำตาล เหลือง ส้มสลับกัน มีขนละเอียดปกคลุม ผิวด้านล่างเรียบไม่มีรูพรุน เนื้อบางเหนียว ขึ้นติดไม้ผุเป็นกลุ่มซ้อนกัน"
     },
     {
       "scientificName": "Trichaptum biforme",
@@ -423,7 +437,8 @@
       "airHumidity": 64.8,
       "soilPH": null,
       "soilTemperature": null,
-      "soilHumidity": null
+      "soilHumidity": null,
+      "generalCharacteristics": "เห็ดหิ้งบางสีม่วงอมชมพูโดยเฉพาะขอบดอกเมื่อยังสด ผิวบนมีขนละเอียดสีเทาอมน้ำตาล ผิวด้านล่างเมื่อแก่จะแตกเป็นรอยหยักคล้ายฟันปลา เนื้อบางเหนียว ขึ้นเป็นกลุ่มซ้อนบนไม้สน/ไม้ผุ"
     },
     {
       "scientificName": "ระบุไม่ได้",
@@ -446,7 +461,8 @@
       "airHumidity": 67.0,
       "soilPH": null,
       "soilTemperature": null,
-      "soilHumidity": null
+      "soilHumidity": null,
+      "generalCharacteristics": "เห็ดชนิดนี้ยังไม่สามารถระบุชนิดทางวิทยาศาสตร์ได้แน่ชัด อาจต้องใช้ผู้เชี่ยวชาญหรือการตรวจสอบด้วยกล้องจุลทรรศน์เพิ่มเติมเพื่อยืนยันชนิด"
     }
   ],
   "avgTemperature": 31.1,
