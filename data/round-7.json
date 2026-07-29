@@ -21,10 +21,16 @@
         "/images/round-7/round-7-row-0037-0.jpg",
         "/images/round-7/round-7-row-0047-0.jpg"
       ],
-      "pointsFoundCount": 2
+      "pointsFoundCount": 2,
+      "habitatType": "soil",
+      "airTemperature": 29.9,
+      "airHumidity": 59.0,
+      "soilPH": 7.5,
+      "soilTemperature": 20.0,
+      "soilHumidity": 2.0
     },
     {
-      "scientificName": "clavaria fuscata",
+      "scientificName": "Clavaria fuscata",
       "localName": "-",
       "family": "Clavariaceae",
       "group": "เห็ดปะการังและเห็ดกระบอง",
@@ -40,7 +46,13 @@
         "/images/round-7/round-7-row-0010-0.jpg",
         "/images/round-7/round-7-row-0042-0.jpg"
       ],
-      "pointsFoundCount": 2
+      "pointsFoundCount": 2,
+      "habitatType": "wood",
+      "airTemperature": 31.4,
+      "airHumidity": 60.5,
+      "soilPH": null,
+      "soilTemperature": null,
+      "soilHumidity": null
     },
     {
       "scientificName": "Coprinellus disseminatus",
@@ -60,7 +72,13 @@
         "/images/round-7/round-7-row-0035-0.jpg",
         "/images/round-7/round-7-row-0044-0.jpg"
       ],
-      "pointsFoundCount": 2
+      "pointsFoundCount": 2,
+      "habitatType": "wood",
+      "airTemperature": 31.1,
+      "airHumidity": 54.3,
+      "soilPH": null,
+      "soilTemperature": null,
+      "soilHumidity": null
     },
     {
       "scientificName": "Hapalopilus rutilans",
@@ -79,7 +97,13 @@
         "/images/round-7/round-7-row-0011-0.jpg",
         "/images/round-7/round-7-row-0043-0.jpg"
       ],
-      "pointsFoundCount": 2
+      "pointsFoundCount": 2,
+      "habitatType": "wood",
+      "airTemperature": 30.6,
+      "airHumidity": 61.0,
+      "soilPH": null,
+      "soilTemperature": null,
+      "soilHumidity": null
     },
     {
       "scientificName": "Hexagonia tenuis (Fr.) Fr.",
@@ -96,7 +120,13 @@
       "images": [
         "/images/round-7/round-7-row-0012-0.jpg"
       ],
-      "pointsFoundCount": 1
+      "pointsFoundCount": 1,
+      "habitatType": "wood",
+      "airTemperature": 31.8,
+      "airHumidity": 59.0,
+      "soilPH": null,
+      "soilTemperature": null,
+      "soilHumidity": null
     },
     {
       "scientificName": "Hydnum repandum",
@@ -113,7 +143,13 @@
       "images": [
         "/images/round-7/round-7-row-0007-0.jpg"
       ],
-      "pointsFoundCount": 1
+      "pointsFoundCount": 1,
+      "habitatType": "wood",
+      "airTemperature": 31.2,
+      "airHumidity": 62.0,
+      "soilPH": null,
+      "soilTemperature": null,
+      "soilHumidity": null
     },
     {
       "scientificName": "Hymenochaete cruenta",
@@ -130,7 +166,13 @@
       "images": [
         "/images/round-7/round-7-row-0008-0.jpg"
       ],
-      "pointsFoundCount": 1
+      "pointsFoundCount": 1,
+      "habitatType": "wood",
+      "airTemperature": 31.2,
+      "airHumidity": 62.0,
+      "soilPH": null,
+      "soilTemperature": null,
+      "soilHumidity": null
     },
     {
       "scientificName": "Laetiporus speciosus",
@@ -147,7 +189,13 @@
       "images": [
         "/images/round-7/round-7-row-0026-0.jpg"
       ],
-      "pointsFoundCount": 1
+      "pointsFoundCount": 1,
+      "habitatType": "wood",
+      "airTemperature": 31.6,
+      "airHumidity": 55.0,
+      "soilPH": null,
+      "soilTemperature": null,
+      "soilHumidity": null
     },
     {
       "scientificName": "Microporus xanthopus",
@@ -164,10 +212,16 @@
       "images": [
         "/images/round-7/round-7-row-0013-0.jpg"
       ],
-      "pointsFoundCount": 1
+      "pointsFoundCount": 1,
+      "habitatType": "wood",
+      "airTemperature": 31.8,
+      "airHumidity": 59.0,
+      "soilPH": null,
+      "soilTemperature": null,
+      "soilHumidity": null
     },
     {
-      "scientificName": "mycena galericulata",
+      "scientificName": "Mycena galericulata",
       "localName": "เห็ดฝากะโปรง / Bonnet",
       "family": "Mycenaceae",
       "group": "เห็ดครีบ",
@@ -186,7 +240,13 @@
         "/images/round-7/round-7-row-0046-0.jpg",
         "/images/round-7/round-7-row-0048-0.jpg"
       ],
-      "pointsFoundCount": 3
+      "pointsFoundCount": 3,
+      "habitatType": "soil",
+      "airTemperature": 30.3,
+      "airHumidity": 56.2,
+      "soilPH": 7.0,
+      "soilTemperature": 25.7,
+      "soilHumidity": 3.0
     },
     {
       "scientificName": "Omphalotus olearius",
@@ -203,7 +263,13 @@
       "images": [
         "/images/round-7/round-7-row-0004-0.jpg"
       ],
-      "pointsFoundCount": 1
+      "pointsFoundCount": 1,
+      "habitatType": "wood",
+      "airTemperature": 0.0,
+      "airHumidity": 59.0,
+      "soilPH": null,
+      "soilTemperature": null,
+      "soilHumidity": null
     },
     {
       "scientificName": "Phellinus gilvus",
@@ -232,10 +298,16 @@
         "/images/round-7/round-7-row-0039-0.jpg",
         "/images/round-7/round-7-row-0041-0.jpg"
       ],
-      "pointsFoundCount": 4
+      "pointsFoundCount": 4,
+      "habitatType": "wood",
+      "airTemperature": 31.4,
+      "airHumidity": 57.5,
+      "soilPH": null,
+      "soilTemperature": null,
+      "soilHumidity": null
     },
     {
-      "scientificName": "phellinus linteus",
+      "scientificName": "Phellinus linteus",
       "localName": "เห็ดพิมาน",
       "family": "Hymenochaetaceae",
       "group": "เห็ดหิ้ง",
@@ -251,10 +323,16 @@
         "/images/round-7/round-7-row-0016-0.jpg",
         "/images/round-7/round-7-row-0027-0.jpg"
       ],
-      "pointsFoundCount": 2
+      "pointsFoundCount": 2,
+      "habitatType": "wood",
+      "airTemperature": 31.7,
+      "airHumidity": 54.5,
+      "soilPH": null,
+      "soilTemperature": null,
+      "soilHumidity": null
     },
     {
-      "scientificName": "phellinus tremulae",
+      "scientificName": "Phellinus tremulae",
       "localName": "เห็ดพิมาน",
       "family": "Hymenochaetaceae",
       "group": "เห็ดหิ้ง",
@@ -268,7 +346,13 @@
       "images": [
         "/images/round-7/round-7-row-0019-0.jpg"
       ],
-      "pointsFoundCount": 1
+      "pointsFoundCount": 1,
+      "habitatType": "wood",
+      "airTemperature": 30.7,
+      "airHumidity": 64.0,
+      "soilPH": null,
+      "soilTemperature": null,
+      "soilHumidity": null
     },
     {
       "scientificName": "Stereum ostrea",
@@ -288,7 +372,13 @@
         "/images/round-7/round-7-row-0020-0.jpg",
         "/images/round-7/round-7-row-0030-0.jpg"
       ],
-      "pointsFoundCount": 2
+      "pointsFoundCount": 2,
+      "habitatType": "wood",
+      "airTemperature": 31.7,
+      "airHumidity": 54.0,
+      "soilPH": null,
+      "soilTemperature": null,
+      "soilHumidity": null
     },
     {
       "scientificName": "Termitomyces microcarpus",
@@ -309,7 +399,13 @@
         "/images/round-7/round-7-row-0038-0.jpg",
         "/images/round-7/round-7-row-0049-0.jpg"
       ],
-      "pointsFoundCount": 3
+      "pointsFoundCount": 3,
+      "habitatType": "soil",
+      "airTemperature": 31.3,
+      "airHumidity": 58.7,
+      "soilPH": 7.0,
+      "soilTemperature": 26.0,
+      "soilHumidity": 3.0
     },
     {
       "scientificName": "Trametes versicolor",
@@ -326,10 +422,16 @@
       "images": [
         "/images/round-7/round-7-row-0040-0.jpg"
       ],
-      "pointsFoundCount": 1
+      "pointsFoundCount": 1,
+      "habitatType": "wood",
+      "airTemperature": 31.6,
+      "airHumidity": 61.0,
+      "soilPH": null,
+      "soilTemperature": null,
+      "soilHumidity": null
     },
     {
-      "scientificName": "xylaria filiformis",
+      "scientificName": "Xylaria filiformis",
       "localName": "-",
       "family": "Xylariaceae",
       "group": "เห็ดปะการังและเห็ดกระบอง",
@@ -345,7 +447,13 @@
         "/images/round-7/round-7-row-0006-0.jpg",
         "/images/round-7/round-7-row-0014-0.jpg"
       ],
-      "pointsFoundCount": 1
+      "pointsFoundCount": 1,
+      "habitatType": "wood",
+      "airTemperature": 31.8,
+      "airHumidity": 58.7,
+      "soilPH": null,
+      "soilTemperature": null,
+      "soilHumidity": null
     },
     {
       "scientificName": "ระบุไม่ได้",
@@ -366,7 +474,13 @@
         "/images/round-7/round-7-row-0025-0.jpg",
         "/images/round-7/round-7-row-0033-0.jpg"
       ],
-      "pointsFoundCount": 3
+      "pointsFoundCount": 3,
+      "habitatType": "soil",
+      "airTemperature": 31.4,
+      "airHumidity": 57.0,
+      "soilPH": 7.5,
+      "soilTemperature": 24.0,
+      "soilHumidity": 2.0
     }
   ],
   "avgTemperature": 30.5,

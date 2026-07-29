@@ -17,6 +17,13 @@ type MushroomRecord = {
   pointsFound: string[];
   pointsFoundCount: number;
   images: string[];
+  habitatType: "soil" | "wood";
+  airTemperature: number | null;
+  airHumidity: number | null;
+  soilPH: number | null;
+  soilTemperature: number | null;
+  soilHumidity: number | null;
+  generalCharacteristics: string;
 };
 
 type RoundData = {
@@ -74,7 +81,7 @@ export function RoundExplorer({
         <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.25em] text-emerald-700">
-              ผลสำรวจเห็ด
+              ผลสำรวจเห็ดในเส้นทางศึกษาธรรมชาติยอดเขาหลวง
             </p>
             <h1 className="mt-2 text-3xl font-semibold text-stone-900 sm:text-4xl">
               ครั้งที่ {roundData.round} — {roundData.date}

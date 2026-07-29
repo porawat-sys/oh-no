@@ -1,19 +1,22 @@
 """
-extract_data.py (เวอร์ชันแก้ไข - ดึงรูปด้วยการแกะ XML เองแทนการพึ่ง openpyxl._images)
+extract_data.py (เวอร์ชัน 3 - เพิ่มข้อมูลอุณหภูมิ/ความชื้น แยกเห็ดดิน-เห็ดตอไม้ + แก้ตัวพิมพ์ใหญ่ชื่อวิทยาศาสตร์)
 ----------------
 แปลงไฟล์ 1.xlsx - 7.xlsx (ผลสำรวจเห็ดเขาหลวง) ให้เป็น:
   - data/round-1.json ... round-7.json
   - data/summary.json
-  - public/images/round-1/ ... round-7/  (รูปเห็ดที่ดึงออกจากไฟล์ excel)
+  - public/images/round-1/ ... round-7/
 
 วิธีรัน:
     pip install openpyxl --break-system-packages
     python3 scripts/extract_data.py
 
-หมายเหตุ: เวอร์ชันนี้ไม่พึ่งพา worksheet._images ของ openpyxl (บางเครื่อง/บาง
-environment คืนค่าว่างแม้ไฟล์จะมีรูปจริง) แต่แกะไฟล์ xlsx (ซึ่งเป็น zip)
-แล้วอ่าน xl/drawings/drawingN.xml + rels โดยตรงเพื่อหาว่ารูปไหนอยู่แถวไหน
-วิธีนี้เสถียรกว่าและได้ผลลัพธ์เหมือนกันทุกเครื่อง
+สิ่งที่เพิ่มจากเวอร์ชันก่อนหน้า:
+  1. ตรวจว่าเห็ดแต่ละชนิดเป็น "เห็ดดิน" หรือ "เห็ดตอไม้" จากคอลัมน์ M/N/O
+     (pH ดิน, อุณหภูมิดิน, ความชื้นดิน) — ถ้าแถวไหนมีค่าคอลัมน์เหล่านี้ = เห็ดดิน
+  2. คำนวณค่าเฉลี่ยอุณหภูมิ/ความชื้นอากาศ ต่อชนิดเห็ด (จากทุกแถวที่พบชนิดนั้น)
+  3. คำนวณค่าเฉลี่ย pH ดิน/อุณหภูมิดิน/ความชื้นดิน ต่อชนิดเห็ด (เฉพาะชนิดที่เป็นเห็ดดิน)
+  4. ทำให้ชื่อวิทยาศาสตร์ขึ้นต้นด้วยตัวพิมพ์ใหญ่เสมอ (ตัวอักษรตัวแรกเท่านั้น
+     ส่วนที่เหลือคงไว้ตามเดิม เช่น "amanita farinosa" -> "Amanita farinosa")
 """
 
 import json
@@ -23,9 +26,10 @@ import statistics
 import zipfile
 import xml.etree.ElementTree as ET
 from openpyxl import load_workbook
+from species_descriptions import SPECIES_DESCRIPTIONS
 
 # ---------- ตั้งค่า path ----------
-SOURCE_DIR = "source-data"       # โฟลเดอร์ที่เก็บไฟล์ 1.xlsx - 7.xlsx
+SOURCE_DIR = "source-data"
 DATA_OUT_DIR = "data"
 IMAGES_OUT_DIR = os.path.join("public", "images")
 
@@ -39,7 +43,7 @@ THAI_DATES = {
     7: "18 กรกฎาคม 2569",
 }
 
-# คอลัมน์ (index เริ่มที่ 0) ตามโครงสร้างไฟล์จริง
+# คอลัมน์ (index เริ่มที่ 0)
 COL_POINT = 0
 COL_IMAGE = 1
 COL_FAMILY = 2
@@ -50,8 +54,11 @@ COL_GROUP = 6
 COL_ORIGIN = 7
 COL_ROLE = 8
 COL_EDIBILITY = 9
-COL_TEMP = 10
-COL_HUMIDITY = 11
+COL_TEMP = 10        # K อุณหภูมิอากาศ
+COL_HUMIDITY = 11    # L ความชื้นสัมพัทธ์อากาศ
+COL_SOIL_PH = 12     # M pH ของดิน
+COL_SOIL_TEMP = 13   # N อุณหภูมิในดิน
+COL_SOIL_HUMIDITY = 14  # O ความชื้นของดิน
 
 NS = {
     "xdr": "http://schemas.openxmlformats.org/drawingml/2006/spreadsheetDrawing",
@@ -67,6 +74,18 @@ def normalize_name(name):
     return re.sub(r"\s+", " ", str(name).strip())
 
 
+def capitalize_first_letter(name):
+    """ทำให้ตัวอักษรตัวแรกของชื่อวิทยาศาสตร์เป็นตัวพิมพ์ใหญ่ ส่วนที่เหลือคงเดิม
+    เช่น 'amanita farinosa' -> 'Amanita farinosa'
+         'Hexagonia tenuis (Fr.) Fr.' -> ไม่เปลี่ยน (ตัวแรกเป็นตัวใหญ่อยู่แล้ว)
+    """
+    if not name:
+        return name
+    if name[0].isalpha():
+        return name[0].upper() + name[1:]
+    return name
+
+
 def find_data_end_row(ws):
     for row_idx in range(4, ws.max_row + 1):
         val = ws.cell(row=row_idx, column=1).value
@@ -76,13 +95,10 @@ def find_data_end_row(ws):
 
 
 def get_row_to_media_map(xlsx_path, sheet_index=1):
-    """แกะไฟล์ xlsx (zip) หา mapping {แถว: [path ของรูปใน zip]} โดยตรงจาก XML
-    ไม่พึ่งพา openpyxl._images"""
     with zipfile.ZipFile(xlsx_path) as z:
         sheet_rels_path = f"xl/worksheets/_rels/sheet{sheet_index}.xml.rels"
         if sheet_rels_path not in z.namelist():
             return {}
-
         with z.open(sheet_rels_path) as f:
             rels_xml = ET.parse(f)
 
@@ -116,7 +132,7 @@ def get_row_to_media_map(xlsx_path, sheet_index=1):
                 row_el = from_el.find("xdr:row", NS)
                 if row_el is None:
                     continue
-                row = int(row_el.text) + 1  # openpyxl/excel นับแถวเริ่มที่ 1
+                row = int(row_el.text) + 1
 
                 blip = anchor.find(".//a:blip", NS)
                 if blip is None:
@@ -130,6 +146,11 @@ def get_row_to_media_map(xlsx_path, sheet_index=1):
         return row_to_media
 
 
+def safe_mean(values):
+    nums = [v for v in values if isinstance(v, (int, float))]
+    return round(statistics.mean(nums), 1) if nums else None
+
+
 def process_round(round_num, source_path, images_out_root):
     wb = load_workbook(source_path)
     ws = wb.active
@@ -140,10 +161,9 @@ def process_round(round_num, source_path, images_out_root):
     round_img_dir = os.path.join(images_out_root, f"round-{round_num}")
     os.makedirs(round_img_dir, exist_ok=True)
 
-    # เปิด zip ไว้รอบเดียวเพื่อดึงไบต์ของรูปแต่ละอัน
     with zipfile.ZipFile(source_path) as z:
         species = {}
-        temps, humidities = [], []
+        round_temps, round_humidities = [], []
 
         for row_idx in range(4, end_row + 1):
             point = ws.cell(row=row_idx, column=COL_POINT + 1).value
@@ -155,12 +175,22 @@ def process_round(round_num, source_path, images_out_root):
             if not sci_key:
                 continue
 
-            temp = ws.cell(row=row_idx, column=COL_TEMP + 1).value
-            humidity = ws.cell(row=row_idx, column=COL_HUMIDITY + 1).value
-            if isinstance(temp, (int, float)):
-                temps.append(temp)
-            if isinstance(humidity, (int, float)):
-                humidities.append(humidity)
+            air_temp = ws.cell(row=row_idx, column=COL_TEMP + 1).value
+            air_humidity = ws.cell(row=row_idx, column=COL_HUMIDITY + 1).value
+            soil_ph = ws.cell(row=row_idx, column=COL_SOIL_PH + 1).value
+            soil_temp = ws.cell(row=row_idx, column=COL_SOIL_TEMP + 1).value
+            soil_humidity = ws.cell(row=row_idx, column=COL_SOIL_HUMIDITY + 1).value
+
+            if isinstance(air_temp, (int, float)):
+                round_temps.append(air_temp)
+            if isinstance(air_humidity, (int, float)):
+                round_humidities.append(air_humidity)
+
+            # ถือว่าเป็น "เห็ดดิน" ถ้าแถวนี้มีค่า M, N หรือ O อย่างน้อย 1 ค่า
+            row_is_soil = any(
+                isinstance(v, (int, float))
+                for v in (soil_ph, soil_temp, soil_humidity)
+            )
 
             row_images = []
             for i, media_path in enumerate(row_to_media.get(row_idx, [])):
@@ -177,7 +207,7 @@ def process_round(round_num, source_path, images_out_root):
 
             if sci_key not in species:
                 species[sci_key] = {
-                    "scientificName": normalize_name(sci_name_raw),
+                    "scientificName": capitalize_first_letter(normalize_name(sci_name_raw)),
                     "localName": ws.cell(row=row_idx, column=COL_LOCAL_NAME + 1).value or "-",
                     "family": ws.cell(row=row_idx, column=COL_FAMILY + 1).value or "-",
                     "group": ws.cell(row=row_idx, column=COL_GROUP + 1).value or "-",
@@ -187,6 +217,12 @@ def process_round(round_num, source_path, images_out_root):
                     "totalFound": 0,
                     "pointsFound": [],
                     "images": [],
+                    "_airTemps": [],
+                    "_airHumidities": [],
+                    "_soilPHs": [],
+                    "_soilTemps": [],
+                    "_soilHumidities": [],
+                    "_soilRowCount": 0,
                 }
 
             rec = species[sci_key]
@@ -196,17 +232,56 @@ def process_round(round_num, source_path, images_out_root):
             if row_images:
                 rec["images"].extend(row_images)
 
+            rec["_airTemps"].append(air_temp)
+            rec["_airHumidities"].append(air_humidity)
+            if row_is_soil:
+                rec["_soilRowCount"] += 1
+                rec["_soilPHs"].append(soil_ph)
+                rec["_soilTemps"].append(soil_temp)
+                rec["_soilHumidities"].append(soil_humidity)
+
     mushroom_list = []
     for rec in species.values():
         rec["pointsFoundCount"] = len(rec["pointsFound"])
         if not rec["images"]:
             rec["images"] = ["/images/placeholder-mushroom.png"]
+
+        # ตัดสินว่าเป็นเห็ดดินหรือเห็ดตอไม้ จากสัดส่วนแถวที่มีข้อมูลดิน
+        is_soil_mushroom = rec["_soilRowCount"] > 0
+        rec["habitatType"] = "soil" if is_soil_mushroom else "wood"
+
+        rec["airTemperature"] = safe_mean(rec["_airTemps"])
+        rec["airHumidity"] = safe_mean(rec["_airHumidities"])
+
+        if is_soil_mushroom:
+            rec["soilPH"] = safe_mean(rec["_soilPHs"])
+            rec["soilTemperature"] = safe_mean(rec["_soilTemps"])
+            rec["soilHumidity"] = safe_mean(rec["_soilHumidities"])
+        else:
+            rec["soilPH"] = None
+            rec["soilTemperature"] = None
+            rec["soilHumidity"] = None
+
+        # ลบคีย์ชั่วคราวที่ใช้คำนวณออกก่อน export
+        for tmp_key in [
+            "_airTemps", "_airHumidities", "_soilPHs",
+            "_soilTemps", "_soilHumidities", "_soilRowCount",
+        ]:
+            rec.pop(tmp_key, None)
+
+        # ผสมข้อมูล "ลักษณะทั่วไป" จากไฟล์ species_descriptions.py
+        # จับคู่ด้วยชื่อวิทยาศาสตร์แบบ normalize (ตัดช่องว่าง + ตัวพิมพ์เล็ก)
+        lookup_key = normalize_name(rec["scientificName"]).lower()
+        rec["generalCharacteristics"] = SPECIES_DESCRIPTIONS.get(
+            lookup_key, "ยังไม่มีข้อมูลลักษณะทั่วไปสำหรับเห็ดชนิดนี้"
+        )
+
         mushroom_list.append(rec)
 
     mushroom_list.sort(key=lambda m: m["scientificName"].lower())
 
-    avg_temp = round(statistics.mean(temps), 1) if temps else None
-    avg_humidity = round(statistics.mean(humidities), 1) if humidities else None
+    avg_temp = safe_mean(round_temps)
+    avg_humidity = safe_mean(round_humidities)
 
     return {
         "round": round_num,
@@ -241,8 +316,11 @@ def main():
             1 for m in result["mushrooms"]
             if m["images"] != ["/images/placeholder-mushroom.png"]
         )
+        soil_count = sum(1 for m in result["mushrooms"] if m["habitatType"] == "soil")
+        wood_count = sum(1 for m in result["mushrooms"] if m["habitatType"] == "wood")
+
         print(f"  -> พบ {result['speciesCount']} ชนิด "
-              f"(มีรูปจริง {with_image_count} ชนิด), "
+              f"(มีรูปจริง {with_image_count}, เห็ดดิน {soil_count}, เห็ดตอไม้ {wood_count}), "
               f"เฉลี่ยอุณหภูมิ {result['avgTemperature']}°C, "
               f"เฉลี่ยความชื้น {result['avgHumidity']}%")
 

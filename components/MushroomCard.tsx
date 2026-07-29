@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 
-// ต้องตรงกับชื่อ repo ของคุณ (จากที่ตั้งไว้ใน next.config.ts)
 const BASE_PATH = process.env.NODE_ENV === "production" ? "/oh-no" : "";
 
 type Mushroom = {
@@ -17,6 +16,13 @@ type Mushroom = {
   pointsFound: string[];
   pointsFoundCount: number;
   images: string[];
+  habitatType: "soil" | "wood";
+  airTemperature: number | null;
+  airHumidity: number | null;
+  soilPH: number | null;
+  soilTemperature: number | null;
+  soilHumidity: number | null;
+  generalCharacteristics: string;
 };
 
 function withBasePath(path: string) {
@@ -42,6 +48,8 @@ export function MushroomCard({ mushroom }: { mushroom: Mushroom }) {
     ? mushroom.images
     : ["/images/placeholder-mushroom.png"];
 
+  const isSoil = mushroom.habitatType === "soil";
+
   return (
     <div className="flex flex-col overflow-hidden rounded-[1.75rem] border border-stone-200 bg-white/95 shadow-sm transition hover:shadow-md">
       {/* รูปภาพ */}
@@ -51,6 +59,10 @@ export function MushroomCard({ mushroom }: { mushroom: Mushroom }) {
           alt={mushroom.scientificName}
           className="h-full w-full object-cover"
         />
+
+        <span className="absolute left-2 top-2 rounded-full bg-black/60 px-3 py-1 text-xs font-medium text-white">
+          {isSoil ? "🌱 เห็ดดิน" : "🪵 เห็ดตอไม้/ต้นไม้"}
+        </span>
 
         {images.length > 1 && (
           <div className="absolute bottom-2 right-2 flex gap-1">
@@ -106,6 +118,47 @@ export function MushroomCard({ mushroom }: { mushroom: Mushroom }) {
               {mushroom.pointsFoundCount} จุด
             </p>
           </div>
+        </div>
+
+        {/* ข้อมูลสภาพแวดล้อม: อากาศแสดงทุกชนิด, ดินแสดงเฉพาะเห็ดดิน */}
+        <div className="space-y-2 rounded-2xl border border-sky-100 bg-sky-50/60 p-3 text-sm">
+          <p className="font-medium text-sky-900">🌡️ สภาพแวดล้อมที่พบ</p>
+          <div className="grid grid-cols-2 gap-x-3 gap-y-1 text-stone-700">
+            <span>อุณหภูมิอากาศ</span>
+            <span className="text-right font-medium">
+              {mushroom.airTemperature !== null ? `${mushroom.airTemperature}°C` : "-"}
+            </span>
+            <span>ความชื้นสัมพัทธ์อากาศ</span>
+            <span className="text-right font-medium">
+              {mushroom.airHumidity !== null ? `${mushroom.airHumidity}%` : "-"}
+            </span>
+
+            {isSoil && (
+              <>
+                <span className="mt-1 border-t border-sky-100 pt-1 text-stone-600">
+                  pH ดิน
+                </span>
+                <span className="mt-1 border-t border-sky-100 pt-1 text-right font-medium">
+                  {mushroom.soilPH !== null ? mushroom.soilPH : "-"}
+                </span>
+                <span>อุณหภูมิดิน</span>
+                <span className="text-right font-medium">
+                  {mushroom.soilTemperature !== null ? `${mushroom.soilTemperature}°C` : "-"}
+                </span>
+                <span>ความชื้นดิน</span>
+                <span className="text-right font-medium">
+                  {mushroom.soilHumidity !== null ? `${mushroom.soilHumidity}%` : "-"}
+                </span>
+              </>
+            )}
+          </div>
+        </div>
+
+        <div className="space-y-2 rounded-2xl border border-stone-200 bg-stone-50/60 p-3 text-sm">
+          <p className="font-medium text-stone-800">📋 ลักษณะทั่วไป</p>
+          <p className="leading-relaxed text-stone-600">
+            {mushroom.generalCharacteristics}
+          </p>
         </div>
 
         <div className="space-y-1 text-sm text-stone-600">

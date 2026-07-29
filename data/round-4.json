@@ -18,7 +18,13 @@
       "images": [
         "/images/round-4/round-4-row-0040-0.jpg"
       ],
-      "pointsFoundCount": 1
+      "pointsFoundCount": 1,
+      "habitatType": "wood",
+      "airTemperature": 30.5,
+      "airHumidity": 66.0,
+      "soilPH": null,
+      "soilTemperature": null,
+      "soilHumidity": null
     },
     {
       "scientificName": "Favolus sp.1",
@@ -36,7 +42,13 @@
         "/images/round-4/round-4-row-0048-0.jpg",
         "/images/round-4/round-4-row-0049-0.jpg"
       ],
-      "pointsFoundCount": 1
+      "pointsFoundCount": 1,
+      "habitatType": "wood",
+      "airTemperature": 31.9,
+      "airHumidity": 43.0,
+      "soilPH": null,
+      "soilTemperature": null,
+      "soilHumidity": null
     },
     {
       "scientificName": "Hapalopilus Rutilans",
@@ -61,7 +73,13 @@
         "/images/round-4/round-4-row-0053-0.jpg",
         "/images/round-4/round-4-row-0072-0.jpg"
       ],
-      "pointsFoundCount": 4
+      "pointsFoundCount": 4,
+      "habitatType": "wood",
+      "airTemperature": 30.7,
+      "airHumidity": 56.0,
+      "soilPH": null,
+      "soilTemperature": null,
+      "soilHumidity": null
     },
     {
       "scientificName": "Hexagonia tenuis (Fr.) Fr.",
@@ -82,7 +100,13 @@
         "/images/round-4/round-4-row-0033-0.jpg",
         "/images/round-4/round-4-row-0041-0.jpg"
       ],
-      "pointsFoundCount": 2
+      "pointsFoundCount": 2,
+      "habitatType": "wood",
+      "airTemperature": 31.0,
+      "airHumidity": 61.0,
+      "soilPH": null,
+      "soilTemperature": null,
+      "soilHumidity": null
     },
     {
       "scientificName": "Lentinus Polychrous",
@@ -99,7 +123,13 @@
       "images": [
         "/images/round-4/round-4-row-0045-0.jpg"
       ],
-      "pointsFoundCount": 1
+      "pointsFoundCount": 1,
+      "habitatType": "wood",
+      "airTemperature": 31.7,
+      "airHumidity": 65.0,
+      "soilPH": null,
+      "soilTemperature": null,
+      "soilHumidity": null
     },
     {
       "scientificName": "Lenzites elegans",
@@ -125,7 +155,13 @@
         "/images/round-4/round-4-row-0034-0.jpg",
         "/images/round-4/round-4-row-0039-0.jpg"
       ],
-      "pointsFoundCount": 2
+      "pointsFoundCount": 2,
+      "habitatType": "wood",
+      "airTemperature": 31.0,
+      "airHumidity": 64.8,
+      "soilPH": null,
+      "soilTemperature": null,
+      "soilHumidity": null
     },
     {
       "scientificName": "Microporus vernicipes (Berk.) Ktz",
@@ -154,7 +190,13 @@
         "/images/round-4/round-4-row-0064-0.jpg",
         "/images/round-4/round-4-row-0070-0.jpg"
       ],
-      "pointsFoundCount": 3
+      "pointsFoundCount": 3,
+      "habitatType": "wood",
+      "airTemperature": 31.3,
+      "airHumidity": 51.7,
+      "soilPH": null,
+      "soilTemperature": null,
+      "soilHumidity": null
     },
     {
       "scientificName": "Microporus xanthopus",
@@ -185,7 +227,13 @@
         "/images/round-4/round-4-row-0044-0.jpg",
         "/images/round-4/round-4-row-0078-0.jpg"
       ],
-      "pointsFoundCount": 4
+      "pointsFoundCount": 4,
+      "habitatType": "wood",
+      "airTemperature": 31.3,
+      "airHumidity": 60.8,
+      "soilPH": null,
+      "soilTemperature": null,
+      "soilHumidity": null
     },
     {
       "scientificName": "Omphalotus olearius",
@@ -202,7 +250,13 @@
       "images": [
         "/images/round-4/round-4-row-0046-0.jpg"
       ],
-      "pointsFoundCount": 1
+      "pointsFoundCount": 1,
+      "habitatType": "wood",
+      "airTemperature": 31.7,
+      "airHumidity": 65.0,
+      "soilPH": null,
+      "soilTemperature": null,
+      "soilHumidity": null
     },
     {
       "scientificName": "Phellinus gilvus",
@@ -232,10 +286,16 @@
         "/images/round-4/round-4-row-0071-0.jpg",
         "/images/round-4/round-4-row-0077-0.jpg"
       ],
-      "pointsFoundCount": 5
+      "pointsFoundCount": 5,
+      "habitatType": "wood",
+      "airTemperature": 30.7,
+      "airHumidity": 52.7,
+      "soilPH": null,
+      "soilTemperature": null,
+      "soilHumidity": null
     },
     {
-      "scientificName": "phellinus linteus",
+      "scientificName": "Phellinus linteus",
       "localName": "เห็ดพิมาน",
       "family": "Hymenochaetaceae",
       "group": "เห็ดหิ้ง",
@@ -251,10 +311,16 @@
         "/images/round-4/round-4-row-0038-0.jpg",
         "/images/round-4/round-4-row-0066-0.jpg"
       ],
-      "pointsFoundCount": 2
+      "pointsFoundCount": 2,
+      "habitatType": "wood",
+      "airTemperature": 31.8,
+      "airHumidity": 61.5,
+      "soilPH": null,
+      "soilTemperature": null,
+      "soilHumidity": null
     },
     {
-      "scientificName": "phellinus tremulae",
+      "scientificName": "Phellinus tremulae",
       "localName": "เห็ดพิมาน",
       "family": "Hymenochaetaceae",
       "group": "เห็ดหิ้ง",
@@ -272,7 +338,13 @@
         "/images/round-4/round-4-row-0050-0.jpg",
         "/images/round-4/round-4-row-0073-0.jpg"
       ],
-      "pointsFoundCount": 3
+      "pointsFoundCount": 3,
+      "habitatType": "wood",
+      "airTemperature": 30.8,
+      "airHumidity": 56.0,
+      "soilPH": null,
+      "soilTemperature": null,
+      "soilHumidity": null
     },
     {
       "scientificName": "Porostereum spadiceum",
@@ -290,7 +362,13 @@
         "/images/round-4/round-4-row-0004-0.jpg",
         "/images/round-4/round-4-row-0018-0.jpg"
       ],
-      "pointsFoundCount": 1
+      "pointsFoundCount": 1,
+      "habitatType": "wood",
+      "airTemperature": 31.6,
+      "airHumidity": 60.5,
+      "soilPH": null,
+      "soilTemperature": null,
+      "soilHumidity": null
     },
     {
       "scientificName": "Stereum ostrea",
@@ -313,7 +391,13 @@
         "/images/round-4/round-4-row-0075-0.jpg",
         "/images/round-4/round-4-row-0076-0.jpg"
       ],
-      "pointsFoundCount": 2
+      "pointsFoundCount": 2,
+      "habitatType": "wood",
+      "airTemperature": 30.9,
+      "airHumidity": 46.8,
+      "soilPH": null,
+      "soilTemperature": null,
+      "soilHumidity": null
     },
     {
       "scientificName": "Trichaptum biforme",
@@ -333,7 +417,13 @@
         "/images/round-4/round-4-row-0020-0.jpg",
         "/images/round-4/round-4-row-0036-0.jpg"
       ],
-      "pointsFoundCount": 1
+      "pointsFoundCount": 1,
+      "habitatType": "wood",
+      "airTemperature": 31.3,
+      "airHumidity": 64.8,
+      "soilPH": null,
+      "soilTemperature": null,
+      "soilHumidity": null
     },
     {
       "scientificName": "ระบุไม่ได้",
@@ -350,7 +440,13 @@
       "images": [
         "/images/round-4/round-4-row-0021-0.jpg"
       ],
-      "pointsFoundCount": 1
+      "pointsFoundCount": 1,
+      "habitatType": "wood",
+      "airTemperature": 31.1,
+      "airHumidity": 67.0,
+      "soilPH": null,
+      "soilTemperature": null,
+      "soilHumidity": null
     }
   ],
   "avgTemperature": 31.1,
