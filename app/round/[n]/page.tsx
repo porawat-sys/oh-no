@@ -1,30 +1,7 @@
 import { promises as fs } from "fs";
 import path from "path";
 import { notFound } from "next/navigation";
-import { RoundExplorer } from "@/components/RoundExplorer";
-
-type MushroomRecord = {
-  scientificName: string;
-  localName: string;
-  family: string;
-  group: string;
-  habitat: string;
-  ecologicalRole: string;
-  edibility: string;
-  totalFound: number;
-  pointsFound: string[];
-  pointsFoundCount: number;
-  images: string[];
-};
-
-type RoundData = {
-  round: number;
-  date: string;
-  speciesCount: number;
-  mushrooms: MushroomRecord[];
-  avgTemperature: number | null;
-  avgHumidity: number | null;
-};
+import { RoundExplorer, type RoundData } from "@/components/RoundExplorer";
 
 async function getRoundData(round: number): Promise<RoundData | null> {
   const filePath = path.join(process.cwd(), "data", `round-${round}.json`);

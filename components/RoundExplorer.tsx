@@ -5,7 +5,7 @@ import { useMemo, useState } from "react";
 import { MushroomCard } from "@/components/MushroomCard";
 import { WeatherSummary } from "@/components/WeatherSummary";
 
-type MushroomRecord = {
+export type MushroomRecord = {
   scientificName: string;
   localName: string;
   family: string;
@@ -26,7 +26,7 @@ type MushroomRecord = {
   generalCharacteristics: string;
 };
 
-type RoundData = {
+export type RoundData = {
   round: number;
   date: string;
   speciesCount: number;
