@@ -16,16 +16,16 @@
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่"
       ],
       "images": [
-        "/images/round-1/round-1-row-0009-0.jpg",
-        "/images/round-1/round-1-row-0010-0.jpg"
+        "/images/round-1/round-1-row-0009-0.jpeg",
+        "/images/round-1/round-1-row-0010-0.jpeg"
       ],
       "pointsFoundCount": 1,
       "habitatType": "soil",
       "airTemperature": 24.4,
-      "airHumidity": 80.0,
+      "airHumidity": 80,
       "soilPH": 7.5,
       "soilTemperature": 23.5,
-      "soilHumidity": 35.0,
+      "soilHumidity": 35,
       "generalCharacteristics": "เห็ดในสกุล Agaricus หมวกเห็ดทรงกลมถึงแบน ผิวสีขาวถึงครีม เนื้อในสีขาว ครีบใต้หมวกสีชมพูอ่อนเมื่ออ่อน แล้วเปลี่ยนเป็นสีน้ำตาลเข้มเมื่อแก่ มีวงแหวนที่ก้าน ขึ้นเดี่ยวหรือเป็นกลุ่มบนพื้นดินที่มีอินทรียวัตถุสูง"
     },
     {
@@ -42,11 +42,11 @@
         "จุดที่ 2 ประดู่ใหญ่-มออีหก"
       ],
       "images": [
-        "/images/round-1/round-1-row-0007-0.jpg",
-        "/images/round-1/round-1-row-0090-0.jpg",
-        "/images/round-1/round-1-row-0103-0.jpg",
-        "/images/round-1/round-1-row-0106-0.jpg",
-        "/images/round-1/round-1-row-0109-0.jpg"
+        "/images/round-1/round-1-row-0007-0.jpeg",
+        "/images/round-1/round-1-row-0090-0.jpeg",
+        "/images/round-1/round-1-row-0103-0.jpeg",
+        "/images/round-1/round-1-row-0106-0.jpeg",
+        "/images/round-1/round-1-row-0109-0.jpeg"
       ],
       "pointsFoundCount": 2,
       "habitatType": "soil",
@@ -54,7 +54,7 @@
       "airHumidity": 70.2,
       "soilPH": 7.5,
       "soilTemperature": 22.6,
-      "soilHumidity": 17.0,
+      "soilHumidity": 17,
       "generalCharacteristics": "เห็ดพิษขนาดเล็กในสกุล Amanita หมวกสีเทาถึงน้ำตาลอ่อน มีผงคล้ายแป้งปกคลุมผิวหมวก ครีบสีขาว ก้านเรียวยาว ไม่มีวงแหวนชัดเจน โคนก้านไม่มีเปลือกหุ้ม (volva) ชัดเจนแบบ Amanita ทั่วไป ขึ้นตามพื้นดินในป่าเบญจพรรณและป่าดิบ"
     },
     {
@@ -70,22 +70,22 @@
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่"
       ],
       "images": [
-        "/images/round-1/round-1-row-0006-0.jpg",
-        "/images/round-1/round-1-row-0067-0.jpg",
-        "/images/round-1/round-1-row-0068-0.jpg"
+        "/images/round-1/round-1-row-0006-0.jpeg",
+        "/images/round-1/round-1-row-0067-0.jpeg",
+        "/images/round-1/round-1-row-0068-0.jpeg"
       ],
       "pointsFoundCount": 1,
       "habitatType": "soil",
       "airTemperature": 25.8,
-      "airHumidity": 76.0,
+      "airHumidity": 76,
       "soilPH": 7.5,
       "soilTemperature": 21.3,
-      "soilHumidity": 10.0,
+      "soilHumidity": 10,
       "generalCharacteristics": "เห็ดในสกุล Amanita หมวกสีส้มถึงส้มแดงสด ผิวเรียบเป็นมัน ขอบหมวกมีรอยเป็นเส้น (striate) ก้านสีเหลืองอมส้ม มีวงแหวนและเปลือกหุ้มโคนก้าน (volva) ชัดเจน บางถิ่นนิยมรับประทาน แต่ต้องระวังสับสนกับชนิดพิษในสกุลเดียวกัน"
     },
     {
       "scientificName": "Amanita onusta",
-      "localName": "เลพิเดลล่าดินปืน",
+      "localName": "เลพิเดลล่าดินปืน / gunpowder Lepidella",
       "family": "Amanitaceae",
       "group": "เห็ดครีบ",
       "habitat": "ดิน",
@@ -97,17 +97,17 @@
         "จุดที่ 2 ประดู่ใหญ่-มออีหก"
       ],
       "images": [
-        "/images/round-1/round-1-row-0028-0.jpg",
-        "/images/round-1/round-1-row-0111-0.jpg",
-        "/images/round-1/round-1-row-0112-0.jpg"
+        "/images/round-1/round-1-row-0028-0.jpeg",
+        "/images/round-1/round-1-row-0111-0.jpeg",
+        "/images/round-1/round-1-row-0112-0.jpeg"
       ],
       "pointsFoundCount": 2,
       "habitatType": "soil",
       "airTemperature": 25.2,
       "airHumidity": 69.3,
       "soilPH": 7.5,
-      "soilTemperature": 20.0,
-      "soilHumidity": 20.0,
+      "soilTemperature": 20,
+      "soilHumidity": 20,
       "generalCharacteristics": "เห็ดในสกุล Amanita หมวกสีเทาถึงน้ำตาลเทา ผิวปกคลุมด้วยเกล็ดหูดสีเข้มกระจายทั่วหมวก ก้านมีเกล็ดคล้ายกัน โคนก้านพองออกเล็กน้อยแต่ไม่มี volva ชัดเจน ขึ้นตามพื้นดินในป่าที่ชื้น"
     },
     {
@@ -124,13 +124,13 @@
         "จุดที่ 6 น้ำดิบผามะหาด-ชานเบิกภัย"
       ],
       "images": [
-        "/images/round-1/round-1-row-0058-0.jpg",
-        "/images/round-1/round-1-row-0124-0.jpg"
+        "/images/round-1/round-1-row-0058-0.jpeg",
+        "/images/round-1/round-1-row-0124-0.jpeg"
       ],
       "pointsFoundCount": 2,
       "habitatType": "wood",
       "airTemperature": 24.7,
-      "airHumidity": 82.0,
+      "airHumidity": 82,
       "soilPH": null,
       "soilTemperature": null,
       "soilHumidity": null,
@@ -149,15 +149,15 @@
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่"
       ],
       "images": [
-        "/images/round-1/round-1-row-0069-0.jpg"
+        "/images/round-1/round-1-row-0069-0.jpeg"
       ],
       "pointsFoundCount": 1,
       "habitatType": "soil",
       "airTemperature": 26.2,
-      "airHumidity": 78.0,
+      "airHumidity": 78,
       "soilPH": 7.5,
-      "soilTemperature": 23.0,
-      "soilHumidity": 20.0,
+      "soilTemperature": 23,
+      "soilHumidity": 20,
       "generalCharacteristics": "เห็ดหมึกหอมหรือเห็ดร่มขนนก หมวกทรงกระบอกยาว สีขาวมีเกล็ดคล้ายขนนกปุยปกคลุม เมื่อแก่ครีบจะเปลี่ยนเป็นสีดำและละลายเป็นของเหลวคล้ายหมึก (deliquescence) รับประทานได้เมื่อยังอ่อน ต้องเก็บและปรุงทันทีก่อนที่จะละลาย"
     },
     {
@@ -173,9 +173,9 @@
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่"
       ],
       "images": [
-        "/images/round-1/round-1-row-0018-0.jpg",
-        "/images/round-1/round-1-row-0033-0.jpg",
-        "/images/round-1/round-1-row-0045-0.jpg"
+        "/images/round-1/round-1-row-0018-0.jpeg",
+        "/images/round-1/round-1-row-0033-0.jpeg",
+        "/images/round-1/round-1-row-0045-0.jpeg"
       ],
       "pointsFoundCount": 1,
       "habitatType": "wood",
@@ -199,12 +199,12 @@
         "จุดที่ 3 มออีหก-จุดชมวิว"
       ],
       "images": [
-        "/images/round-1/round-1-row-0113-0.jpg"
+        "/images/round-1/round-1-row-0113-0.jpeg"
       ],
       "pointsFoundCount": 1,
       "habitatType": "wood",
       "airTemperature": 24.5,
-      "airHumidity": 77.0,
+      "airHumidity": 77,
       "soilPH": null,
       "soilTemperature": null,
       "soilHumidity": null,
@@ -223,11 +223,11 @@
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่"
       ],
       "images": [
-        "/images/round-1/round-1-row-0054-0.jpg",
-        "/images/round-1/round-1-row-0057-0.jpg",
-        "/images/round-1/round-1-row-0060-0.jpg",
-        "/images/round-1/round-1-row-0061-0.jpg",
-        "/images/round-1/round-1-row-0074-0.jpg"
+        "/images/round-1/round-1-row-0054-0.jpeg",
+        "/images/round-1/round-1-row-0057-0.jpeg",
+        "/images/round-1/round-1-row-0060-0.jpeg",
+        "/images/round-1/round-1-row-0061-0.jpeg",
+        "/images/round-1/round-1-row-0074-0.jpeg"
       ],
       "pointsFoundCount": 1,
       "habitatType": "wood",
@@ -251,12 +251,12 @@
         "จุดที่ 3 มออีหก-จุดชมวิว"
       ],
       "images": [
-        "/images/round-1/round-1-row-0116-0.jpg"
+        "/images/round-1/round-1-row-0116-0.jpeg"
       ],
       "pointsFoundCount": 1,
       "habitatType": "wood",
       "airTemperature": 24.6,
-      "airHumidity": 70.0,
+      "airHumidity": 70,
       "soilPH": null,
       "soilTemperature": null,
       "soilHumidity": null,
@@ -277,14 +277,14 @@
         "จุดที่ 7 ชานเบิกภัย-ไทรงาม"
       ],
       "images": [
-        "/images/round-1/round-1-row-0013-0.jpg",
-        "/images/round-1/round-1-row-0072-0.jpg",
-        "/images/round-1/round-1-row-0073-0.jpg",
-        "/images/round-1/round-1-row-0125-0.jpg",
-        "/images/round-1/round-1-row-0126-0.jpg",
-        "/images/round-1/round-1-row-0127-0.jpg",
-        "/images/round-1/round-1-row-0160-0.jpg",
-        "/images/round-1/round-1-row-0162-0.jpg"
+        "/images/round-1/round-1-row-0013-0.jpeg",
+        "/images/round-1/round-1-row-0072-0.jpeg",
+        "/images/round-1/round-1-row-0073-0.jpeg",
+        "/images/round-1/round-1-row-0125-0.jpeg",
+        "/images/round-1/round-1-row-0126-0.jpeg",
+        "/images/round-1/round-1-row-0127-0.jpeg",
+        "/images/round-1/round-1-row-0160-0.jpeg",
+        "/images/round-1/round-1-row-0162-0.jpeg"
       ],
       "pointsFoundCount": 3,
       "habitatType": "wood",
@@ -308,9 +308,9 @@
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่"
       ],
       "images": [
-        "/images/round-1/round-1-row-0015-0.jpg",
-        "/images/round-1/round-1-row-0022-0.jpg",
-        "/images/round-1/round-1-row-0075-0.jpg"
+        "/images/round-1/round-1-row-0015-0.jpeg",
+        "/images/round-1/round-1-row-0022-0.jpeg",
+        "/images/round-1/round-1-row-0075-0.jpeg"
       ],
       "pointsFoundCount": 1,
       "habitatType": "wood",
@@ -325,7 +325,7 @@
       "scientificName": "Hymenochaete cruenta",
       "localName": "-",
       "family": "Hymenochaetaceae",
-      "group": "เห็ดแผ่นหนัง",
+      "group": "เห็ดแบนราบไปกับต้นไม้",
       "habitat": "ต้นไม้/ตอไม้",
       "ecologicalRole": "เห็ดปรสิต (parasitic mushroom)",
       "edibility": "กินได้",
@@ -334,12 +334,12 @@
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่"
       ],
       "images": [
-        "/images/round-1/round-1-row-0059-0.jpg"
+        "/images/round-1/round-1-row-0059-0.jpeg"
       ],
       "pointsFoundCount": 1,
       "habitatType": "wood",
       "airTemperature": 25.8,
-      "airHumidity": 82.0,
+      "airHumidity": 82,
       "soilPH": null,
       "soilTemperature": null,
       "soilHumidity": null,
@@ -358,15 +358,15 @@
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่"
       ],
       "images": [
-        "/images/round-1/round-1-row-0025-0.jpg"
+        "/images/round-1/round-1-row-0025-0.jpeg"
       ],
       "pointsFoundCount": 1,
       "habitatType": "soil",
       "airTemperature": 23.5,
-      "airHumidity": 80.0,
+      "airHumidity": 80,
       "soilPH": 7.5,
-      "soilTemperature": 23.0,
-      "soilHumidity": 35.0,
+      "soilTemperature": 23,
+      "soilHumidity": 35,
       "generalCharacteristics": "เห็ดในสกุล Inocybe หมวกทรงกรวยถึงระฆัง สีน้ำตาลอมส้ม ผิวมีเส้นใยเป็นรัศมี ก้านมักมีสีชมพูอมแดงเมื่อช้ำ ครีบสีน้ำตาลอมเทา เห็ดในสกุลนี้ส่วนใหญ่มีพิษ ห้ามรับประทาน"
     },
     {
@@ -385,24 +385,24 @@
         "จุดที่ 7 ชานเบิกภัย-ไทรงาม"
       ],
       "images": [
-        "/images/round-1/round-1-row-0021-0.jpg",
-        "/images/round-1/round-1-row-0027-0.jpg",
-        "/images/round-1/round-1-row-0047-0.jpg",
-        "/images/round-1/round-1-row-0050-0.jpg",
-        "/images/round-1/round-1-row-0078-0.jpg",
-        "/images/round-1/round-1-row-0079-0.jpg",
-        "/images/round-1/round-1-row-0080-0.jpg",
-        "/images/round-1/round-1-row-0105-0.jpg",
-        "/images/round-1/round-1-row-0119-0.jpg",
-        "/images/round-1/round-1-row-0123-0.jpg",
-        "/images/round-1/round-1-row-0129-0.jpg",
-        "/images/round-1/round-1-row-0132-0.jpg",
-        "/images/round-1/round-1-row-0159-0.jpg"
+        "/images/round-1/round-1-row-0021-0.jpeg",
+        "/images/round-1/round-1-row-0027-0.jpeg",
+        "/images/round-1/round-1-row-0047-0.jpeg",
+        "/images/round-1/round-1-row-0050-0.jpeg",
+        "/images/round-1/round-1-row-0078-0.jpeg",
+        "/images/round-1/round-1-row-0079-0.jpeg",
+        "/images/round-1/round-1-row-0080-0.jpeg",
+        "/images/round-1/round-1-row-0105-0.jpeg",
+        "/images/round-1/round-1-row-0119-0.jpeg",
+        "/images/round-1/round-1-row-0123-0.jpeg",
+        "/images/round-1/round-1-row-0129-0.jpeg",
+        "/images/round-1/round-1-row-0132-0.jpeg",
+        "/images/round-1/round-1-row-0159-0.jpeg"
       ],
       "pointsFoundCount": 4,
       "habitatType": "wood",
       "airTemperature": 23.9,
-      "airHumidity": 76.0,
+      "airHumidity": 76,
       "soilPH": null,
       "soilTemperature": null,
       "soilHumidity": null,
@@ -424,18 +424,18 @@
         "จุดที่ 5 ตะเคียนคู่-น้ำดิบผามะหาด"
       ],
       "images": [
-        "/images/round-1/round-1-row-0020-0.jpg",
-        "/images/round-1/round-1-row-0031-0.jpg",
-        "/images/round-1/round-1-row-0048-0.jpg",
-        "/images/round-1/round-1-row-0049-0.jpg",
-        "/images/round-1/round-1-row-0053-0.jpg",
-        "/images/round-1/round-1-row-0064-0.jpg",
-        "/images/round-1/round-1-row-0083-0.jpg",
-        "/images/round-1/round-1-row-0092-0.jpg",
-        "/images/round-1/round-1-row-0107-0.jpg",
-        "/images/round-1/round-1-row-0115-0.jpg",
-        "/images/round-1/round-1-row-0117-0.jpg",
-        "/images/round-1/round-1-row-0120-0.jpg"
+        "/images/round-1/round-1-row-0020-0.jpeg",
+        "/images/round-1/round-1-row-0031-0.jpeg",
+        "/images/round-1/round-1-row-0048-0.jpeg",
+        "/images/round-1/round-1-row-0049-0.jpeg",
+        "/images/round-1/round-1-row-0053-0.jpeg",
+        "/images/round-1/round-1-row-0064-0.jpeg",
+        "/images/round-1/round-1-row-0083-0.jpeg",
+        "/images/round-1/round-1-row-0092-0.jpeg",
+        "/images/round-1/round-1-row-0107-0.jpeg",
+        "/images/round-1/round-1-row-0115-0.jpeg",
+        "/images/round-1/round-1-row-0117-0.jpeg",
+        "/images/round-1/round-1-row-0120-0.jpeg"
       ],
       "pointsFoundCount": 4,
       "habitatType": "soil",
@@ -459,12 +459,12 @@
         "จุดที่ 6 น้ำดิบผามะหาด-ชานเบิกภัย"
       ],
       "images": [
-        "/images/round-1/round-1-row-0147-0.jpg"
+        "/images/round-1/round-1-row-0147-0.jpeg"
       ],
       "pointsFoundCount": 1,
       "habitatType": "wood",
       "airTemperature": 22.7,
-      "airHumidity": 71.0,
+      "airHumidity": 71,
       "soilPH": null,
       "soilTemperature": null,
       "soilHumidity": null,
@@ -485,11 +485,11 @@
         "จุดที่ 7 ชานเบิกภัย-ไทรงาม"
       ],
       "images": [
-        "/images/round-1/round-1-row-0044-0.jpg",
-        "/images/round-1/round-1-row-0076-0.jpg",
-        "/images/round-1/round-1-row-0104-0.jpg",
-        "/images/round-1/round-1-row-0122-0.jpg",
-        "/images/round-1/round-1-row-0158-0.jpg"
+        "/images/round-1/round-1-row-0044-0.jpeg",
+        "/images/round-1/round-1-row-0076-0.jpeg",
+        "/images/round-1/round-1-row-0104-0.jpeg",
+        "/images/round-1/round-1-row-0122-0.jpeg",
+        "/images/round-1/round-1-row-0158-0.jpeg"
       ],
       "pointsFoundCount": 3,
       "habitatType": "wood",
@@ -513,16 +513,16 @@
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่"
       ],
       "images": [
-        "/images/round-1/round-1-row-0019-0.jpg",
-        "/images/round-1/round-1-row-0030-0.jpg"
+        "/images/round-1/round-1-row-0019-0.jpeg",
+        "/images/round-1/round-1-row-0030-0.jpeg"
       ],
       "pointsFoundCount": 1,
       "habitatType": "soil",
       "airTemperature": 23.4,
-      "airHumidity": 81.0,
+      "airHumidity": 81,
       "soilPH": 7.5,
-      "soilTemperature": 23.0,
-      "soilHumidity": 30.0,
+      "soilTemperature": 23,
+      "soilHumidity": 30,
       "generalCharacteristics": "เห็ดขนาดเล็กในสกุล Marasmius หมวกสีน้ำตาลอ่อนถึงเทา ก้านสีดำเป็นมันเรียวยาวคล้ายเส้นลวด มีกลิ่นคล้ายกระเทียมหรือหอมหัวใหญ่เมื่อขยี้ (ที่มาของชื่อ alliaceus) ขึ้นเป็นกลุ่มบนซากใบไม้และกิ่งไม้ผุในป่า"
     },
     {
@@ -540,18 +540,18 @@
         "จุดที่ 7 ชานเบิกภัย-ไทรงาม"
       ],
       "images": [
-        "/images/round-1/round-1-row-0098-0.jpg",
-        "/images/round-1/round-1-row-0099-0.jpg",
-        "/images/round-1/round-1-row-0128-0.jpg",
-        "/images/round-1/round-1-row-0135-0.jpg",
-        "/images/round-1/round-1-row-0139-0.jpg",
-        "/images/round-1/round-1-row-0140-0.jpg",
-        "/images/round-1/round-1-row-0141-0.jpg",
-        "/images/round-1/round-1-row-0142-0.jpg",
-        "/images/round-1/round-1-row-0143-0.jpg",
-        "/images/round-1/round-1-row-0152-0.jpg",
-        "/images/round-1/round-1-row-0153-0.jpg",
-        "/images/round-1/round-1-row-0155-0.jpg"
+        "/images/round-1/round-1-row-0098-0.jpeg",
+        "/images/round-1/round-1-row-0099-0.jpeg",
+        "/images/round-1/round-1-row-0128-0.jpeg",
+        "/images/round-1/round-1-row-0135-0.jpeg",
+        "/images/round-1/round-1-row-0139-0.jpeg",
+        "/images/round-1/round-1-row-0140-0.jpeg",
+        "/images/round-1/round-1-row-0141-0.jpeg",
+        "/images/round-1/round-1-row-0142-0.jpeg",
+        "/images/round-1/round-1-row-0143-0.jpeg",
+        "/images/round-1/round-1-row-0152-0.jpeg",
+        "/images/round-1/round-1-row-0153-0.jpeg",
+        "/images/round-1/round-1-row-0155-0.jpeg"
       ],
       "pointsFoundCount": 3,
       "habitatType": "wood",
@@ -569,7 +569,7 @@
       "group": "เห็ดหิ้ง",
       "habitat": "ต้นไม้/ตอไม้",
       "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
-      "edibility": "กินไม่ได้",
+      "edibility": "ไม่มีข้อมูลว่ากินได้",
       "totalFound": 24,
       "pointsFound": [
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่",
@@ -578,46 +578,46 @@
         "จุดที่ 8 ไทรงาม-ปล่องนางนาค"
       ],
       "images": [
-        "/images/round-1/round-1-row-0008-0.jpg",
-        "/images/round-1/round-1-row-0014-0.jpg",
-        "/images/round-1/round-1-row-0016-0.jpg",
-        "/images/round-1/round-1-row-0017-0.jpg",
-        "/images/round-1/round-1-row-0029-0.jpg",
-        "/images/round-1/round-1-row-0034-0.jpg",
-        "/images/round-1/round-1-row-0042-0.jpg",
-        "/images/round-1/round-1-row-0062-0.jpg",
-        "/images/round-1/round-1-row-0063-0.jpg",
-        "/images/round-1/round-1-row-0070-0.jpg",
-        "/images/round-1/round-1-row-0071-0.jpg",
-        "/images/round-1/round-1-row-0087-0.jpg",
-        "/images/round-1/round-1-row-0088-0.jpg",
-        "/images/round-1/round-1-row-0089-0.jpg",
-        "/images/round-1/round-1-row-0093-0.jpg",
-        "/images/round-1/round-1-row-0094-0.jpg",
-        "/images/round-1/round-1-row-0096-0.jpg",
-        "/images/round-1/round-1-row-0097-0.jpg",
-        "/images/round-1/round-1-row-0100-0.jpg",
-        "/images/round-1/round-1-row-0101-0.jpg",
-        "/images/round-1/round-1-row-0102-0.jpg",
-        "/images/round-1/round-1-row-0108-0.jpg",
-        "/images/round-1/round-1-row-0144-0.jpg",
-        "/images/round-1/round-1-row-0170-0.jpg"
+        "/images/round-1/round-1-row-0008-0.jpeg",
+        "/images/round-1/round-1-row-0014-0.jpeg",
+        "/images/round-1/round-1-row-0016-0.jpeg",
+        "/images/round-1/round-1-row-0017-0.jpeg",
+        "/images/round-1/round-1-row-0029-0.jpeg",
+        "/images/round-1/round-1-row-0034-0.jpeg",
+        "/images/round-1/round-1-row-0042-0.jpeg",
+        "/images/round-1/round-1-row-0062-0.jpeg",
+        "/images/round-1/round-1-row-0063-0.jpeg",
+        "/images/round-1/round-1-row-0070-0.jpeg",
+        "/images/round-1/round-1-row-0071-0.jpeg",
+        "/images/round-1/round-1-row-0087-0.jpeg",
+        "/images/round-1/round-1-row-0088-0.jpeg",
+        "/images/round-1/round-1-row-0089-0.jpeg",
+        "/images/round-1/round-1-row-0093-0.jpeg",
+        "/images/round-1/round-1-row-0094-0.jpeg",
+        "/images/round-1/round-1-row-0096-0.jpeg",
+        "/images/round-1/round-1-row-0097-0.jpeg",
+        "/images/round-1/round-1-row-0100-0.jpeg",
+        "/images/round-1/round-1-row-0101-0.jpeg",
+        "/images/round-1/round-1-row-0102-0.jpeg",
+        "/images/round-1/round-1-row-0108-0.jpeg",
+        "/images/round-1/round-1-row-0144-0.jpeg",
+        "/images/round-1/round-1-row-0170-0.jpeg"
       ],
       "pointsFoundCount": 4,
       "habitatType": "soil",
       "airTemperature": 25.3,
       "airHumidity": 76.1,
       "soilPH": 7.5,
-      "soilTemperature": 23.0,
-      "soilHumidity": 20.0,
+      "soilTemperature": 23,
+      "soilHumidity": 20,
       "generalCharacteristics": "เห็ดหิ้งขนาดเล็กมีก้าน (ต่างจากเห็ดหิ้งทั่วไปที่ไม่มีก้าน) หมวกกลมแบนสีน้ำตาลเป็นวงสลับ ก้านสีดำเป็นมัน (xanthopus หมายถึงก้านสีเหลืองในบางสายพันธุ์ย่อย) ผิวด้านล่างมีรูพรุนละเอียด ขึ้นบนกิ่งไม้ผุที่ร่วงอยู่กับพื้น"
     },
     {
       "scientificName": "Mycena galericulata",
-      "localName": "เห็ดฝากะโปรง",
+      "localName": "เห็ดฝากะโปรง / Bonnet",
       "family": "Mycenaceae",
       "group": "เห็ดครีบ",
-      "habitat": "ดิน",
+      "habitat": "ต้นไม้/ตอไม้",
       "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
       "edibility": "กินไม่ได้",
       "totalFound": 13,
@@ -626,19 +626,19 @@
         "จุดที่ 3 มออีหก-จุดชมวิว"
       ],
       "images": [
-        "/images/round-1/round-1-row-0005-0.jpg",
-        "/images/round-1/round-1-row-0011-0.jpg",
-        "/images/round-1/round-1-row-0012-0.jpg",
-        "/images/round-1/round-1-row-0023-0.jpg",
-        "/images/round-1/round-1-row-0024-0.jpg",
-        "/images/round-1/round-1-row-0026-0.jpg",
-        "/images/round-1/round-1-row-0051-0.jpg",
-        "/images/round-1/round-1-row-0065-0.jpg",
-        "/images/round-1/round-1-row-0066-0.jpg",
-        "/images/round-1/round-1-row-0077-0.jpg",
-        "/images/round-1/round-1-row-0081-0.jpg",
-        "/images/round-1/round-1-row-0082-0.jpg",
-        "/images/round-1/round-1-row-0114-0.jpg"
+        "/images/round-1/round-1-row-0005-0.jpeg",
+        "/images/round-1/round-1-row-0011-0.jpeg",
+        "/images/round-1/round-1-row-0012-0.jpeg",
+        "/images/round-1/round-1-row-0023-0.jpeg",
+        "/images/round-1/round-1-row-0024-0.jpeg",
+        "/images/round-1/round-1-row-0026-0.jpeg",
+        "/images/round-1/round-1-row-0051-0.jpeg",
+        "/images/round-1/round-1-row-0065-0.jpeg",
+        "/images/round-1/round-1-row-0066-0.jpeg",
+        "/images/round-1/round-1-row-0077-0.jpeg",
+        "/images/round-1/round-1-row-0081-0.jpeg",
+        "/images/round-1/round-1-row-0082-0.jpeg",
+        "/images/round-1/round-1-row-0114-0.jpeg"
       ],
       "pointsFoundCount": 2,
       "habitatType": "soil",
@@ -665,14 +665,14 @@
         "จุดที่ 8 ไทรงาม-ปล่องนางนาค"
       ],
       "images": [
-        "/images/round-1/round-1-row-0046-0.jpg",
-        "/images/round-1/round-1-row-0056-0.jpg",
-        "/images/round-1/round-1-row-0136-0.jpg",
-        "/images/round-1/round-1-row-0137-0.jpg",
-        "/images/round-1/round-1-row-0138-0.jpg",
-        "/images/round-1/round-1-row-0151-0.jpg",
-        "/images/round-1/round-1-row-0154-0.jpg",
-        "/images/round-1/round-1-row-0166-0.jpg"
+        "/images/round-1/round-1-row-0046-0.jpeg",
+        "/images/round-1/round-1-row-0056-0.jpeg",
+        "/images/round-1/round-1-row-0136-0.jpeg",
+        "/images/round-1/round-1-row-0137-0.jpeg",
+        "/images/round-1/round-1-row-0138-0.jpeg",
+        "/images/round-1/round-1-row-0151-0.jpeg",
+        "/images/round-1/round-1-row-0154-0.jpeg",
+        "/images/round-1/round-1-row-0166-0.jpeg"
       ],
       "pointsFoundCount": 4,
       "habitatType": "wood",
@@ -696,13 +696,13 @@
         "จุดที่ 7 ชานเบิกภัย-ไทรงาม"
       ],
       "images": [
-        "/images/round-1/round-1-row-0161-0.jpg",
-        "/images/round-1/round-1-row-0163-0.jpg"
+        "/images/round-1/round-1-row-0161-0.jpeg",
+        "/images/round-1/round-1-row-0163-0.jpeg"
       ],
       "pointsFoundCount": 1,
       "habitatType": "wood",
       "airTemperature": 20.9,
-      "airHumidity": 80.0,
+      "airHumidity": 80,
       "soilPH": null,
       "soilTemperature": null,
       "soilHumidity": null,
@@ -723,9 +723,9 @@
         "จุดที่ 7 ชานเบิกภัย-ไทรงาม"
       ],
       "images": [
-        "/images/round-1/round-1-row-0121-0.jpg",
-        "/images/round-1/round-1-row-0133-0.jpg",
-        "/images/round-1/round-1-row-0156-0.jpg"
+        "/images/round-1/round-1-row-0121-0.jpeg",
+        "/images/round-1/round-1-row-0133-0.jpeg",
+        "/images/round-1/round-1-row-0156-0.jpeg"
       ],
       "pointsFoundCount": 3,
       "habitatType": "wood",
@@ -751,14 +751,14 @@
         "จุดที่ 7 ชานเบิกภัย-ไทรงาม"
       ],
       "images": [
-        "/images/round-1/round-1-row-0055-0.jpg",
-        "/images/round-1/round-1-row-0145-0.jpg",
-        "/images/round-1/round-1-row-0165-0.jpg"
+        "/images/round-1/round-1-row-0055-0.jpeg",
+        "/images/round-1/round-1-row-0145-0.jpeg",
+        "/images/round-1/round-1-row-0165-0.jpeg"
       ],
       "pointsFoundCount": 3,
       "habitatType": "wood",
       "airTemperature": 23.2,
-      "airHumidity": 78.0,
+      "airHumidity": 78,
       "soilPH": null,
       "soilTemperature": null,
       "soilHumidity": null,
@@ -768,7 +768,7 @@
       "scientificName": "Porostereum spadiceum",
       "localName": "-",
       "family": "Phanerochaetaceae",
-      "group": "เห็ดแผ่นแบนราบไปกับท่อนไม้",
+      "group": "แผ่นหนัง",
       "habitat": "ต้นไม้/ตอไม้",
       "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
       "edibility": "ไม่มีข้อมูลว่ากินได้",
@@ -777,14 +777,14 @@
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่"
       ],
       "images": [
-        "/images/round-1/round-1-row-0004-0.jpg",
-        "/images/round-1/round-1-row-0085-0.jpg",
-        "/images/round-1/round-1-row-0091-0.jpg"
+        "/images/round-1/round-1-row-0004-0.jpeg",
+        "/images/round-1/round-1-row-0085-0.jpeg",
+        "/images/round-1/round-1-row-0091-0.jpeg"
       ],
       "pointsFoundCount": 1,
       "habitatType": "wood",
       "airTemperature": 25.9,
-      "airHumidity": 73.0,
+      "airHumidity": 73,
       "soilPH": null,
       "soilTemperature": null,
       "soilHumidity": null,
@@ -806,19 +806,19 @@
         "จุดที่ 8 ไทรงาม-ปล่องนางนาค"
       ],
       "images": [
-        "/images/round-1/round-1-row-0038-0.jpg",
-        "/images/round-1/round-1-row-0039-0.jpg",
-        "/images/round-1/round-1-row-0040-0.jpg",
-        "/images/round-1/round-1-row-0041-0.jpg",
-        "/images/round-1/round-1-row-0130-0.jpg",
-        "/images/round-1/round-1-row-0131-0.jpg",
-        "/images/round-1/round-1-row-0134-0.jpg",
-        "/images/round-1/round-1-row-0146-0.jpg",
-        "/images/round-1/round-1-row-0148-0.jpg",
-        "/images/round-1/round-1-row-0149-0.jpg",
-        "/images/round-1/round-1-row-0150-0.jpg",
-        "/images/round-1/round-1-row-0164-0.jpg",
-        "/images/round-1/round-1-row-0168-0.jpg"
+        "/images/round-1/round-1-row-0038-0.jpeg",
+        "/images/round-1/round-1-row-0039-0.jpeg",
+        "/images/round-1/round-1-row-0040-0.jpeg",
+        "/images/round-1/round-1-row-0041-0.jpeg",
+        "/images/round-1/round-1-row-0130-0.jpeg",
+        "/images/round-1/round-1-row-0131-0.jpeg",
+        "/images/round-1/round-1-row-0134-0.jpeg",
+        "/images/round-1/round-1-row-0146-0.jpeg",
+        "/images/round-1/round-1-row-0148-0.jpeg",
+        "/images/round-1/round-1-row-0149-0.jpeg",
+        "/images/round-1/round-1-row-0150-0.jpeg",
+        "/images/round-1/round-1-row-0164-0.jpeg",
+        "/images/round-1/round-1-row-0168-0.jpeg"
       ],
       "pointsFoundCount": 4,
       "habitatType": "wood",
@@ -842,12 +842,12 @@
         "จุดที่ 8 ไทรงาม-ปล่องนางนาค"
       ],
       "images": [
-        "/images/round-1/round-1-row-0169-0.jpg"
+        "/images/round-1/round-1-row-0169-0.jpeg"
       ],
       "pointsFoundCount": 1,
       "habitatType": "wood",
       "airTemperature": 20.9,
-      "airHumidity": 80.0,
+      "airHumidity": 80,
       "soilPH": null,
       "soilTemperature": null,
       "soilHumidity": null,
@@ -866,12 +866,12 @@
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่"
       ],
       "images": [
-        "/images/round-1/round-1-row-0032-0.jpg"
+        "/images/round-1/round-1-row-0032-0.jpeg"
       ],
       "pointsFoundCount": 1,
       "habitatType": "wood",
       "airTemperature": 24.2,
-      "airHumidity": 79.0,
+      "airHumidity": 79,
       "soilPH": null,
       "soilTemperature": null,
       "soilHumidity": null,
@@ -880,7 +880,7 @@
     {
       "scientificName": "Trichaptum biforme",
       "localName": "เห็ดฟันสีม่วง",
-      "family": "Trichaptaceae",
+      "family": "Hymenochaetaceae",
       "group": "เห็ดฟันเลื่อย",
       "habitat": "ต้นไม้/ตอไม้",
       "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
@@ -890,12 +890,12 @@
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่"
       ],
       "images": [
-        "/images/round-1/round-1-row-0035-0.jpg"
+        "/images/round-1/round-1-row-0035-0.jpeg"
       ],
       "pointsFoundCount": 1,
       "habitatType": "wood",
       "airTemperature": 24.6,
-      "airHumidity": 82.0,
+      "airHumidity": 82,
       "soilPH": null,
       "soilTemperature": null,
       "soilHumidity": null,
@@ -918,17 +918,17 @@
         "จุดที่ 8 ไทรงาม-ปล่องนางนาค"
       ],
       "images": [
-        "/images/round-1/round-1-row-0036-0.jpg",
-        "/images/round-1/round-1-row-0037-0.jpg",
-        "/images/round-1/round-1-row-0043-0.jpg",
-        "/images/round-1/round-1-row-0052-0.jpg",
-        "/images/round-1/round-1-row-0084-0.jpg",
-        "/images/round-1/round-1-row-0086-0.jpg",
-        "/images/round-1/round-1-row-0095-0.jpg",
-        "/images/round-1/round-1-row-0110-0.jpg",
-        "/images/round-1/round-1-row-0118-0.jpg",
-        "/images/round-1/round-1-row-0157-0.jpg",
-        "/images/round-1/round-1-row-0167-0.jpg"
+        "/images/round-1/round-1-row-0036-0.jpeg",
+        "/images/round-1/round-1-row-0037-0.jpeg",
+        "/images/round-1/round-1-row-0043-0.jpeg",
+        "/images/round-1/round-1-row-0052-0.jpeg",
+        "/images/round-1/round-1-row-0084-0.jpeg",
+        "/images/round-1/round-1-row-0086-0.jpeg",
+        "/images/round-1/round-1-row-0095-0.jpeg",
+        "/images/round-1/round-1-row-0110-0.jpeg",
+        "/images/round-1/round-1-row-0118-0.jpeg",
+        "/images/round-1/round-1-row-0157-0.jpeg",
+        "/images/round-1/round-1-row-0167-0.jpeg"
       ],
       "pointsFoundCount": 5,
       "habitatType": "soil",
@@ -936,7 +936,7 @@
       "airHumidity": 76.7,
       "soilPH": 7.5,
       "soilTemperature": 21.8,
-      "soilHumidity": 15.0,
+      "soilHumidity": 15,
       "generalCharacteristics": "เห็ดชนิดนี้ยังไม่สามารถระบุชนิดทางวิทยาศาสตร์ได้แน่ชัด อาจต้องใช้ผู้เชี่ยวชาญหรือการตรวจสอบด้วยกล้องจุลทรรศน์เพิ่มเติมเพื่อยืนยันชนิด"
     }
   ],

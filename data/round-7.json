@@ -5,7 +5,7 @@
   "mushrooms": [
     {
       "scientificName": "Amauroderma rugosum",
-      "localName": "เห็ดหลินจือดำป่า / เห็ดจวักงู",
+      "localName": "เห็ดหลินจือดำป่า, เห็ดจวักงู",
       "family": "Ganodermataceae",
       "group": "เห็ดหิ้ง",
       "habitat": "ต้นไม้/ตอไม้",
@@ -27,7 +27,7 @@
       "airHumidity": 59.0,
       "soilPH": 7.5,
       "soilTemperature": 20.0,
-      "soilHumidity": 2.0,
+      "soilHumidity": 20.0,
       "generalCharacteristics": "เห็ดในวงศ์ Ganodermataceae คล้ายเห็ดหลินจือแต่ผิวหมวกด้าน ไม่มัน สีน้ำตาลเข้มถึงดำ มีรอยย่นเป็นวงตามผิวหมวก เนื้อในเห็ดเมื่อตัดผ่าจะเปลี่ยนเป็นสีชมพูอมม่วงเมื่อสัมผัสอากาศ ก้านสีดำเป็นมัน ขึ้นบนพื้นดินใกล้ตอไม้ผุ"
     },
     {
@@ -135,7 +135,7 @@
     },
     {
       "scientificName": "Hydnum repandum",
-      "localName": "เห็ดเม่นแคระ / Hedgehog mushroom",
+      "localName": "เห็ดเม่นแคระ",
       "family": "Hydnaceae",
       "group": "เห็ดฟันเลื่อย",
       "habitat": "ต้นไม้/ตอไม้",
@@ -161,7 +161,7 @@
       "scientificName": "Hymenochaete cruenta",
       "localName": "-",
       "family": "Hymenochaetaceae",
-      "group": "เห็ดแผ่นหนัง",
+      "group": "เห็ดแบนราบไปกับต้นไม้",
       "habitat": "ต้นไม้/ตอไม้",
       "ecologicalRole": "เห็ดปรสิต (parasitic mushroom)",
       "edibility": "กินได้",
@@ -183,7 +183,7 @@
     },
     {
       "scientificName": "Laetiporus speciosus",
-      "localName": "เห็ดไก่ป่า / chicken of the wood",
+      "localName": "เห็ดไก่ป่า",
       "family": "Laetiporaceae",
       "group": "เห็ดหิ้ง",
       "habitat": "ต้นไม้/ตอไม้",
@@ -231,7 +231,7 @@
     },
     {
       "scientificName": "Mycena galericulata",
-      "localName": "เห็ดฝากะโปรง / Bonnet",
+      "localName": "เห็ดฝากะโปรง",
       "family": "Mycenaceae",
       "group": "เห็ดครีบ",
       "habitat": "ต้นไม้/ตอไม้",
@@ -255,7 +255,7 @@
       "airHumidity": 56.2,
       "soilPH": 7.0,
       "soilTemperature": 25.7,
-      "soilHumidity": 3.0,
+      "soilHumidity": 30.0,
       "generalCharacteristics": "เห็ดขนาดเล็กในสกุล Mycena หมวกทรงระฆังสีเทาอมน้ำตาล ผิวเรียบมีรอยจีบโปร่งแสงตามขอบ ครีบสีขาวถึงชมพูอ่อนห่างพอประมาณ ก้านเรียวยาวสีเดียวกับหมวก ขึ้นเป็นกลุ่มบนตอไม้หรือไม้ผุ เป็นเห็ดย่อยสลายไม้"
     },
     {
@@ -275,7 +275,7 @@
       ],
       "pointsFoundCount": 1,
       "habitatType": "wood",
-      "airTemperature": 0.0,
+      "airTemperature": 30.0,
       "airHumidity": 59.0,
       "soilPH": null,
       "soilTemperature": null,
@@ -420,7 +420,7 @@
       "airHumidity": 58.7,
       "soilPH": 7.0,
       "soilTemperature": 26.0,
-      "soilHumidity": 3.0,
+      "soilHumidity": 30.0,
       "generalCharacteristics": "เห็ดโคนขนาดเล็ก ขึ้นเป็นกลุ่มจำนวนมากบนจอมปลวกหรือใกล้รังปลวก (มีความสัมพันธ์แบบพึ่งพากับปลวก) หมวกสีเทาอมน้ำตาลมีปุ่มแหลมตรงกลาง ก้านเรียวยาวสีขาว รับประทานได้และมีรสชาติดี"
     },
     {
@@ -498,10 +498,10 @@
       "airHumidity": 57.0,
       "soilPH": 7.5,
       "soilTemperature": 24.0,
-      "soilHumidity": 2.0,
+      "soilHumidity": 20.0,
       "generalCharacteristics": "เห็ดชนิดนี้ยังไม่สามารถระบุชนิดทางวิทยาศาสตร์ได้แน่ชัด อาจต้องใช้ผู้เชี่ยวชาญหรือการตรวจสอบด้วยกล้องจุลทรรศน์เพิ่มเติมเพื่อยืนยันชนิด"
     }
   ],
-  "avgTemperature": 30.5,
+  "avgTemperature": 31.2,
   "avgHumidity": 57.8
 }

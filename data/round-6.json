@@ -16,15 +16,15 @@
         "จุดที่ 2 ประดู่ใหญ่-มออีหก"
       ],
       "images": [
-        "/images/round-6/round-6-row-0071-0.jpg"
+        "/images/round-6/round-6-row-0071-0.jpeg"
       ],
       "pointsFoundCount": 1,
       "habitatType": "soil",
       "airTemperature": 32.3,
-      "airHumidity": 77.0,
-      "soilPH": 7.0,
-      "soilTemperature": 30.0,
-      "soilHumidity": 3.0,
+      "airHumidity": 77,
+      "soilPH": 7,
+      "soilTemperature": 30,
+      "soilHumidity": 3,
       "generalCharacteristics": "เห็ดพิษร้ายแรงในกลุ่ม 'Destroying Angel' หมวกและก้านสีขาวล้วนทั้งดอก ผิวเรียบเป็นมัน มีวงแหวนที่ก้านและเปลือกหุ้มโคนก้าน (volva) ชัดเจน ห้ามรับประทานเด็ดขาดเพราะมีสารพิษทำลายตับและไต"
     },
     {
@@ -42,10 +42,10 @@
         "จุดที่ 7 ชานเบิกภัย-ไทรงาม"
       ],
       "images": [
-        "/images/round-6/round-6-row-0068-0.jpg",
-        "/images/round-6/round-6-row-0094-0.jpg",
-        "/images/round-6/round-6-row-0095-0.jpg",
-        "/images/round-6/round-6-row-0096-0.jpg"
+        "/images/round-6/round-6-row-0068-0.jpeg",
+        "/images/round-6/round-6-row-0094-0.jpeg",
+        "/images/round-6/round-6-row-0095-0.jpeg",
+        "/images/round-6/round-6-row-0096-0.jpeg"
       ],
       "pointsFoundCount": 3,
       "habitatType": "wood",
@@ -71,16 +71,16 @@
         "จุดที่ 4 จุดชมวิว-ตะเคียนคู่"
       ],
       "images": [
-        "/images/round-6/round-6-row-0047-0.jpg",
-        "/images/round-6/round-6-row-0059-0.jpg",
-        "/images/round-6/round-6-row-0075-0.jpg",
-        "/images/round-6/round-6-row-0079-0.jpg",
-        "/images/round-6/round-6-row-0080-0.jpg"
+        "/images/round-6/round-6-row-0047-0.jpeg",
+        "/images/round-6/round-6-row-0059-0.jpeg",
+        "/images/round-6/round-6-row-0075-0.jpeg",
+        "/images/round-6/round-6-row-0079-0.jpeg",
+        "/images/round-6/round-6-row-0080-0.jpeg"
       ],
       "pointsFoundCount": 3,
       "habitatType": "soil",
       "airTemperature": 31.2,
-      "airHumidity": 79.0,
+      "airHumidity": 79,
       "soilPH": 6.7,
       "soilTemperature": 25.7,
       "soilHumidity": 4.3,
@@ -99,12 +99,12 @@
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่"
       ],
       "images": [
-        "/images/round-6/round-6-row-0018-0.jpg"
+        "/images/round-6/round-6-row-0018-0.jpeg"
       ],
       "pointsFoundCount": 1,
       "habitatType": "wood",
       "airTemperature": 31.9,
-      "airHumidity": 80.0,
+      "airHumidity": 80,
       "soilPH": null,
       "soilTemperature": null,
       "soilHumidity": null,
@@ -123,15 +123,15 @@
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่"
       ],
       "images": [
-        "/images/round-6/round-6-row-0051-0.jpg"
+        "/images/round-6/round-6-row-0051-0.jpeg"
       ],
       "pointsFoundCount": 1,
       "habitatType": "soil",
       "airTemperature": 32.8,
-      "airHumidity": 82.0,
-      "soilPH": 7.0,
-      "soilTemperature": 26.0,
-      "soilHumidity": 2.0,
+      "airHumidity": 82,
+      "soilPH": 7,
+      "soilTemperature": 26,
+      "soilHumidity": 2,
       "generalCharacteristics": "เห็ดหมึกหอมหรือเห็ดร่มขนนก หมวกทรงกระบอกยาว สีขาวมีเกล็ดคล้ายขนนกปุยปกคลุม เมื่อแก่ครีบจะเปลี่ยนเป็นสีดำและละลายเป็นของเหลวคล้ายหมึก (deliquescence) รับประทานได้เมื่อยังอ่อน ต้องเก็บและปรุงทันทีก่อนที่จะละลาย"
     },
     {
@@ -148,8 +148,8 @@
         "จุดที่ 7 ชานเบิกภัย-ไทรงาม"
       ],
       "images": [
-        "/images/round-6/round-6-row-0065-0.jpg",
-        "/images/round-6/round-6-row-0097-0.jpg"
+        "/images/round-6/round-6-row-0065-0.jpeg",
+        "/images/round-6/round-6-row-0097-0.jpeg"
       ],
       "pointsFoundCount": 2,
       "habitatType": "wood",
@@ -174,10 +174,10 @@
         "จุดที่ 3 มออีหก-จุดชมวิว"
       ],
       "images": [
-        "/images/round-6/round-6-row-0041-0.jpg",
-        "/images/round-6/round-6-row-0042-0.jpg",
-        "/images/round-6/round-6-row-0055-0.jpg",
-        "/images/round-6/round-6-row-0078-0.jpg"
+        "/images/round-6/round-6-row-0041-0.jpeg",
+        "/images/round-6/round-6-row-0042-0.jpeg",
+        "/images/round-6/round-6-row-0055-0.jpeg",
+        "/images/round-6/round-6-row-0078-0.jpeg"
       ],
       "pointsFoundCount": 2,
       "habitatType": "wood",
@@ -202,17 +202,17 @@
         "จุดที่ 8 ไทรงาม-ปล่องนางนาค"
       ],
       "images": [
-        "/images/round-6/round-6-row-0013-0.jpg",
-        "/images/round-6/round-6-row-0030-0.jpg",
-        "/images/round-6/round-6-row-0058-0.jpg",
-        "/images/round-6/round-6-row-0100-0.jpg"
+        "/images/round-6/round-6-row-0013-0.jpeg",
+        "/images/round-6/round-6-row-0030-0.jpeg",
+        "/images/round-6/round-6-row-0058-0.jpeg",
+        "/images/round-6/round-6-row-0100-0.jpeg"
       ],
       "pointsFoundCount": 2,
       "habitatType": "soil",
       "airTemperature": 31.0,
       "airHumidity": 79.8,
-      "soilPH": 7.0,
-      "soilTemperature": 25.0,
+      "soilPH": 7,
+      "soilTemperature": 25,
       "soilHumidity": 5.5,
       "generalCharacteristics": "เห็ดขี้ไก่ขนาดเล็ก หมวกสีแดงส้มสดใส ผิวเรียบเป็นมันเมื่อชื้น ครีบห่างสีเดียวกับหมวก ก้านเรียวสีเดียวกับหมวกหรืออ่อนกว่าเล็กน้อย ขึ้นเป็นกลุ่มบนพื้นดินหรือสนามหญ้าชื้น"
     },
@@ -229,8 +229,8 @@
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่"
       ],
       "images": [
-        "/images/round-6/round-6-row-0045-0.jpg",
-        "/images/round-6/round-6-row-0061-0.jpg"
+        "/images/round-6/round-6-row-0045-0.jpeg",
+        "/images/round-6/round-6-row-0061-0.jpeg"
       ],
       "pointsFoundCount": 1,
       "habitatType": "wood",
@@ -254,14 +254,14 @@
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่"
       ],
       "images": [
-        "/images/round-6/round-6-row-0008-0.jpg"
+        "/images/round-6/round-6-row-0008-0.jpeg"
       ],
       "pointsFoundCount": 1,
       "habitatType": "soil",
       "airTemperature": 30.9,
-      "airHumidity": 87.0,
-      "soilPH": 7.0,
-      "soilTemperature": 26.0,
+      "airHumidity": 87,
+      "soilPH": 7,
+      "soilTemperature": 26,
       "soilHumidity": 9.5,
       "generalCharacteristics": "เห็ดร่มใหญ่หรือ Parasol mushroom หมวกขนาดใหญ่ทรงร่ม สีน้ำตาลอ่อนมีเกล็ดสีเข้มกว่ากระจายทั่ว ก้านสูงเรียวมีลายคล้ายผิวงู มีวงแหวนเลื่อนได้ที่ก้าน ครีบสีขาวไม่ติดก้าน รับประทานได้และเป็นที่นิยมในหลายประเทศ"
     },
@@ -278,16 +278,16 @@
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่"
       ],
       "images": [
-        "/images/round-6/round-6-row-0009-0.jpg",
-        "/images/round-6/round-6-row-0010-0.jpg"
+        "/images/round-6/round-6-row-0009-0.jpeg",
+        "/images/round-6/round-6-row-0010-0.jpeg"
       ],
       "pointsFoundCount": 1,
       "habitatType": "soil",
       "airTemperature": 30.9,
-      "airHumidity": 87.0,
-      "soilPH": 7.0,
-      "soilTemperature": 26.0,
-      "soilHumidity": 8.0,
+      "airHumidity": 87,
+      "soilPH": 7,
+      "soilTemperature": 26,
+      "soilHumidity": 8,
       "generalCharacteristics": "เห็ดในสกุลเดียวกับเห็ดร่มใหญ่ (Macrolepiota) หมวกสีขาวถึงครีมมีเกล็ดสีน้ำตาลอ่อนกระจาย ก้านเรียวยาวมีวงแหวนเลื่อนได้ ครีบสีขาวไม่ติดก้าน ขึ้นเป็นกลุ่มหรือวงแหวนบนพื้นดิน"
     },
     {
@@ -303,10 +303,10 @@
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่"
       ],
       "images": [
-        "/images/round-6/round-6-row-0016-0.jpg",
-        "/images/round-6/round-6-row-0029-0.jpg",
-        "/images/round-6/round-6-row-0031-0.jpg",
-        "/images/round-6/round-6-row-0057-0.jpg"
+        "/images/round-6/round-6-row-0016-0.jpeg",
+        "/images/round-6/round-6-row-0029-0.jpeg",
+        "/images/round-6/round-6-row-0031-0.jpeg",
+        "/images/round-6/round-6-row-0057-0.jpeg"
       ],
       "pointsFoundCount": 1,
       "habitatType": "wood",
@@ -331,15 +331,15 @@
         "จุดที่ 8 ไทรงาม-ปล่องนางนาค"
       ],
       "images": [
-        "/images/round-6/round-6-row-0014-0.jpg",
-        "/images/round-6/round-6-row-0032-0.jpg",
-        "/images/round-6/round-6-row-0034-0.jpg",
-        "/images/round-6/round-6-row-0038-0.jpg",
-        "/images/round-6/round-6-row-0046-0.jpg",
-        "/images/round-6/round-6-row-0060-0.jpg",
-        "/images/round-6/round-6-row-0062-0.jpg",
-        "/images/round-6/round-6-row-0066-0.jpg",
-        "/images/round-6/round-6-row-0099-0.jpg"
+        "/images/round-6/round-6-row-0014-0.jpeg",
+        "/images/round-6/round-6-row-0032-0.jpeg",
+        "/images/round-6/round-6-row-0034-0.jpeg",
+        "/images/round-6/round-6-row-0038-0.jpeg",
+        "/images/round-6/round-6-row-0046-0.jpeg",
+        "/images/round-6/round-6-row-0060-0.jpeg",
+        "/images/round-6/round-6-row-0062-0.jpeg",
+        "/images/round-6/round-6-row-0066-0.jpeg",
+        "/images/round-6/round-6-row-0099-0.jpeg"
       ],
       "pointsFoundCount": 2,
       "habitatType": "wood",
@@ -364,29 +364,29 @@
         "จุดที่ 6 น้ำดิบผามะหาด-ชานเบิกภัย"
       ],
       "images": [
-        "/images/round-6/round-6-row-0015-0.jpg",
-        "/images/round-6/round-6-row-0017-0.jpg",
-        "/images/round-6/round-6-row-0019-0.jpg",
-        "/images/round-6/round-6-row-0020-0.jpg",
-        "/images/round-6/round-6-row-0021-0.jpg",
-        "/images/round-6/round-6-row-0026-0.jpg",
-        "/images/round-6/round-6-row-0027-0.jpg",
-        "/images/round-6/round-6-row-0033-0.jpg",
-        "/images/round-6/round-6-row-0036-0.jpg",
-        "/images/round-6/round-6-row-0039-0.jpg",
-        "/images/round-6/round-6-row-0052-0.jpg",
-        "/images/round-6/round-6-row-0054-0.jpg",
-        "/images/round-6/round-6-row-0063-0.jpg",
-        "/images/round-6/round-6-row-0067-0.jpg",
-        "/images/round-6/round-6-row-0087-0.jpg"
+        "/images/round-6/round-6-row-0015-0.jpeg",
+        "/images/round-6/round-6-row-0017-0.jpeg",
+        "/images/round-6/round-6-row-0019-0.jpeg",
+        "/images/round-6/round-6-row-0020-0.jpeg",
+        "/images/round-6/round-6-row-0021-0.jpeg",
+        "/images/round-6/round-6-row-0026-0.jpeg",
+        "/images/round-6/round-6-row-0027-0.jpeg",
+        "/images/round-6/round-6-row-0033-0.jpeg",
+        "/images/round-6/round-6-row-0036-0.jpeg",
+        "/images/round-6/round-6-row-0039-0.jpeg",
+        "/images/round-6/round-6-row-0052-0.jpeg",
+        "/images/round-6/round-6-row-0054-0.jpeg",
+        "/images/round-6/round-6-row-0063-0.jpeg",
+        "/images/round-6/round-6-row-0067-0.jpeg",
+        "/images/round-6/round-6-row-0087-0.jpeg"
       ],
       "pointsFoundCount": 2,
       "habitatType": "soil",
       "airTemperature": 31.9,
       "airHumidity": 76.9,
-      "soilPH": 7.0,
-      "soilTemperature": 22.0,
-      "soilHumidity": 3.0,
+      "soilPH": 7,
+      "soilTemperature": 22,
+      "soilHumidity": 3,
       "generalCharacteristics": "เห็ดขนาดเล็กในสกุล Mycena หมวกทรงระฆังสีเทาอมน้ำตาล ผิวเรียบมีรอยจีบโปร่งแสงตามขอบ ครีบสีขาวถึงชมพูอ่อนห่างพอประมาณ ก้านเรียวยาวสีเดียวกับหมวก ขึ้นเป็นกลุ่มบนตอไม้หรือไม้ผุ เป็นเห็ดย่อยสลายไม้"
     },
     {
@@ -403,16 +403,16 @@
         "จุดที่ 6 น้ำดิบผามะหาด-ชานเบิกภัย"
       ],
       "images": [
-        "/images/round-6/round-6-row-0011-0.jpg",
-        "/images/round-6/round-6-row-0085-0.jpg"
+        "/images/round-6/round-6-row-0011-0.jpeg",
+        "/images/round-6/round-6-row-0085-0.jpeg"
       ],
       "pointsFoundCount": 2,
       "habitatType": "soil",
       "airTemperature": 29.9,
       "airHumidity": 79.5,
-      "soilPH": 7.0,
-      "soilTemperature": 24.0,
-      "soilHumidity": 6.0,
+      "soilPH": 7,
+      "soilTemperature": 24,
+      "soilHumidity": 6,
       "generalCharacteristics": "เห็ดพิษเรืองแสงได้ในที่มืด (jack-o'-lantern mushroom) หมวกสีส้มสดถึงส้มอมเหลือง ครีบสีเดียวกับหมวกลามลงมาที่ก้าน ขึ้นเป็นกลุ่มใหญ่ที่โคนต้นไม้หรือตอไม้ มีสารพิษทำให้เกิดอาการทางเดินอาหารรุนแรง ห้ามรับประทาน"
     },
     {
@@ -431,15 +431,15 @@
         "จุดที่ 6 น้ำดิบผามะหาด-ชานเบิกภัย"
       ],
       "images": [
-        "/images/round-6/round-6-row-0037-0.jpg",
-        "/images/round-6/round-6-row-0043-0.jpg",
-        "/images/round-6/round-6-row-0048-0.jpg",
-        "/images/round-6/round-6-row-0064-0.jpg",
-        "/images/round-6/round-6-row-0077-0.jpg",
-        "/images/round-6/round-6-row-0083-0.jpg",
-        "/images/round-6/round-6-row-0088-0.jpg",
-        "/images/round-6/round-6-row-0090-0.jpg",
-        "/images/round-6/round-6-row-0092-0.jpg"
+        "/images/round-6/round-6-row-0037-0.jpeg",
+        "/images/round-6/round-6-row-0043-0.jpeg",
+        "/images/round-6/round-6-row-0048-0.jpeg",
+        "/images/round-6/round-6-row-0064-0.jpeg",
+        "/images/round-6/round-6-row-0077-0.jpeg",
+        "/images/round-6/round-6-row-0083-0.jpeg",
+        "/images/round-6/round-6-row-0088-0.jpeg",
+        "/images/round-6/round-6-row-0090-0.jpeg",
+        "/images/round-6/round-6-row-0092-0.jpeg"
       ],
       "pointsFoundCount": 4,
       "habitatType": "wood",
@@ -463,12 +463,12 @@
         "จุดที่ 6 น้ำดิบผามะหาด-ชานเบิกภัย"
       ],
       "images": [
-        "/images/round-6/round-6-row-0084-0.jpg"
+        "/images/round-6/round-6-row-0084-0.jpeg"
       ],
       "pointsFoundCount": 1,
       "habitatType": "wood",
       "airTemperature": 28.8,
-      "airHumidity": 72.0,
+      "airHumidity": 72,
       "soilPH": null,
       "soilTemperature": null,
       "soilHumidity": null,
@@ -478,7 +478,7 @@
       "scientificName": "Porostereum spadiceum",
       "localName": "-",
       "family": "Phanerochaetaceae",
-      "group": "เห็ดแผ่นแบนราบไปกับท่อนไม้",
+      "group": "แผ่นหนัง",
       "habitat": "ต้นไม้/ตอไม้",
       "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
       "edibility": "ไม่มีข้อมูลว่ากินได้",
@@ -487,12 +487,12 @@
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่"
       ],
       "images": [
-        "/images/round-6/round-6-row-0005-0.jpg"
+        "/images/round-6/round-6-row-0005-0.jpeg"
       ],
       "pointsFoundCount": 1,
       "habitatType": "wood",
       "airTemperature": 28.9,
-      "airHumidity": 90.0,
+      "airHumidity": 90,
       "soilPH": null,
       "soilTemperature": null,
       "soilHumidity": null,
@@ -514,11 +514,11 @@
         "จุดที่ 9 ปล่องนางนาค-พระยาแล่นเรือ"
       ],
       "images": [
-        "/images/round-6/round-6-row-0049-0.jpg",
-        "/images/round-6/round-6-row-0093-0.jpg",
-        "/images/round-6/round-6-row-0098-0.jpg",
-        "/images/round-6/round-6-row-0102-0.jpg",
-        "/images/round-6/round-6-row-0103-0.jpg"
+        "/images/round-6/round-6-row-0049-0.jpeg",
+        "/images/round-6/round-6-row-0093-0.jpeg",
+        "/images/round-6/round-6-row-0098-0.jpeg",
+        "/images/round-6/round-6-row-0102-0.jpeg",
+        "/images/round-6/round-6-row-0103-0.jpeg"
       ],
       "pointsFoundCount": 4,
       "habitatType": "wood",
@@ -545,22 +545,22 @@
         "จุดที่ 8 ไทรงาม-ปล่องนางนาค"
       ],
       "images": [
-        "/images/round-6/round-6-row-0022-0.jpg",
-        "/images/round-6/round-6-row-0023-0.jpg",
-        "/images/round-6/round-6-row-0044-0.jpg",
-        "/images/round-6/round-6-row-0056-0.jpg",
-        "/images/round-6/round-6-row-0069-0.jpg",
-        "/images/round-6/round-6-row-0072-0.jpg",
-        "/images/round-6/round-6-row-0076-0.jpg",
-        "/images/round-6/round-6-row-0086-0.jpg",
-        "/images/round-6/round-6-row-0091-0.jpg",
-        "/images/round-6/round-6-row-0101-0.jpg"
+        "/images/round-6/round-6-row-0022-0.jpeg",
+        "/images/round-6/round-6-row-0023-0.jpeg",
+        "/images/round-6/round-6-row-0044-0.jpeg",
+        "/images/round-6/round-6-row-0056-0.jpeg",
+        "/images/round-6/round-6-row-0069-0.jpeg",
+        "/images/round-6/round-6-row-0072-0.jpeg",
+        "/images/round-6/round-6-row-0076-0.jpeg",
+        "/images/round-6/round-6-row-0086-0.jpeg",
+        "/images/round-6/round-6-row-0091-0.jpeg",
+        "/images/round-6/round-6-row-0101-0.jpeg"
       ],
       "pointsFoundCount": 4,
       "habitatType": "soil",
       "airTemperature": 31.2,
       "airHumidity": 75.8,
-      "soilPH": 7.0,
+      "soilPH": 7,
       "soilTemperature": 26.5,
       "soilHumidity": 2.5,
       "generalCharacteristics": "เห็ดโคนขนาดเล็ก ขึ้นเป็นกลุ่มจำนวนมากบนจอมปลวกหรือใกล้รังปลวก (มีความสัมพันธ์แบบพึ่งพากับปลวก) หมวกสีเทาอมน้ำตาลมีปุ่มแหลมตรงกลาง ก้านเรียวยาวสีขาว รับประทานได้และมีรสชาติดี"
@@ -578,16 +578,16 @@
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่"
       ],
       "images": [
-        "/images/round-6/round-6-row-0006-0.jpg",
-        "/images/round-6/round-6-row-0025-0.jpg"
+        "/images/round-6/round-6-row-0006-0.jpeg",
+        "/images/round-6/round-6-row-0025-0.jpeg"
       ],
       "pointsFoundCount": 1,
       "habitatType": "soil",
       "airTemperature": 30.4,
       "airHumidity": 85.5,
-      "soilPH": 7.0,
-      "soilTemperature": 25.0,
-      "soilHumidity": 7.0,
+      "soilPH": 7,
+      "soilTemperature": 25,
+      "soilHumidity": 7,
       "generalCharacteristics": "เห็ดรูปพัดหรือรูปดอกไม้แตกแขนงคล้ายปะการัง สีน้ำตาลเข้มถึงน้ำตาลอมม่วง ผิวขรุขระคล้ายหนัง ขึ้นเป็นกลุ่มแตกกิ่งจากฐานเดียวกันบนพื้นดินในป่า เนื้อเหนียวคล้ายหนัง"
     },
     {
@@ -603,17 +603,17 @@
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่"
       ],
       "images": [
-        "/images/round-6/round-6-row-0012-0.jpg",
-        "/images/round-6/round-6-row-0024-0.jpg",
-        "/images/round-6/round-6-row-0035-0.jpg"
+        "/images/round-6/round-6-row-0012-0.jpeg",
+        "/images/round-6/round-6-row-0024-0.jpeg",
+        "/images/round-6/round-6-row-0035-0.jpeg"
       ],
       "pointsFoundCount": 1,
       "habitatType": "soil",
       "airTemperature": 31.9,
       "airHumidity": 77.7,
-      "soilPH": 7.0,
-      "soilTemperature": 26.0,
-      "soilHumidity": 9.0,
+      "soilPH": 7,
+      "soilTemperature": 26,
+      "soilHumidity": 9,
       "generalCharacteristics": "เห็ดในสกุล Xylaria ดอกเห็ดรูปทรงกระบองเรียวยาวคล้ายเส้นด้าย สีดำหรือน้ำตาลเข้ม ผิวเรียบถึงขรุขระเล็กน้อย เนื้อในแข็งเป็นไม้ก๊อกสีขาว ขึ้นเดี่ยวหรือเป็นกลุ่มเล็กบนไม้ผุ"
     },
     {
@@ -629,11 +629,11 @@
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่"
       ],
       "images": [
-        "/images/round-6/round-6-row-0007-0.jpg",
-        "/images/round-6/round-6-row-0028-0.jpg",
-        "/images/round-6/round-6-row-0040-0.jpg",
-        "/images/round-6/round-6-row-0050-0.jpg",
-        "/images/round-6/round-6-row-0053-0.jpg"
+        "/images/round-6/round-6-row-0007-0.jpeg",
+        "/images/round-6/round-6-row-0028-0.jpeg",
+        "/images/round-6/round-6-row-0040-0.jpeg",
+        "/images/round-6/round-6-row-0050-0.jpeg",
+        "/images/round-6/round-6-row-0053-0.jpeg"
       ],
       "pointsFoundCount": 1,
       "habitatType": "wood",
@@ -658,15 +658,15 @@
         "จุดที่ 4 จุดชมวิว-ตะเคียนคู่"
       ],
       "images": [
-        "/images/round-6/round-6-row-0073-0.jpg",
-        "/images/round-6/round-6-row-0082-0.jpg"
+        "/images/round-6/round-6-row-0073-0.jpeg",
+        "/images/round-6/round-6-row-0082-0.jpeg"
       ],
       "pointsFoundCount": 2,
       "habitatType": "soil",
       "airTemperature": 31.4,
-      "airHumidity": 73.0,
-      "soilPH": 7.0,
-      "soilTemperature": 25.0,
+      "airHumidity": 73,
+      "soilPH": 7,
+      "soilTemperature": 25,
       "soilHumidity": 2.5,
       "generalCharacteristics": "เห็ดนิ้วมือคนตาย (dead man's fingers) ดอกเห็ดรูปทรงกระบองหรือนิ้วมือ สีดำผิวขรุขระ เนื้อในสีขาวแข็งเป็นไม้ก๊อก มักขึ้นเป็นกลุ่มจากโคนตอไม้ผุ รูปทรงคล้ายนิ้วมือโผล่จากพื้นดิน"
     },
@@ -685,16 +685,16 @@
         "จุดที่ 4 จุดชมวิว-ตะเคียนคู่"
       ],
       "images": [
-        "/images/round-6/round-6-row-0004-0.jpg",
-        "/images/round-6/round-6-row-0070-0.jpg",
-        "/images/round-6/round-6-row-0074-0.jpg",
-        "/images/round-6/round-6-row-0081-0.jpg"
+        "/images/round-6/round-6-row-0004-0.jpeg",
+        "/images/round-6/round-6-row-0070-0.jpeg",
+        "/images/round-6/round-6-row-0074-0.jpeg",
+        "/images/round-6/round-6-row-0081-0.jpeg"
       ],
       "pointsFoundCount": 3,
       "habitatType": "soil",
       "airTemperature": 31.6,
       "airHumidity": 82.5,
-      "soilPH": 7.0,
+      "soilPH": 7,
       "soilTemperature": 26.3,
       "soilHumidity": 4.3,
       "generalCharacteristics": "เห็ดชนิดนี้ยังไม่สามารถระบุชนิดทางวิทยาศาสตร์ได้แน่ชัด อาจต้องใช้ผู้เชี่ยวชาญหรือการตรวจสอบด้วยกล้องจุลทรรศน์เพิ่มเติมเพื่อยืนยันชนิด"

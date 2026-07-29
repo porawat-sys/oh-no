@@ -94,6 +94,26 @@ def find_data_end_row(ws):
     return ws.max_row
 
 
+def resolve_opc_path(base_dir, target):
+    """แปลง Target ที่อ้างอิงใน .rels ให้เป็น path เต็มในไฟล์ zip
+    รองรับทั้งแบบ relative (../drawings/x.xml) และแบบ absolute (/xl/drawings/x.xml)
+    ซึ่งเป็นรูปแบบที่ openpyxl เขียนออกมาหลัง resave (ต่างจากไฟล์ต้นฉบับที่ยังไม่ผ่าน openpyxl)
+    """
+    if target.startswith("/"):
+        return target.lstrip("/")
+    # relative path: ไล่ระดับโฟลเดอร์ตาม base_dir
+    parts = base_dir.split("/")
+    for segment in target.split("/"):
+        if segment == "..":
+            if parts:
+                parts.pop()
+        elif segment == ".":
+            continue
+        else:
+            parts.append(segment)
+    return "/".join(parts)
+
+
 def get_row_to_media_map(xlsx_path, sheet_index=1):
     with zipfile.ZipFile(xlsx_path) as z:
         sheet_rels_path = f"xl/worksheets/_rels/sheet{sheet_index}.xml.rels"
@@ -109,8 +129,9 @@ def get_row_to_media_map(xlsx_path, sheet_index=1):
         if not drawing_target:
             return {}
 
-        drawing_path = "xl/" + drawing_target.replace("../", "")
-        drawing_rels_path = drawing_path.replace("drawings/", "drawings/_rels/") + ".rels"
+        drawing_path = resolve_opc_path("xl/worksheets", drawing_target)
+        drawing_dir = "/".join(drawing_path.split("/")[:-1])
+        drawing_rels_path = drawing_dir + "/_rels/" + drawing_path.split("/")[-1] + ".rels"
 
         rid_to_media = {}
         if drawing_rels_path in z.namelist():
@@ -118,7 +139,7 @@ def get_row_to_media_map(xlsx_path, sheet_index=1):
                 drels_xml = ET.parse(f)
             for rel in drels_xml.findall(".//rel:Relationship", NS):
                 target = rel.attrib["Target"]
-                rid_to_media[rel.attrib["Id"]] = "xl/" + target.replace("../", "")
+                rid_to_media[rel.attrib["Id"]] = resolve_opc_path(drawing_dir, target)
 
         with z.open(drawing_path) as f:
             dxml = ET.parse(f)
