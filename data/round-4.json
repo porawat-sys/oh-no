@@ -416,7 +416,7 @@
     {
       "scientificName": "Trichaptum biforme",
       "localName": "เห็ดฟันสีม่วง",
-      "family": "Hymenochaetaceae",
+      "family": "Trichaptaceae",
       "group": "เห็ดฟันเลื่อย",
       "habitat": "ต้นไม้/ตอไม้",
       "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
@@ -446,8 +446,8 @@
       "family": "ระบุไม่ได้",
       "group": "-",
       "habitat": "ต้นไม้/ตอไม้",
-      "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
-      "edibility": "ไม่มีข้อมูลว่ากินได้",
+      "ecologicalRole": "-",
+      "edibility": "ไม่มีข้อมูล",
       "totalFound": 1,
       "pointsFound": [
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่"

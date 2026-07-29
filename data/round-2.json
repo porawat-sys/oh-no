@@ -5,7 +5,7 @@
   "mushrooms": [
     {
       "scientificName": "Amanita onusta",
-      "localName": "เลพิเดลล่าดินปืน / gunpowder Lepidella",
+      "localName": "เลพิเดลล่าดินปืน",
       "family": "Amanitaceae",
       "group": "เห็ดครีบ",
       "habitat": "ดิน",
@@ -257,7 +257,7 @@
       "group": "เห็ดหิ้ง",
       "habitat": "ต้นไม้/ตอไม้",
       "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
-      "edibility": "ไม่มีข้อมูลว่ากินได้",
+      "edibility": "กินไม่ได้",
       "totalFound": 20,
       "pointsFound": [
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่",
