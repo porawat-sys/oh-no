@@ -35,6 +35,8 @@ export type RoundData = {
   avgHumidity: number | null;
 };
 
+const ALL = "ทั้งหมด";
+
 export function RoundExplorer({
   roundData,
   previousRound,
@@ -45,13 +47,28 @@ export function RoundExplorer({
   nextRound: number | null;
 }) {
   const [query, setQuery] = useState("");
-  const [familyFilter, setFamilyFilter] = useState("ทั้งหมด");
-  const [edibilityFilter, setEdibilityFilter] = useState("ทั้งหมด");
+  const [familyFilter, setFamilyFilter] = useState(ALL);
+  const [edibilityFilter, setEdibilityFilter] = useState(ALL);
+  const [groupFilter, setGroupFilter] = useState(ALL);
+  const [pointFilter, setPointFilter] = useState(ALL);
 
   const familyOptions = useMemo(() => {
     const families = Array.from(new Set(roundData.mushrooms.map((m) => m.family).filter(Boolean)))
       .sort((a, b) => a.localeCompare(b, "th"));
-    return ["ทั้งหมด", ...families];
+    return [ALL, ...families];
+  }, [roundData.mushrooms]);
+
+  const groupOptions = useMemo(() => {
+    const groups = Array.from(new Set(roundData.mushrooms.map((m) => m.group).filter(Boolean)))
+      .sort((a, b) => a.localeCompare(b, "th"));
+    return [ALL, ...groups];
+  }, [roundData.mushrooms]);
+
+  const pointOptions = useMemo(() => {
+    const points = Array.from(
+      new Set(roundData.mushrooms.flatMap((m) => m.pointsFound))
+    ).sort((a, b) => a.localeCompare(b, "th", { numeric: true }));
+    return [ALL, ...points];
   }, [roundData.mushrooms]);
 
   const filteredMushrooms = useMemo(() => {
@@ -64,16 +81,19 @@ export function RoundExplorer({
         mushroom.localName.toLowerCase().includes(normalizedQuery) ||
         mushroom.family.toLowerCase().includes(normalizedQuery);
 
-      const matchesFamily = familyFilter === "ทั้งหมด" || mushroom.family === familyFilter;
+      const matchesFamily = familyFilter === ALL || mushroom.family === familyFilter;
+      const matchesGroup = groupFilter === ALL || mushroom.group === groupFilter;
+      const matchesPoint =
+        pointFilter === ALL || mushroom.pointsFound.includes(pointFilter);
       const matchesEdibility =
-        edibilityFilter === "ทั้งหมด" ||
+        edibilityFilter === ALL ||
         (edibilityFilter === "กินได้" && mushroom.edibility.includes("กินได้")) ||
         (edibilityFilter === "กินไม่ได้" && mushroom.edibility.includes("กินไม่ได้")) ||
         (edibilityFilter === "ไม่มีข้อมูล" && mushroom.edibility.includes("ไม่มีข้อมูล"));
 
-      return matchesQuery && matchesFamily && matchesEdibility;
+      return matchesQuery && matchesFamily && matchesGroup && matchesPoint && matchesEdibility;
     });
-  }, [edibilityFilter, familyFilter, query, roundData.mushrooms]);
+  }, [edibilityFilter, familyFilter, groupFilter, pointFilter, query, roundData.mushrooms]);
 
   return (
     <div className="space-y-8">
@@ -110,16 +130,17 @@ export function RoundExplorer({
       </header>
 
       <section className="rounded-[2rem] border border-stone-200 bg-white/90 p-5 shadow-sm">
-        <div className="flex flex-col gap-4 lg:flex-row lg:items-end">
-          <label className="flex-1 text-sm font-medium text-stone-700">
+        <div className="grid gap-4 lg:grid-cols-5">
+          <label className="text-sm font-medium text-stone-700 lg:col-span-1">
             <span className="mb-2 block">ค้นหาชื่อเห็ด</span>
             <input
               value={query}
               onChange={(event) => setQuery(event.target.value)}
-              placeholder="ค้นหาเช่น Amanita, เห็ดหูหนู"
+              placeholder="เช่น Amanita, เห็ดหูหนู"
               className="w-full rounded-2xl border border-stone-300 bg-stone-50 px-4 py-3 text-sm outline-none ring-0 focus:border-emerald-700"
             />
           </label>
+
           <label className="text-sm font-medium text-stone-700">
             <span className="mb-2 block">กรองตามวงศ์</span>
             <select
@@ -134,6 +155,37 @@ export function RoundExplorer({
               ))}
             </select>
           </label>
+
+          <label className="text-sm font-medium text-stone-700">
+            <span className="mb-2 block">กรองตามกลุ่มเห็ด</span>
+            <select
+              value={groupFilter}
+              onChange={(event) => setGroupFilter(event.target.value)}
+              className="w-full rounded-2xl border border-stone-300 bg-stone-50 px-4 py-3 text-sm outline-none focus:border-emerald-700"
+            >
+              {groupOptions.map((value) => (
+                <option key={value} value={value}>
+                  {value}
+                </option>
+              ))}
+            </select>
+          </label>
+
+          <label className="text-sm font-medium text-stone-700">
+            <span className="mb-2 block">กรองตามจุดที่สำรวจ</span>
+            <select
+              value={pointFilter}
+              onChange={(event) => setPointFilter(event.target.value)}
+              className="w-full rounded-2xl border border-stone-300 bg-stone-50 px-4 py-3 text-sm outline-none focus:border-emerald-700"
+            >
+              {pointOptions.map((value) => (
+                <option key={value} value={value}>
+                  {value}
+                </option>
+              ))}
+            </select>
+          </label>
+
           <label className="text-sm font-medium text-stone-700">
             <span className="mb-2 block">กรองตามการรับประทาน</span>
             <select
@@ -141,13 +193,37 @@ export function RoundExplorer({
               onChange={(event) => setEdibilityFilter(event.target.value)}
               className="w-full rounded-2xl border border-stone-300 bg-stone-50 px-4 py-3 text-sm outline-none focus:border-emerald-700"
             >
-              <option value="ทั้งหมด">ทั้งหมด</option>
+              <option value={ALL}>{ALL}</option>
               <option value="กินได้">กินได้</option>
               <option value="กินไม่ได้">กินไม่ได้</option>
               <option value="ไม่มีข้อมูล">ไม่มีข้อมูล</option>
             </select>
           </label>
         </div>
+
+        {(familyFilter !== ALL ||
+          groupFilter !== ALL ||
+          pointFilter !== ALL ||
+          edibilityFilter !== ALL ||
+          query) && (
+          <div className="mt-4 flex flex-wrap items-center gap-2 text-sm">
+            <span className="text-stone-500">
+              พบ {filteredMushrooms.length} จาก {roundData.mushrooms.length} ชนิด
+            </span>
+            <button
+              onClick={() => {
+                setQuery("");
+                setFamilyFilter(ALL);
+                setGroupFilter(ALL);
+                setPointFilter(ALL);
+                setEdibilityFilter(ALL);
+              }}
+              className="rounded-full border border-stone-300 px-3 py-1 text-stone-600 transition hover:border-emerald-700 hover:text-emerald-700"
+            >
+              ล้างตัวกรองทั้งหมด ✕
+            </button>
+          </div>
+        )}
       </section>
 
       <section className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
