@@ -37,6 +37,61 @@ export type RoundData = {
 
 const ALL = "ทั้งหมด";
 
+// รายการตายตัว รวมจากทุกรอบที่เคยสำรวจ ใช้เสมอไม่ว่ารอบนั้นจะมีข้อมูลหรือไม่
+// เพื่อให้ตัวกรองแสดงตัวเลือกครบเหมือนกันทุกรอบ
+
+const ALL_SURVEY_POINTS = [
+  "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่",
+  "จุดที่ 2 ประดู่ใหญ่-มออีหก",
+  "จุดที่ 3 มออีหก-จุดชมวิว",
+  "จุดที่ 4 จุดชมวิว-ตะเคียนคู่",
+  "จุดที่ 5 ตะเคียนคู่-น้ำดิบผามะหาด",
+  "จุดที่ 6 น้ำดิบผามะหาด-ชานเบิกภัย",
+  "จุดที่ 7 ชานเบิกภัย-ไทรงาม",
+  "จุดที่ 8 ไทรงาม-ปล่องนางนาค",
+  "จุดที่ 9 ปล่องนางนาค-พระยาแล่นเรือ",
+  "จุดที่ 10 พระยาแล่นเรือ-ค่ายพักแรม",
+];
+
+const ALL_FAMILIES = [
+  "Agaricaceae",
+  "Amanitaceae",
+  "Auriculariaceae",
+  "Clavariaceae",
+  "Ganodermataceae",
+  "Hydnaceae",
+  "Hygrophoraceae",
+  "Hymenochaetaceae",
+  "Inocybaceae",
+  "Laetiporaceae",
+  "Lyophyllaceae",
+  "Marasmiaceae",
+  "Mycenaceae",
+  "Omphalinaceae",
+  "Omphalotaceae",
+  "Phanerochaetaceae",
+  "Pleurotaceae",
+  "Polyporaceae",
+  "Psathyrellaceae",
+  "Pyronemataceae",
+  "Stereaceae",
+  "Thelephoraceae",
+  "Xylariaceae",
+  "ระบุไม่ได้",
+];
+
+const ALL_GROUPS = [
+  "เห็ดครีบ",
+  "เห็ดปะการังและเห็ดกระบอง",
+  "เห็ดฟันเลื่อย",
+  "เห็ดรูปแก้วแชมเปญ รูปถ้วย หรือรูปจาน",
+  "เห็ดหิ้ง",
+  "เห็ดหูหนู/เห็ดวุ้น",
+  "เห็ดแบนราบไปกับต้นไม้",
+  "เห็ดแผ่นหนัง",
+  "แผ่นหนัง",
+];
+
 export function RoundExplorer({
   roundData,
   previousRound,
@@ -52,24 +107,23 @@ export function RoundExplorer({
   const [groupFilter, setGroupFilter] = useState(ALL);
   const [pointFilter, setPointFilter] = useState(ALL);
 
-  const familyOptions = useMemo(() => {
-    const families = Array.from(new Set(roundData.mushrooms.map((m) => m.family).filter(Boolean)))
-      .sort((a, b) => a.localeCompare(b, "th"));
-    return [ALL, ...families];
-  }, [roundData.mushrooms]);
+  // ใช้รายการตายตัวเสมอ ไม่ขึ้นกับว่ารอบนี้มีข้อมูลของตัวเลือกนั้นหรือไม่
+  const familyOptions = [ALL, ...ALL_FAMILIES];
+  const groupOptions = [ALL, ...ALL_GROUPS];
+  const pointOptions = [ALL, ...ALL_SURVEY_POINTS];
 
-  const groupOptions = useMemo(() => {
-    const groups = Array.from(new Set(roundData.mushrooms.map((m) => m.group).filter(Boolean)))
-      .sort((a, b) => a.localeCompare(b, "th"));
-    return [ALL, ...groups];
-  }, [roundData.mushrooms]);
-
-  const pointOptions = useMemo(() => {
-    const points = Array.from(
-      new Set(roundData.mushrooms.flatMap((m) => m.pointsFound))
-    ).sort((a, b) => a.localeCompare(b, "th", { numeric: true }));
-    return [ALL, ...points];
-  }, [roundData.mushrooms]);
+  const familiesInThisRound = useMemo(
+    () => new Set(roundData.mushrooms.map((m) => m.family)),
+    [roundData.mushrooms]
+  );
+  const groupsInThisRound = useMemo(
+    () => new Set(roundData.mushrooms.map((m) => m.group)),
+    [roundData.mushrooms]
+  );
+  const pointsFoundInThisRound = useMemo(
+    () => new Set(roundData.mushrooms.flatMap((m) => m.pointsFound)),
+    [roundData.mushrooms]
+  );
 
   const filteredMushrooms = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
@@ -94,6 +148,13 @@ export function RoundExplorer({
       return matchesQuery && matchesFamily && matchesGroup && matchesPoint && matchesEdibility;
     });
   }, [edibilityFilter, familyFilter, groupFilter, pointFilter, query, roundData.mushrooms]);
+
+  // เงื่อนไขที่เลือกอยู่ แต่รอบนี้ไม่มีข้อมูลเลย (ไม่ใช่แค่กรองแล้วเป็น 0 แต่คือ "ไม่มีตั้งแต่ต้น")
+  const selectedFamilyHasNoData = familyFilter !== ALL && !familiesInThisRound.has(familyFilter);
+  const selectedGroupHasNoData = groupFilter !== ALL && !groupsInThisRound.has(groupFilter);
+  const selectedPointHasNoData = pointFilter !== ALL && !pointsFoundInThisRound.has(pointFilter);
+  const selectedOptionHasNoData =
+    selectedFamilyHasNoData || selectedGroupHasNoData || selectedPointHasNoData;
 
   return (
     <div className="space-y-8">
@@ -226,17 +287,25 @@ export function RoundExplorer({
         )}
       </section>
 
-      <section className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-        {filteredMushrooms.map((mushroom) => (
-          <MushroomCard key={mushroom.scientificName} mushroom={mushroom} />
-        ))}
-      </section>
-
-      {filteredMushrooms.length === 0 ? (
-        <div className="rounded-[2rem] border border-dashed border-stone-300 bg-white/80 p-8 text-center text-stone-600">
-          ไม่พบข้อมูลเห็ดตามเงื่อนไขที่เลือก กรุณาลองค้นหาอีกครั้ง
+      {selectedOptionHasNoData ? (
+        <div className="rounded-[2rem] border border-dashed border-amber-300 bg-amber-50 p-8 text-center text-amber-800">
+          รอบนี้ไม่มีข้อมูลเห็ดตามตัวกรองที่เลือก (อาจไม่พบในรอบนี้ หรือยังไม่ได้สำรวจถึงจุดนี้)
         </div>
-      ) : null}
+      ) : (
+        <>
+          <section className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+            {filteredMushrooms.map((mushroom) => (
+              <MushroomCard key={mushroom.scientificName} mushroom={mushroom} />
+            ))}
+          </section>
+
+          {filteredMushrooms.length === 0 ? (
+            <div className="rounded-[2rem] border border-dashed border-stone-300 bg-white/80 p-8 text-center text-stone-600">
+              ไม่พบข้อมูลเห็ดตามเงื่อนไขที่เลือก กรุณาลองค้นหาอีกครั้ง
+            </div>
+          ) : null}
+        </>
+      )}
 
       <WeatherSummary avgTemperature={roundData.avgTemperature} avgHumidity={roundData.avgHumidity} />
     </div>
