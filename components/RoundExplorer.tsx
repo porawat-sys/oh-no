@@ -2,37 +2,21 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
+import { FilterBar } from "@/components/FilterBar";
 import { MushroomCard } from "@/components/MushroomCard";
 import { WeatherSummary } from "@/components/WeatherSummary";
+import { matchesFilters, type FilterState } from "@/components/filterUtils";
+import type { MushroomRecord, RoundData } from "@/components/types";
 
-export type MushroomRecord = {
-  scientificName: string;
-  localName: string;
-  family: string;
-  group: string;
-  habitat: string;
-  ecologicalRole: string;
-  edibility: string;
-  totalFound: number;
-  pointsFound: string[];
-  pointsFoundCount: number;
-  images: string[];
-  habitatType: "soil" | "wood";
-  airTemperature: number | null;
-  airHumidity: number | null;
-  soilPH: number | null;
-  soilTemperature: number | null;
-  soilHumidity: number | null;
-  generalCharacteristics: string;
-};
-
-export type RoundData = {
-  round: number;
-  date: string;
-  speciesCount: number;
-  mushrooms: MushroomRecord[];
-  avgTemperature: number | null;
-  avgHumidity: number | null;
+const EMPTY_FILTERS: FilterState = {
+  query: "",
+  families: [],
+  groups: [],
+  habitats: [],
+  ecoRoles: [],
+  edibilities: [],
+  periods: [],
+  points: [],
 };
 
 const ALL = "ทั้งหมด";
@@ -101,60 +85,14 @@ export function RoundExplorer({
   previousRound: number | null;
   nextRound: number | null;
 }) {
-  const [query, setQuery] = useState("");
-  const [familyFilter, setFamilyFilter] = useState(ALL);
-  const [edibilityFilter, setEdibilityFilter] = useState(ALL);
-  const [groupFilter, setGroupFilter] = useState(ALL);
-  const [pointFilter, setPointFilter] = useState(ALL);
+  const [filters, setFilters] = useState<FilterState>(EMPTY_FILTERS);
 
-  // ใช้รายการตายตัวเสมอ ไม่ขึ้นกับว่ารอบนี้มีข้อมูลของตัวเลือกนั้นหรือไม่
-  const familyOptions = [ALL, ...ALL_FAMILIES];
-  const groupOptions = [ALL, ...ALL_GROUPS];
-  const pointOptions = [ALL, ...ALL_SURVEY_POINTS];
-
-  const familiesInThisRound = useMemo(
-    () => new Set(roundData.mushrooms.map((m) => m.family)),
-    [roundData.mushrooms]
-  );
-  const groupsInThisRound = useMemo(
-    () => new Set(roundData.mushrooms.map((m) => m.group)),
-    [roundData.mushrooms]
-  );
-  const pointsFoundInThisRound = useMemo(
-    () => new Set(roundData.mushrooms.flatMap((m) => m.pointsFound)),
-    [roundData.mushrooms]
+  const filteredMushrooms = useMemo(
+    () => roundData.mushrooms.filter((mushroom) => matchesFilters(mushroom, filters)),
+    [filters, roundData.mushrooms]
   );
 
-  const filteredMushrooms = useMemo(() => {
-    const normalizedQuery = query.trim().toLowerCase();
-
-    return roundData.mushrooms.filter((mushroom) => {
-      const matchesQuery =
-        !normalizedQuery ||
-        mushroom.scientificName.toLowerCase().includes(normalizedQuery) ||
-        mushroom.localName.toLowerCase().includes(normalizedQuery) ||
-        mushroom.family.toLowerCase().includes(normalizedQuery);
-
-      const matchesFamily = familyFilter === ALL || mushroom.family === familyFilter;
-      const matchesGroup = groupFilter === ALL || mushroom.group === groupFilter;
-      const matchesPoint =
-        pointFilter === ALL || mushroom.pointsFound.includes(pointFilter);
-      const matchesEdibility =
-        edibilityFilter === ALL ||
-        (edibilityFilter === "กินได้" && mushroom.edibility.includes("กินได้")) ||
-        (edibilityFilter === "กินไม่ได้" && mushroom.edibility.includes("กินไม่ได้")) ||
-        (edibilityFilter === "ไม่มีข้อมูล" && mushroom.edibility.includes("ไม่มีข้อมูล"));
-
-      return matchesQuery && matchesFamily && matchesGroup && matchesPoint && matchesEdibility;
-    });
-  }, [edibilityFilter, familyFilter, groupFilter, pointFilter, query, roundData.mushrooms]);
-
-  // เงื่อนไขที่เลือกอยู่ แต่รอบนี้ไม่มีข้อมูลเลย (ไม่ใช่แค่กรองแล้วเป็น 0 แต่คือ "ไม่มีตั้งแต่ต้น")
-  const selectedFamilyHasNoData = familyFilter !== ALL && !familiesInThisRound.has(familyFilter);
-  const selectedGroupHasNoData = groupFilter !== ALL && !groupsInThisRound.has(groupFilter);
-  const selectedPointHasNoData = pointFilter !== ALL && !pointsFoundInThisRound.has(pointFilter);
-  const selectedOptionHasNoData =
-    selectedFamilyHasNoData || selectedGroupHasNoData || selectedPointHasNoData;
+  const selectedOptionHasNoData = false;
 
   return (
     <div className="space-y-8">
@@ -190,102 +128,13 @@ export function RoundExplorer({
         </div>
       </header>
 
-      <section className="rounded-[2rem] border border-stone-200 bg-white/90 p-5 shadow-sm">
-        <div className="grid gap-4 lg:grid-cols-5">
-          <label className="text-sm font-medium text-stone-700 lg:col-span-1">
-            <span className="mb-2 block">ค้นหาชื่อเห็ด</span>
-            <input
-              value={query}
-              onChange={(event) => setQuery(event.target.value)}
-              placeholder="เช่น Amanita, เห็ดหูหนู"
-              className="w-full rounded-2xl border border-stone-300 bg-stone-50 px-4 py-3 text-sm outline-none ring-0 focus:border-emerald-700"
-            />
-          </label>
-
-          <label className="text-sm font-medium text-stone-700">
-            <span className="mb-2 block">กรองตามวงศ์</span>
-            <select
-              value={familyFilter}
-              onChange={(event) => setFamilyFilter(event.target.value)}
-              className="w-full rounded-2xl border border-stone-300 bg-stone-50 px-4 py-3 text-sm outline-none focus:border-emerald-700"
-            >
-              {familyOptions.map((value) => (
-                <option key={value} value={value}>
-                  {value}
-                </option>
-              ))}
-            </select>
-          </label>
-
-          <label className="text-sm font-medium text-stone-700">
-            <span className="mb-2 block">กรองตามกลุ่มเห็ด</span>
-            <select
-              value={groupFilter}
-              onChange={(event) => setGroupFilter(event.target.value)}
-              className="w-full rounded-2xl border border-stone-300 bg-stone-50 px-4 py-3 text-sm outline-none focus:border-emerald-700"
-            >
-              {groupOptions.map((value) => (
-                <option key={value} value={value}>
-                  {value}
-                </option>
-              ))}
-            </select>
-          </label>
-
-          <label className="text-sm font-medium text-stone-700">
-            <span className="mb-2 block">กรองตามจุดที่สำรวจ</span>
-            <select
-              value={pointFilter}
-              onChange={(event) => setPointFilter(event.target.value)}
-              className="w-full rounded-2xl border border-stone-300 bg-stone-50 px-4 py-3 text-sm outline-none focus:border-emerald-700"
-            >
-              {pointOptions.map((value) => (
-                <option key={value} value={value}>
-                  {value}
-                </option>
-              ))}
-            </select>
-          </label>
-
-          <label className="text-sm font-medium text-stone-700">
-            <span className="mb-2 block">กรองตามการรับประทาน</span>
-            <select
-              value={edibilityFilter}
-              onChange={(event) => setEdibilityFilter(event.target.value)}
-              className="w-full rounded-2xl border border-stone-300 bg-stone-50 px-4 py-3 text-sm outline-none focus:border-emerald-700"
-            >
-              <option value={ALL}>{ALL}</option>
-              <option value="กินได้">กินได้</option>
-              <option value="กินไม่ได้">กินไม่ได้</option>
-              <option value="ไม่มีข้อมูล">ไม่มีข้อมูล</option>
-            </select>
-          </label>
-        </div>
-
-        {(familyFilter !== ALL ||
-          groupFilter !== ALL ||
-          pointFilter !== ALL ||
-          edibilityFilter !== ALL ||
-          query) && (
-          <div className="mt-4 flex flex-wrap items-center gap-2 text-sm">
-            <span className="text-stone-500">
-              พบ {filteredMushrooms.length} จาก {roundData.mushrooms.length} ชนิด
-            </span>
-            <button
-              onClick={() => {
-                setQuery("");
-                setFamilyFilter(ALL);
-                setGroupFilter(ALL);
-                setPointFilter(ALL);
-                setEdibilityFilter(ALL);
-              }}
-              className="rounded-full border border-stone-300 px-3 py-1 text-stone-600 transition hover:border-emerald-700 hover:text-emerald-700"
-            >
-              ล้างตัวกรองทั้งหมด ✕
-            </button>
-          </div>
-        )}
-      </section>
+      <FilterBar
+        mushrooms={roundData.mushrooms}
+        visibleCount={filteredMushrooms.length}
+        totalCount={roundData.mushrooms.length}
+        onChange={setFilters}
+        onClear={() => setFilters(EMPTY_FILTERS)}
+      />
 
       {selectedOptionHasNoData ? (
         <div className="rounded-[2rem] border border-dashed border-amber-300 bg-amber-50 p-8 text-center text-amber-800">

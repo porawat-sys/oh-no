@@ -2,7 +2,7 @@
   {
     "round": 1,
     "date": "22 พฤศจิกายน 2568",
-    "speciesCount": 32,
+    "speciesCount": 31,
     "avgTemperature": 24.2,
     "avgHumidity": 76.7
   },
@@ -16,35 +16,35 @@
   {
     "round": 3,
     "date": "16 มกราคม 2569",
-    "speciesCount": 14,
+    "speciesCount": 13,
     "avgTemperature": 27.5,
-    "avgHumidity": 69.6
+    "avgHumidity": 69.2
   },
   {
     "round": 4,
     "date": "14 กุมภาพันธ์ 2569",
-    "speciesCount": 16,
+    "speciesCount": 15,
     "avgTemperature": 31.1,
-    "avgHumidity": 57.2
+    "avgHumidity": 57.1
   },
   {
     "round": 5,
     "date": "7 พฤษภาคม 2569",
-    "speciesCount": 11,
+    "speciesCount": 10,
     "avgTemperature": 32.5,
-    "avgHumidity": 68.8
+    "avgHumidity": 68.9
   },
   {
     "round": 6,
     "date": "18 มิถุนายน 2569",
-    "speciesCount": 25,
+    "speciesCount": 24,
     "avgTemperature": 31.2,
-    "avgHumidity": 77.6
+    "avgHumidity": 77.4
   },
   {
     "round": 7,
     "date": "18 กรกฎาคม 2569",
-    "speciesCount": 19,
+    "speciesCount": 18,
     "avgTemperature": 31.2,
     "avgHumidity": 57.8
   }

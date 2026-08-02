@@ -1,29 +1,10 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
+import type { MushroomRecord } from "@/components/types";
 
 const BASE_PATH = process.env.NODE_ENV === "production" ? "/oh-no" : "";
-
-type Mushroom = {
-  scientificName: string;
-  localName: string;
-  family: string;
-  group: string;
-  habitat: string;
-  ecologicalRole: string;
-  edibility: string;
-  totalFound: number;
-  pointsFound: string[];
-  pointsFoundCount: number;
-  images: string[];
-  habitatType: "soil" | "wood";
-  airTemperature: number | null;
-  airHumidity: number | null;
-  soilPH: number | null;
-  soilTemperature: number | null;
-  soilHumidity: number | null;
-  generalCharacteristics: string;
-};
 
 function withBasePath(path: string) {
   if (!path) return path;
@@ -40,7 +21,15 @@ function edibilityStyle(edibility: string) {
   return "bg-stone-100 text-stone-600 border-stone-200";
 }
 
-export function MushroomCard({ mushroom }: { mushroom: Mushroom }) {
+export function MushroomCard({
+  mushroom,
+  detailHref,
+  foundInPeriods,
+}: {
+  mushroom: MushroomRecord;
+  detailHref?: string;
+  foundInPeriods?: number[];
+}) {
   const [showPoints, setShowPoints] = useState(false);
   const [imageIndex, setImageIndex] = useState(0);
 
@@ -94,14 +83,14 @@ export function MushroomCard({ mushroom }: { mushroom: Mushroom }) {
 
         <div className="flex flex-wrap gap-2 text-xs">
           <span className="rounded-full border border-stone-200 bg-stone-50 px-3 py-1 text-stone-700">
-            {mushroom.group}
+            {mushroom.group.join(", ")}
           </span>
           <span
             className={`rounded-full border px-3 py-1 font-medium ${edibilityStyle(
-              mushroom.edibility
+              mushroom.edibility.join(", ")
             )}`}
           >
-            {mushroom.edibility}
+            {mushroom.edibility.join(", ")}
           </span>
         </div>
 
@@ -164,13 +153,28 @@ export function MushroomCard({ mushroom }: { mushroom: Mushroom }) {
         <div className="space-y-1 text-sm text-stone-600">
           <p>
             <span className="font-medium text-stone-800">แหล่งกำเนิด:</span>{" "}
-            {mushroom.habitat}
+            {mushroom.habitat.join(", ")}
           </p>
           <p>
             <span className="font-medium text-stone-800">บทบาท:</span>{" "}
-            {mushroom.ecologicalRole}
+            {mushroom.ecologicalRole.join(", ")}
           </p>
+          {foundInPeriods && foundInPeriods.length > 0 ? (
+            <div className="flex flex-wrap gap-2 pt-2">
+              {foundInPeriods.map((period) => (
+                <span key={period} className="rounded-full bg-emerald-50 px-2.5 py-1 text-xs font-medium text-emerald-800">
+                  รอบที่ {period}
+                </span>
+              ))}
+            </div>
+          ) : null}
         </div>
+
+        {detailHref ? (
+          <Link href={detailHref} className="text-sm font-medium text-emerald-700 hover:text-emerald-900">
+            ดูรายละเอียดรอบนี้ →
+          </Link>
+        ) : null}
 
         <button
           onClick={() => setShowPoints((v) => !v)}

@@ -1,16 +1,24 @@
 {
   "round": 1,
   "date": "22 พฤศจิกายน 2568",
-  "speciesCount": 32,
+  "speciesCount": 31,
   "mushrooms": [
     {
       "scientificName": "Agaricus trisulphuratus Berk.",
       "localName": "เห็ดกระดุมทองเหลือง",
-      "family": "Agaricaceae ",
-      "group": "เห็ดครีบ",
-      "habitat": "ดิน",
-      "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
-      "edibility": "กินไม่ได้",
+      "family": "Agaricaceae",
+      "group": [
+        "เห็ดครีบ"
+      ],
+      "habitat": [
+        "ดิน"
+      ],
+      "ecologicalRole": [
+        "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)"
+      ],
+      "edibility": [
+        "กินไม่ได้"
+      ],
       "totalFound": 2,
       "pointsFound": [
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่"
@@ -26,16 +34,25 @@
       "soilPH": 7.5,
       "soilTemperature": 23.5,
       "soilHumidity": 35,
+      "foundInPeriods": [],
       "generalCharacteristics": "เห็ดในสกุล Agaricus หมวกเห็ดทรงกลมถึงแบน ผิวสีขาวถึงครีม เนื้อในสีขาว ครีบใต้หมวกสีชมพูอ่อนเมื่ออ่อน แล้วเปลี่ยนเป็นสีน้ำตาลเข้มเมื่อแก่ มีวงแหวนที่ก้าน ขึ้นเดี่ยวหรือเป็นกลุ่มบนพื้นดินที่มีอินทรียวัตถุสูง"
     },
     {
       "scientificName": "Amanita farinosa",
       "localName": "เห็ดระโงกแป้ง",
       "family": "Amanitaceae",
-      "group": "เห็ดครีบ",
-      "habitat": "ดิน",
-      "ecologicalRole": "เห็ดเอคโตไมคอร์ไรซา (ectomycorrhizal mushroom)",
-      "edibility": "กินไม่ได้",
+      "group": [
+        "เห็ดครีบ"
+      ],
+      "habitat": [
+        "ดิน"
+      ],
+      "ecologicalRole": [
+        "เห็ดเอคโตไมคอร์ไรซา (ectomycorrhizal mushroom)"
+      ],
+      "edibility": [
+        "กินไม่ได้"
+      ],
       "totalFound": 5,
       "pointsFound": [
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่",
@@ -55,16 +72,25 @@
       "soilPH": 7.5,
       "soilTemperature": 22.6,
       "soilHumidity": 17,
+      "foundInPeriods": [],
       "generalCharacteristics": "เห็ดพิษขนาดเล็กในสกุล Amanita หมวกสีเทาถึงน้ำตาลอ่อน มีผงคล้ายแป้งปกคลุมผิวหมวก ครีบสีขาว ก้านเรียวยาว ไม่มีวงแหวนชัดเจน โคนก้านไม่มีเปลือกหุ้ม (volva) ชัดเจนแบบ Amanita ทั่วไป ขึ้นตามพื้นดินในป่าเบญจพรรณและป่าดิบ"
     },
     {
       "scientificName": "Amanita hemibapha",
       "localName": "เห็ดระโงกเหลือง",
       "family": "Amanitaceae",
-      "group": "เห็ดครีบ",
-      "habitat": "ดิน",
-      "ecologicalRole": "เห็ดเอคโตไมคอร์ไรซา (ectomycorrhizal mushroom)",
-      "edibility": "กินได้",
+      "group": [
+        "เห็ดครีบ"
+      ],
+      "habitat": [
+        "ดิน"
+      ],
+      "ecologicalRole": [
+        "เห็ดเอคโตไมคอร์ไรซา (ectomycorrhizal mushroom)"
+      ],
+      "edibility": [
+        "กินได้"
+      ],
       "totalFound": 3,
       "pointsFound": [
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่"
@@ -81,16 +107,25 @@
       "soilPH": 7.5,
       "soilTemperature": 21.3,
       "soilHumidity": 10,
+      "foundInPeriods": [],
       "generalCharacteristics": "เห็ดในสกุล Amanita หมวกสีส้มถึงส้มแดงสด ผิวเรียบเป็นมัน ขอบหมวกมีรอยเป็นเส้น (striate) ก้านสีเหลืองอมส้ม มีวงแหวนและเปลือกหุ้มโคนก้าน (volva) ชัดเจน บางถิ่นนิยมรับประทาน แต่ต้องระวังสับสนกับชนิดพิษในสกุลเดียวกัน"
     },
     {
       "scientificName": "Amanita onusta",
       "localName": "เลพิเดลล่าดินปืน / gunpowder Lepidella",
       "family": "Amanitaceae",
-      "group": "เห็ดครีบ",
-      "habitat": "ดิน",
-      "ecologicalRole": "เห็ดเอคโตไมคอร์ไรซา (ectomycorrhizal mushroom)",
-      "edibility": "กินไม่ได้",
+      "group": [
+        "เห็ดครีบ"
+      ],
+      "habitat": [
+        "ดิน"
+      ],
+      "ecologicalRole": [
+        "เห็ดเอคโตไมคอร์ไรซา (ectomycorrhizal mushroom)"
+      ],
+      "edibility": [
+        "กินไม่ได้"
+      ],
       "totalFound": 3,
       "pointsFound": [
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่",
@@ -108,16 +143,25 @@
       "soilPH": 7.5,
       "soilTemperature": 20,
       "soilHumidity": 20,
+      "foundInPeriods": [],
       "generalCharacteristics": "เห็ดในสกุล Amanita หมวกสีเทาถึงน้ำตาลเทา ผิวปกคลุมด้วยเกล็ดหูดสีเข้มกระจายทั่วหมวก ก้านมีเกล็ดคล้ายกัน โคนก้านพองออกเล็กน้อยแต่ไม่มี volva ชัดเจน ขึ้นตามพื้นดินในป่าที่ชื้น"
     },
     {
       "scientificName": "Auricularia curiculajudae (Bull.) Quel.",
       "localName": "เห็ดหูหนู",
       "family": "Auriculariaceae",
-      "group": "เห็ดหูหนู/เห็ดวุ้น",
-      "habitat": "ต้นไม้/ตอไม้",
-      "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
-      "edibility": "กินได้",
+      "group": [
+        "เห็ดหูหนู/เห็ดวุ้น"
+      ],
+      "habitat": [
+        "ต้นไม้/ตอไม้"
+      ],
+      "ecologicalRole": [
+        "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)"
+      ],
+      "edibility": [
+        "กินได้"
+      ],
       "totalFound": 2,
       "pointsFound": [
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่",
@@ -134,16 +178,25 @@
       "soilPH": null,
       "soilTemperature": null,
       "soilHumidity": null,
+      "foundInPeriods": [],
       "generalCharacteristics": "เห็ดหูหนู เนื้อวุ้นคล้ายวุ้น สีน้ำตาลแดงถึงน้ำตาลเข้ม รูปร่างคล้ายถ้วยหรือหูพับย่น ผิวด้านบนเรียบมัน ด้านล่างมีขนละเอียด ขึ้นเป็นกลุ่มบนไม้ผุหรือกิ่งไม้ตาย รับประทานได้และนิยมใช้ประกอบอาหาร"
     },
     {
       "scientificName": "Coprinus comatus",
       "localName": "เห็ดหมึกขนปุย",
       "family": "Agaricaceae",
-      "group": "เห็ดครีบ",
-      "habitat": "ดิน",
-      "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
-      "edibility": "กินได้",
+      "group": [
+        "เห็ดครีบ"
+      ],
+      "habitat": [
+        "ดิน"
+      ],
+      "ecologicalRole": [
+        "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)"
+      ],
+      "edibility": [
+        "กินได้"
+      ],
       "totalFound": 1,
       "pointsFound": [
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่"
@@ -158,16 +211,25 @@
       "soilPH": 7.5,
       "soilTemperature": 23,
       "soilHumidity": 20,
+      "foundInPeriods": [],
       "generalCharacteristics": "เห็ดหมึกหอมหรือเห็ดร่มขนนก หมวกทรงกระบอกยาว สีขาวมีเกล็ดคล้ายขนนกปุยปกคลุม เมื่อแก่ครีบจะเปลี่ยนเป็นสีดำและละลายเป็นของเหลวคล้ายหมึก (deliquescence) รับประทานได้เมื่อยังอ่อน ต้องเก็บและปรุงทันทีก่อนที่จะละลาย"
     },
     {
       "scientificName": "Dicephalosporarufocornea (Berk. & Br.) Spooner",
       "localName": "เห็ดถ้วยสีเหลือง",
       "family": "Pyronemataceae",
-      "group": "เห็ดรูปแก้วแชมเปญ รูปถ้วย หรือรูปจาน",
-      "habitat": "ต้นไม้/ตอไม้",
-      "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
-      "edibility": "ไม่มีข้อมูลว่ากินได้",
+      "group": [
+        "เห็ดรูปแก้วแชมเปญ รูปถ้วย หรือรูปจาน"
+      ],
+      "habitat": [
+        "ต้นไม้/ตอไม้"
+      ],
+      "ecologicalRole": [
+        "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)"
+      ],
+      "edibility": [
+        "ไม่มีข้อมูลว่ากินได้"
+      ],
       "totalFound": 3,
       "pointsFound": [
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่"
@@ -184,16 +246,25 @@
       "soilPH": null,
       "soilTemperature": null,
       "soilHumidity": null,
+      "foundInPeriods": [],
       "generalCharacteristics": "เห็ดขนาดเล็กในวงศ์ Pyronemataceae ลักษณะเป็นถ้วยหรือแผ่นตื้นสีน้ำตาลแดงถึงส้มสนิม ผิวด้านในเรียบมัน ขึ้นบนพื้นดินหรือเศษไม้ผุที่ชื้น เป็นกลุ่มเห็ดที่พบไม่บ่อยนัก"
     },
     {
       "scientificName": "Favolus grammocephalus",
       "localName": "เห็ดรังผึ้ง",
       "family": "Polyporaceae",
-      "group": "เห็ดหิ้ง",
-      "habitat": "ต้นไม้/ตอไม้",
-      "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
-      "edibility": "ไม่มีข้อมูลว่ากินได้",
+      "group": [
+        "เห็ดหิ้ง"
+      ],
+      "habitat": [
+        "ต้นไม้/ตอไม้"
+      ],
+      "ecologicalRole": [
+        "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)"
+      ],
+      "edibility": [
+        "ไม่มีข้อมูลว่ากินได้"
+      ],
       "totalFound": 1,
       "pointsFound": [
         "จุดที่ 3 มออีหก-จุดชมวิว"
@@ -208,16 +279,25 @@
       "soilPH": null,
       "soilTemperature": null,
       "soilHumidity": null,
+      "foundInPeriods": [],
       "generalCharacteristics": "เห็ดหิ้งขนาดเล็กถึงกลาง ผิวบนสีน้ำตาลอ่อนมีลายเส้นรัศมี ผิวด้านล่างมีรูพรุนขนาดใหญ่เรียงเป็นรังผึ้ง เนื้อเหนียว ขึ้นติดกับไม้ผุหรือกิ่งไม้ตาย เป็นเห็ดย่อยสลายไม้"
     },
     {
       "scientificName": "Favolus tenuiculus",
       "localName": "เห็ดรังผึ้ง",
       "family": "Polyporaceae",
-      "group": "เห็ดหิ้ง",
-      "habitat": "ต้นไม้/ตอไม้",
-      "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
-      "edibility": "ไม่มีข้อมูลว่ากินได้",
+      "group": [
+        "เห็ดหิ้ง"
+      ],
+      "habitat": [
+        "ต้นไม้/ตอไม้"
+      ],
+      "ecologicalRole": [
+        "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)"
+      ],
+      "edibility": [
+        "ไม่มีข้อมูลว่ากินได้"
+      ],
       "totalFound": 5,
       "pointsFound": [
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่"
@@ -236,16 +316,25 @@
       "soilPH": null,
       "soilTemperature": null,
       "soilHumidity": null,
+      "foundInPeriods": [],
       "generalCharacteristics": "เห็ดหิ้งบาง ผิวบนสีขาวถึงครีมอมเหลือง ผิวด้านล่างมีรูพรุนใหญ่คล้ายรังผึ้ง เนื้อบางและเหนียว ขึ้นติดกับกิ่งไม้ผุขนาดเล็ก มักพบเป็นกลุ่ม"
     },
     {
       "scientificName": "Ganoderma sp.1",
       "localName": "เห็ดหลินจือ",
-      "family": "Ganodermataceae ",
-      "group": "เห็ดหิ้ง",
-      "habitat": "ต้นไม้/ตอไม้",
-      "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
-      "edibility": "กินได้",
+      "family": "Ganodermataceae",
+      "group": [
+        "เห็ดหิ้ง"
+      ],
+      "habitat": [
+        "ต้นไม้/ตอไม้"
+      ],
+      "ecologicalRole": [
+        "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)"
+      ],
+      "edibility": [
+        "กินได้"
+      ],
       "totalFound": 1,
       "pointsFound": [
         "จุดที่ 3 มออีหก-จุดชมวิว"
@@ -260,16 +349,25 @@
       "soilPH": null,
       "soilTemperature": null,
       "soilHumidity": null,
+      "foundInPeriods": [],
       "generalCharacteristics": "เห็ดในสกุลหลินจือ (Ganoderma) ผิวหมวกเป็นมันวาวคล้ายเคลือบแล็กเกอร์ สีน้ำตาลแดงถึงน้ำตาลเข้ม ขอบหมวกสีอ่อนกว่า เนื้อในแข็งเป็นไม้ก๊อก ไม่มีก้านหรือก้านสั้น ขึ้นติดโคนต้นไม้หรือตอไม้ เป็นเห็ดที่นิยมนำไปใช้ประโยชน์ทางสมุนไพร"
     },
     {
       "scientificName": "Hapalopilus rutilans",
       "localName": "เห็ดรูรังอ่อน",
       "family": "Polyporaceae",
-      "group": "เห็ดหิ้ง",
-      "habitat": "ต้นไม้/ตอไม้",
-      "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
-      "edibility": "กินไม่ได้",
+      "group": [
+        "เห็ดหิ้ง"
+      ],
+      "habitat": [
+        "ต้นไม้/ตอไม้"
+      ],
+      "ecologicalRole": [
+        "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)"
+      ],
+      "edibility": [
+        "กินไม่ได้"
+      ],
       "totalFound": 8,
       "pointsFound": [
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่",
@@ -293,16 +391,25 @@
       "soilPH": null,
       "soilTemperature": null,
       "soilHumidity": null,
+      "foundInPeriods": [],
       "generalCharacteristics": "เห็ดหิ้งเนื้อนุ่มคล้ายฟองน้ำเมื่อยังสด สีชมพูอมน้ำตาลถึงสีอบเชย เมื่อแห้งเนื้อจะแข็งกรอบ ผิวด้านล่างมีรูพรุนละเอียดสีเดียวกับหมวก ขึ้นบนไม้ผุ มีสารพิษหากรับประทาน"
     },
     {
       "scientificName": "Hexagonia tenuis (Fr.) Fr.",
       "localName": "เห็ดรังแตน",
-      "family": "Polyporaceae ",
-      "group": "เห็ดหิ้ง",
-      "habitat": "ต้นไม้/ตอไม้",
-      "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
-      "edibility": "กินไม่ได้",
+      "family": "Polyporaceae",
+      "group": [
+        "เห็ดหิ้ง"
+      ],
+      "habitat": [
+        "ต้นไม้/ตอไม้"
+      ],
+      "ecologicalRole": [
+        "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)"
+      ],
+      "edibility": [
+        "กินไม่ได้"
+      ],
       "totalFound": 3,
       "pointsFound": [
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่"
@@ -319,16 +426,25 @@
       "soilPH": null,
       "soilTemperature": null,
       "soilHumidity": null,
+      "foundInPeriods": [],
       "generalCharacteristics": "เห็ดหิ้งบางแข็ง ผิวบนสีน้ำตาลอมเทามีขนสั้นปกคลุมเป็นวง ผิวด้านล่างมีรูพรุนรูปหกเหลี่ยมเรียงชัดเจน (ที่มาของชื่อ hexagonia) เนื้อเหนียวเป็นไม้ก๊อก ขึ้นติดกับไม้ผุ"
     },
     {
       "scientificName": "Hymenochaete cruenta",
       "localName": "-",
       "family": "Hymenochaetaceae",
-      "group": "เห็ดแบนราบไปกับต้นไม้",
-      "habitat": "ต้นไม้/ตอไม้",
-      "ecologicalRole": "เห็ดปรสิต (parasitic mushroom)",
-      "edibility": "กินได้",
+      "group": [
+        "เห็ดแบนราบไปกับต้นไม้"
+      ],
+      "habitat": [
+        "ต้นไม้/ตอไม้"
+      ],
+      "ecologicalRole": [
+        "เห็ดปรสิต (parasitic mushroom)"
+      ],
+      "edibility": [
+        "กินได้"
+      ],
       "totalFound": 1,
       "pointsFound": [
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่"
@@ -343,16 +459,25 @@
       "soilPH": null,
       "soilTemperature": null,
       "soilHumidity": null,
+      "foundInPeriods": [],
       "generalCharacteristics": "เห็ดแผ่นบางแนบติดผิวไม้ (crust fungus) สีน้ำตาลแดงเข้มถึงสีเลือดหมู ผิวมีลักษณะกำมะหยี่ ไม่มีรูพรุนชัดเจน ขึ้นแผ่ปกคลุมผิวไม้ผุหรือเปลือกไม้ตาย"
     },
     {
       "scientificName": "Inocybe godeyi",
       "localName": "-",
       "family": "Inocybaceae",
-      "group": "เห็ดครีบ",
-      "habitat": "ดิน",
-      "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
-      "edibility": "กินไม่ได้",
+      "group": [
+        "เห็ดครีบ"
+      ],
+      "habitat": [
+        "ดิน"
+      ],
+      "ecologicalRole": [
+        "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)"
+      ],
+      "edibility": [
+        "กินไม่ได้"
+      ],
       "totalFound": 1,
       "pointsFound": [
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่"
@@ -367,16 +492,25 @@
       "soilPH": 7.5,
       "soilTemperature": 23,
       "soilHumidity": 35,
+      "foundInPeriods": [],
       "generalCharacteristics": "เห็ดในสกุล Inocybe หมวกทรงกรวยถึงระฆัง สีน้ำตาลอมส้ม ผิวมีเส้นใยเป็นรัศมี ก้านมักมีสีชมพูอมแดงเมื่อช้ำ ครีบสีน้ำตาลอมเทา เห็ดในสกุลนี้ส่วนใหญ่มีพิษ ห้ามรับประทาน"
     },
     {
       "scientificName": "Lenzites elegans",
       "localName": "เห็ดกาบหอยขาว",
       "family": "Polyporaceae",
-      "group": "เห็ดหิ้ง",
-      "habitat": "ต้นไม้/ตอไม้",
-      "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
-      "edibility": "ไม่มีข้อมูลว่ากินได้",
+      "group": [
+        "เห็ดหิ้ง"
+      ],
+      "habitat": [
+        "ต้นไม้/ตอไม้"
+      ],
+      "ecologicalRole": [
+        "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)"
+      ],
+      "edibility": [
+        "ไม่มีข้อมูลว่ากินได้"
+      ],
       "totalFound": 13,
       "pointsFound": [
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่",
@@ -406,16 +540,25 @@
       "soilPH": null,
       "soilTemperature": null,
       "soilHumidity": null,
+      "foundInPeriods": [],
       "generalCharacteristics": "เห็ดหิ้งคล้ายเห็ดกระด้ง ผิวบนมีขนสั้นสีน้ำตาลอ่อนถึงเทาเป็นวง ผิวด้านล่างมีลักษณะเป็นแผ่นครีบเรียงถี่ แทนรูพรุนแบบเห็ดหิ้งทั่วไป เนื้อเหนียวเป็นไม้ก๊อก ขึ้นติดไม้ผุ"
     },
     {
       "scientificName": "Leucocoprinus cygneus",
       "localName": "เห็ดดาวกระจาย",
       "family": "Agaricaceae",
-      "group": "เห็ดครีบ",
-      "habitat": "ดิน",
-      "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
-      "edibility": "ไม่มีข้อมูลว่ากินได้",
+      "group": [
+        "เห็ดครีบ"
+      ],
+      "habitat": [
+        "ดิน"
+      ],
+      "ecologicalRole": [
+        "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)"
+      ],
+      "edibility": [
+        "ไม่มีข้อมูลว่ากินได้"
+      ],
       "totalFound": 12,
       "pointsFound": [
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่",
@@ -444,16 +587,25 @@
       "soilPH": 7.5,
       "soilTemperature": 21.5,
       "soilHumidity": 19.5,
+      "foundInPeriods": [],
       "generalCharacteristics": "เห็ดร่มขนาดเล็กสีขาวล้วนหรือขาวอมเหลืองอ่อน หมวกบางมีรอยจีบเป็นเส้นตามขอบ (striate) ก้านเรียวเปราะ มีวงแหวนบางที่ก้าน ขึ้นเป็นกลุ่มบนพื้นดินหรือเศษซากพืชที่ชื้น อายุดอกสั้น"
     },
     {
       "scientificName": "Leucocoprinus fragilissimus",
       "localName": "เห็ดดาวกระจาย",
       "family": "Agaricaceae",
-      "group": "เห็ดครีบ",
-      "habitat": "ต้นไม้/ตอไม้",
-      "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
-      "edibility": "ไม่มีข้อมูลว่ากินได้",
+      "group": [
+        "เห็ดครีบ"
+      ],
+      "habitat": [
+        "ต้นไม้/ตอไม้"
+      ],
+      "ecologicalRole": [
+        "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)"
+      ],
+      "edibility": [
+        "ไม่มีข้อมูลว่ากินได้"
+      ],
       "totalFound": 1,
       "pointsFound": [
         "จุดที่ 6 น้ำดิบผามะหาด-ชานเบิกภัย"
@@ -468,16 +620,25 @@
       "soilPH": null,
       "soilTemperature": null,
       "soilHumidity": null,
+      "foundInPeriods": [],
       "generalCharacteristics": "เห็ดร่มขนาดเล็กมาก เนื้อบางเปราะมาก (fragilissimus แปลว่าเปราะที่สุด) หมวกสีเหลืองอ่อนถึงเหลืองมะนาว มีผงคล้ายแป้งปกคลุม ขอบหมวกมีรอยจีบชัดเจน ขึ้นเป็นกลุ่มบนดินหรือเศษใบไม้ผุ อายุดอกสั้นมากเพียงไม่กี่ชั่วโมงถึงหนึ่งวัน"
     },
     {
       "scientificName": "Marasmiellus candidus (Bres.) Singer",
       "localName": "เห็ดกรวยแก้ว",
       "family": "Omphalotaceae",
-      "group": "เห็ดครีบ",
-      "habitat": "ต้นไม้/ตอไม้",
-      "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
-      "edibility": "กินไม่ได้",
+      "group": [
+        "เห็ดครีบ"
+      ],
+      "habitat": [
+        "ต้นไม้/ตอไม้"
+      ],
+      "ecologicalRole": [
+        "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)"
+      ],
+      "edibility": [
+        "กินไม่ได้"
+      ],
       "totalFound": 5,
       "pointsFound": [
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่",
@@ -498,16 +659,25 @@
       "soilPH": null,
       "soilTemperature": null,
       "soilHumidity": null,
+      "foundInPeriods": [],
       "generalCharacteristics": "เห็ดขนาดเล็กสีขาวล้วนทั้งดอก หมวกบางโปร่งแสงเล็กน้อย ครีบห่างสีขาว ก้านเรียวเล็กสีขาวหรือสีเข้มขึ้นที่โคน ขึ้นเป็นกลุ่มบนกิ่งไม้ผุหรือใบไม้ร่วงที่ชื้น"
     },
     {
       "scientificName": "Marasmius alliaceus",
       "localName": "เห็ดร่มชูชีพกระเทียม",
       "family": "Marasmiaceae",
-      "group": "เห็ดครีบ",
-      "habitat": "ดิน",
-      "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
-      "edibility": "กินได้",
+      "group": [
+        "เห็ดครีบ"
+      ],
+      "habitat": [
+        "ดิน"
+      ],
+      "ecologicalRole": [
+        "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)"
+      ],
+      "edibility": [
+        "กินได้"
+      ],
       "totalFound": 2,
       "pointsFound": [
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่"
@@ -523,16 +693,25 @@
       "soilPH": 7.5,
       "soilTemperature": 23,
       "soilHumidity": 30,
+      "foundInPeriods": [],
       "generalCharacteristics": "เห็ดขนาดเล็กในสกุล Marasmius หมวกสีน้ำตาลอ่อนถึงเทา ก้านสีดำเป็นมันเรียวยาวคล้ายเส้นลวด มีกลิ่นคล้ายกระเทียมหรือหอมหัวใหญ่เมื่อขยี้ (ที่มาของชื่อ alliaceus) ขึ้นเป็นกลุ่มบนซากใบไม้และกิ่งไม้ผุในป่า"
     },
     {
       "scientificName": "Microporus vernicipes (Berk.) Ktz",
       "localName": "เห็ดพัดแพรวา",
       "family": "Polyporaceae",
-      "group": "เห็ดหิ้ง",
-      "habitat": "ต้นไม้/ตอไม้",
-      "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
-      "edibility": "กินไม่ได้",
+      "group": [
+        "เห็ดหิ้ง"
+      ],
+      "habitat": [
+        "ต้นไม้/ตอไม้"
+      ],
+      "ecologicalRole": [
+        "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)"
+      ],
+      "edibility": [
+        "กินไม่ได้"
+      ],
       "totalFound": 12,
       "pointsFound": [
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่",
@@ -560,16 +739,25 @@
       "soilPH": null,
       "soilTemperature": null,
       "soilHumidity": null,
+      "foundInPeriods": [],
       "generalCharacteristics": "เห็ดหิ้งขนาดเล็ก ผิวบนเป็นมันวาวคล้ายเคลือบแล็กเกอร์ สีน้ำตาลแดงเป็นวงสลับสี ผิวด้านล่างมีรูพรุนละเอียดมาก เนื้อบางแข็ง ขึ้นติดกิ่งไม้ผุขนาดเล็ก"
     },
     {
       "scientificName": "Microporus xanthopus",
       "localName": "เห็ดกรวยทองตะกู",
       "family": "Polyporaceae",
-      "group": "เห็ดหิ้ง",
-      "habitat": "ต้นไม้/ตอไม้",
-      "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
-      "edibility": "ไม่มีข้อมูลว่ากินได้",
+      "group": [
+        "เห็ดหิ้ง"
+      ],
+      "habitat": [
+        "ต้นไม้/ตอไม้"
+      ],
+      "ecologicalRole": [
+        "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)"
+      ],
+      "edibility": [
+        "ไม่มีข้อมูลว่ากินได้"
+      ],
       "totalFound": 24,
       "pointsFound": [
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่",
@@ -610,16 +798,25 @@
       "soilPH": 7.5,
       "soilTemperature": 23,
       "soilHumidity": 20,
+      "foundInPeriods": [],
       "generalCharacteristics": "เห็ดหิ้งขนาดเล็กมีก้าน (ต่างจากเห็ดหิ้งทั่วไปที่ไม่มีก้าน) หมวกกลมแบนสีน้ำตาลเป็นวงสลับ ก้านสีดำเป็นมัน (xanthopus หมายถึงก้านสีเหลืองในบางสายพันธุ์ย่อย) ผิวด้านล่างมีรูพรุนละเอียด ขึ้นบนกิ่งไม้ผุที่ร่วงอยู่กับพื้น"
     },
     {
       "scientificName": "Mycena galericulata",
       "localName": "เห็ดฝากะโปรง / Bonnet",
       "family": "Mycenaceae",
-      "group": "เห็ดครีบ",
-      "habitat": "ต้นไม้/ตอไม้",
-      "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
-      "edibility": "กินไม่ได้",
+      "group": [
+        "เห็ดครีบ"
+      ],
+      "habitat": [
+        "ต้นไม้/ตอไม้"
+      ],
+      "ecologicalRole": [
+        "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)"
+      ],
+      "edibility": [
+        "กินไม่ได้"
+      ],
       "totalFound": 13,
       "pointsFound": [
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่",
@@ -647,16 +844,25 @@
       "soilPH": 7.5,
       "soilTemperature": 22.1,
       "soilHumidity": 27.5,
+      "foundInPeriods": [],
       "generalCharacteristics": "เห็ดขนาดเล็กในสกุล Mycena หมวกทรงระฆังสีเทาอมน้ำตาล ผิวเรียบมีรอยจีบโปร่งแสงตามขอบ ครีบสีขาวถึงชมพูอ่อนห่างพอประมาณ ก้านเรียวยาวสีเดียวกับหมวก ขึ้นเป็นกลุ่มบนตอไม้หรือไม้ผุ เป็นเห็ดย่อยสลายไม้"
     },
     {
       "scientificName": "Phellinus gilvus",
       "localName": "เห็ดพิมาน",
       "family": "Hymenochaetaceae",
-      "group": "เห็ดหิ้ง",
-      "habitat": "ต้นไม้/ตอไม้",
-      "ecologicalRole": "เห็ดปรสิต (parasitic mushroom)",
-      "edibility": "กินได้",
+      "group": [
+        "เห็ดหิ้ง"
+      ],
+      "habitat": [
+        "ต้นไม้/ตอไม้"
+      ],
+      "ecologicalRole": [
+        "เห็ดปรสิต (parasitic mushroom)"
+      ],
+      "edibility": [
+        "กินได้"
+      ],
       "totalFound": 8,
       "pointsFound": [
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่",
@@ -681,16 +887,25 @@
       "soilPH": null,
       "soilTemperature": null,
       "soilHumidity": null,
+      "foundInPeriods": [],
       "generalCharacteristics": "เห็ดหิ้งแข็งคล้ายไม้ ผิวบนสีน้ำตาลเข้มถึงดำขรุขระเป็นสะเก็ด ผิวด้านล่างสีน้ำตาลอมเหลือง มีรูพรุนละเอียด เนื้อแข็งเป็นไม้ อายุดอกอยู่ได้นานหลายปี ขึ้นติดลำต้นไม้ยืนต้นที่อ่อนแอหรือไม้ผุ"
     },
     {
       "scientificName": "Phellinus linteus",
       "localName": "เห็ดพิมาน",
       "family": "Hymenochaetaceae",
-      "group": "เห็ดหิ้ง",
-      "habitat": "ต้นไม้/ตอไม้",
-      "ecologicalRole": "เห็ดปรสิต (parasitic mushroom)",
-      "edibility": "กินได้",
+      "group": [
+        "เห็ดหิ้ง"
+      ],
+      "habitat": [
+        "ต้นไม้/ตอไม้"
+      ],
+      "ecologicalRole": [
+        "เห็ดปรสิต (parasitic mushroom)"
+      ],
+      "edibility": [
+        "กินได้"
+      ],
       "totalFound": 2,
       "pointsFound": [
         "จุดที่ 7 ชานเบิกภัย-ไทรงาม"
@@ -706,16 +921,25 @@
       "soilPH": null,
       "soilTemperature": null,
       "soilHumidity": null,
+      "foundInPeriods": [],
       "generalCharacteristics": "เห็ดหิ้งแข็งคล้ายไม้ ผิวบนสีน้ำตาลเข้มถึงดำแตกเป็นรอยแยกเมื่อแก่ ผิวด้านล่างสีน้ำตาลอ่อน เนื้อแข็งเป็นไม้ อายุดอกอยู่ได้หลายปี เป็นเห็ดที่นิยมนำไปใช้ประโยชน์ทางสมุนไพรในบางวัฒนธรรม"
     },
     {
       "scientificName": "Phellinus tremulae",
       "localName": "เห็ดพิมาน",
       "family": "Hymenochaetaceae",
-      "group": "เห็ดหิ้ง",
-      "habitat": "ต้นไม้/ตอไม้",
-      "ecologicalRole": "เห็ดปรสิต (parasitic mushroom)",
-      "edibility": "กินได้",
+      "group": [
+        "เห็ดหิ้ง"
+      ],
+      "habitat": [
+        "ต้นไม้/ตอไม้"
+      ],
+      "ecologicalRole": [
+        "เห็ดปรสิต (parasitic mushroom)"
+      ],
+      "edibility": [
+        "กินได้"
+      ],
       "totalFound": 3,
       "pointsFound": [
         "จุดที่ 5 ตะเคียนคู่-น้ำดิบผามะหาด",
@@ -734,16 +958,25 @@
       "soilPH": null,
       "soilTemperature": null,
       "soilHumidity": null,
+      "foundInPeriods": [],
       "generalCharacteristics": "เห็ดหิ้งแข็งในสกุล Phellinus รูปทรงคล้ายกีบม้า ผิวบนสีเทาถึงดำขรุขระ ผิวด้านล่างสีน้ำตาลอมเหลือง เนื้อแข็งเป็นไม้ ขึ้นติดลำต้นไม้ยืนต้น เป็นเชื้อราทำให้เกิดโรคเนื้อไม้ผุ"
     },
     {
       "scientificName": "Pleurotus pulmonarius",
       "localName": "เห็ดนางฟ้า",
       "family": "Pleurotaceae",
-      "group": "เห็ดครีบ",
-      "habitat": "ต้นไม้/ตอไม้",
-      "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
-      "edibility": "กินได้",
+      "group": [
+        "เห็ดครีบ"
+      ],
+      "habitat": [
+        "ต้นไม้/ตอไม้"
+      ],
+      "ecologicalRole": [
+        "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)"
+      ],
+      "edibility": [
+        "กินได้"
+      ],
       "totalFound": 3,
       "pointsFound": [
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่",
@@ -762,16 +995,25 @@
       "soilPH": null,
       "soilTemperature": null,
       "soilHumidity": null,
+      "foundInPeriods": [],
       "generalCharacteristics": "เห็ดนางรมหรือเห็ดแขนงคล้ายเห็ดนางฟ้า หมวกรูปพัดหรือรูปหอยเชลล์สีขาวถึงเทาอ่อน ครีบสีขาวลามลงมาที่ก้านซึ่งสั้นและอยู่ด้านข้าง ขึ้นเป็นกลุ่มซ้อนกันบนตอไม้หรือลำต้นไม้ผุ รับประทานได้และนิยมเพาะเลี้ยงเป็นเห็ดเศรษฐกิจ"
     },
     {
       "scientificName": "Porostereum spadiceum",
       "localName": "-",
       "family": "Phanerochaetaceae",
-      "group": "แผ่นหนัง",
-      "habitat": "ต้นไม้/ตอไม้",
-      "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
-      "edibility": "ไม่มีข้อมูลว่ากินได้",
+      "group": [
+        "แผ่นหนัง"
+      ],
+      "habitat": [
+        "ต้นไม้/ตอไม้"
+      ],
+      "ecologicalRole": [
+        "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)"
+      ],
+      "edibility": [
+        "ไม่มีข้อมูลว่ากินได้"
+      ],
       "totalFound": 3,
       "pointsFound": [
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่"
@@ -788,16 +1030,25 @@
       "soilPH": null,
       "soilTemperature": null,
       "soilHumidity": null,
+      "foundInPeriods": [],
       "generalCharacteristics": "เห็ดแผ่นบางแนบติดผิวไม้ (crust fungus) สีน้ำตาลอมเทาถึงน้ำตาลเข้ม ผิวมีลักษณะเป็นขนกำมะหยี่บางๆ ขอบดอกม้วนงอเล็กน้อยเมื่อแห้ง ไม่มีก้าน ขึ้นแผ่ปกคลุมผิวไม้ผุหรือกิ่งไม้ตาย"
     },
     {
       "scientificName": "Stereum ostrea",
       "localName": "เห็ดหางไก่งวงปลอม",
       "family": "Stereaceae",
-      "group": "เห็ดแผ่นหนัง",
-      "habitat": "ต้นไม้/ตอไม้",
-      "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
-      "edibility": "ไม่มีข้อมูลว่ากินได้",
+      "group": [
+        "เห็ดแผ่นหนัง"
+      ],
+      "habitat": [
+        "ต้นไม้/ตอไม้"
+      ],
+      "ecologicalRole": [
+        "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)"
+      ],
+      "edibility": [
+        "ไม่มีข้อมูลว่ากินได้"
+      ],
       "totalFound": 13,
       "pointsFound": [
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่",
@@ -827,16 +1078,25 @@
       "soilPH": null,
       "soilTemperature": null,
       "soilHumidity": null,
+      "foundInPeriods": [],
       "generalCharacteristics": "เห็ดครีบเทียมรูปพัดซ้อนกันเป็นชั้น (false turkey tail) ผิวบนมีลายเป็นวงสีน้ำตาล เหลือง ส้มสลับกัน มีขนละเอียดปกคลุม ผิวด้านล่างเรียบไม่มีรูพรุน เนื้อบางเหนียว ขึ้นติดไม้ผุเป็นกลุ่มซ้อนกัน"
     },
     {
       "scientificName": "Termitomyces microcarpus",
       "localName": "เห็ดปลวกไก่น้อย",
       "family": "Lyophyllaceae",
-      "group": "เห็ดครีบ",
-      "habitat": "ต้นไม้/ตอไม้",
-      "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
-      "edibility": "กินได้",
+      "group": [
+        "เห็ดครีบ"
+      ],
+      "habitat": [
+        "ต้นไม้/ตอไม้"
+      ],
+      "ecologicalRole": [
+        "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)"
+      ],
+      "edibility": [
+        "กินได้"
+      ],
       "totalFound": 1,
       "pointsFound": [
         "จุดที่ 8 ไทรงาม-ปล่องนางนาค"
@@ -851,16 +1111,25 @@
       "soilPH": null,
       "soilTemperature": null,
       "soilHumidity": null,
+      "foundInPeriods": [],
       "generalCharacteristics": "เห็ดโคนขนาดเล็ก ขึ้นเป็นกลุ่มจำนวนมากบนจอมปลวกหรือใกล้รังปลวก (มีความสัมพันธ์แบบพึ่งพากับปลวก) หมวกสีเทาอมน้ำตาลมีปุ่มแหลมตรงกลาง ก้านเรียวยาวสีขาว รับประทานได้และมีรสชาติดี"
     },
     {
       "scientificName": "Thelephora anthocephala",
       "localName": "เห็ดพัดเส้นใย",
       "family": "Thelephoraceae",
-      "group": "เห็ดปะการังและเห็ดกระบอง",
-      "habitat": "ต้นไม้/ตอไม้",
-      "ecologicalRole": "เห็ดเอคโตไมคอร์ไรซา (ectomycorrhizal mushroom)",
-      "edibility": "ไม่มีข้อมูลว่ากินได้",
+      "group": [
+        "เห็ดปะการังและเห็ดกระบอง"
+      ],
+      "habitat": [
+        "ต้นไม้/ตอไม้"
+      ],
+      "ecologicalRole": [
+        "เห็ดเอคโตไมคอร์ไรซา (ectomycorrhizal mushroom)"
+      ],
+      "edibility": [
+        "ไม่มีข้อมูลว่ากินได้"
+      ],
       "totalFound": 1,
       "pointsFound": [
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่"
@@ -875,16 +1144,25 @@
       "soilPH": null,
       "soilTemperature": null,
       "soilHumidity": null,
+      "foundInPeriods": [],
       "generalCharacteristics": "เห็ดรูปพัดหรือรูปดอกไม้แตกแขนงคล้ายปะการัง สีน้ำตาลเข้มถึงน้ำตาลอมม่วง ผิวขรุขระคล้ายหนัง ขึ้นเป็นกลุ่มแตกกิ่งจากฐานเดียวกันบนพื้นดินในป่า เนื้อเหนียวคล้ายหนัง"
     },
     {
       "scientificName": "Trichaptum biforme",
       "localName": "เห็ดฟันสีม่วง",
       "family": "Hymenochaetaceae",
-      "group": "เห็ดฟันเลื่อย",
-      "habitat": "ต้นไม้/ตอไม้",
-      "ecologicalRole": "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)",
-      "edibility": "ไม่มีข้อมูลว่ากินได้",
+      "group": [
+        "เห็ดฟันเลื่อย"
+      ],
+      "habitat": [
+        "ต้นไม้/ตอไม้"
+      ],
+      "ecologicalRole": [
+        "เห็ดผู้ย่อยสลายอินทรียวัตถุ (saprophytic mushroom)"
+      ],
+      "edibility": [
+        "ไม่มีข้อมูลว่ากินได้"
+      ],
       "totalFound": 1,
       "pointsFound": [
         "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่"
@@ -899,45 +1177,8 @@
       "soilPH": null,
       "soilTemperature": null,
       "soilHumidity": null,
+      "foundInPeriods": [],
       "generalCharacteristics": "เห็ดหิ้งบางสีม่วงอมชมพูโดยเฉพาะขอบดอกเมื่อยังสด ผิวบนมีขนละเอียดสีเทาอมน้ำตาล ผิวด้านล่างเมื่อแก่จะแตกเป็นรอยหยักคล้ายฟันปลา เนื้อบางเหนียว ขึ้นเป็นกลุ่มซ้อนบนไม้สน/ไม้ผุ"
-    },
-    {
-      "scientificName": "ระบุไม่ได้",
-      "localName": "ระบุไม่ได้",
-      "family": "ระบุไม่ได้",
-      "group": "-",
-      "habitat": "ต้นไม้/ตอไม้",
-      "ecologicalRole": "-",
-      "edibility": "ไม่มีข้อมูล",
-      "totalFound": 11,
-      "pointsFound": [
-        "จุดที่ 1 ศูนย์บริการนักท่องเที่ยว-ประดู่ใหญ่",
-        "จุดที่ 2 ประดู่ใหญ่-มออีหก",
-        "จุดที่ 4 จุดชมวิว-ตะเคียนคู่",
-        "จุดที่ 7 ชานเบิกภัย-ไทรงาม",
-        "จุดที่ 8 ไทรงาม-ปล่องนางนาค"
-      ],
-      "images": [
-        "/images/round-1/round-1-row-0036-0.jpeg",
-        "/images/round-1/round-1-row-0037-0.jpeg",
-        "/images/round-1/round-1-row-0043-0.jpeg",
-        "/images/round-1/round-1-row-0052-0.jpeg",
-        "/images/round-1/round-1-row-0084-0.jpeg",
-        "/images/round-1/round-1-row-0086-0.jpeg",
-        "/images/round-1/round-1-row-0095-0.jpeg",
-        "/images/round-1/round-1-row-0110-0.jpeg",
-        "/images/round-1/round-1-row-0118-0.jpeg",
-        "/images/round-1/round-1-row-0157-0.jpeg",
-        "/images/round-1/round-1-row-0167-0.jpeg"
-      ],
-      "pointsFoundCount": 5,
-      "habitatType": "soil",
-      "airTemperature": 24.5,
-      "airHumidity": 76.7,
-      "soilPH": 7.5,
-      "soilTemperature": 21.8,
-      "soilHumidity": 15,
-      "generalCharacteristics": "เห็ดชนิดนี้ยังไม่สามารถระบุชนิดทางวิทยาศาสตร์ได้แน่ชัด อาจต้องใช้ผู้เชี่ยวชาญหรือการตรวจสอบด้วยกล้องจุลทรรศน์เพิ่มเติมเพื่อยืนยันชนิด"
     }
   ],
   "avgTemperature": 24.2,

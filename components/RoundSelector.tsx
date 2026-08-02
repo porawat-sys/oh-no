@@ -9,6 +9,24 @@ type RoundSummary = {
 export function RoundSelector({ rounds }: { rounds: RoundSummary[] }) {
   return (
     <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+      <Link
+        href="/all"
+        className="group rounded-[1.25rem] border border-emerald-700/30 bg-emerald-50 p-4 shadow-sm transition-all hover:-translate-y-1 hover:border-emerald-700 hover:shadow-md md:col-span-2 xl:col-span-3"
+      >
+        <div className="flex items-center justify-between">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-700">ทั้งหมด</p>
+            <h3 className="mt-1 text-lg font-semibold text-stone-800">ดูผลสำรวจทั้ง 7 รอบต่อกันในหน้าเดียว</h3>
+          </div>
+          <span className="rounded-full bg-emerald-100 px-3 py-1 text-sm font-medium text-emerald-800">
+            7 รอบ
+          </span>
+        </div>
+        <p className="mt-4 text-sm text-stone-600">
+          เปิดหน้า “ทั้งหมด” เพื่อดู 7 รอบเรียงต่อกันพร้อมค้นหาและกรองข้อมูลแบบเรียลไทม์
+        </p>
+      </Link>
+
       {rounds.map((round) => (
         <Link
           key={round.round}

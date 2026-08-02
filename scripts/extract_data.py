@@ -74,6 +74,33 @@ def normalize_name(name):
     return re.sub(r"\s+", " ", str(name).strip())
 
 
+def collect_unique_values(values):
+    if not values:
+        return []
+
+    items = []
+    if isinstance(values, (list, tuple, set)):
+        items = values
+    else:
+        items = [values]
+
+    normalized = []
+    for item in items:
+        if item is None:
+            continue
+        text = normalize_name(item)
+        if not text:
+            continue
+        if text not in normalized:
+            normalized.append(text)
+    return normalized
+
+
+def is_unknown_scientific_name(name):
+    text = normalize_name(name).strip().lower()
+    return text in {"ระบุไม่ได้", "ไม่ระบุ", "unknown", "n/a"}
+
+
 def capitalize_first_letter(name):
     """ทำให้ตัวอักษรตัวแรกของชื่อวิทยาศาสตร์เป็นตัวพิมพ์ใหญ่ ส่วนที่เหลือคงเดิม
     เช่น 'amanita farinosa' -> 'Amanita farinosa'
@@ -192,6 +219,9 @@ def process_round(round_num, source_path, images_out_root):
             if not point or not sci_name_raw:
                 continue
 
+            if is_unknown_scientific_name(sci_name_raw):
+                continue
+
             sci_key = normalize_name(sci_name_raw).lower()
             if not sci_key:
                 continue
@@ -213,6 +243,11 @@ def process_round(round_num, source_path, images_out_root):
                 for v in (soil_ph, soil_temp, soil_humidity)
             )
 
+            group_value = normalize_name(ws.cell(row=row_idx, column=COL_GROUP + 1).value)
+            habitat_value = normalize_name(ws.cell(row=row_idx, column=COL_ORIGIN + 1).value)
+            eco_role_value = normalize_name(ws.cell(row=row_idx, column=COL_ROLE + 1).value)
+            edibility_value = normalize_name(ws.cell(row=row_idx, column=COL_EDIBILITY + 1).value) or "ไม่มีข้อมูล"
+
             row_images = []
             for i, media_path in enumerate(row_to_media.get(row_idx, [])):
                 ext = os.path.splitext(media_path)[1] or ".jpg"
@@ -230,11 +265,11 @@ def process_round(round_num, source_path, images_out_root):
                 species[sci_key] = {
                     "scientificName": capitalize_first_letter(normalize_name(sci_name_raw)),
                     "localName": ws.cell(row=row_idx, column=COL_LOCAL_NAME + 1).value or "-",
-                    "family": ws.cell(row=row_idx, column=COL_FAMILY + 1).value or "-",
-                    "group": ws.cell(row=row_idx, column=COL_GROUP + 1).value or "-",
-                    "habitat": ws.cell(row=row_idx, column=COL_ORIGIN + 1).value or "-",
-                    "ecologicalRole": ws.cell(row=row_idx, column=COL_ROLE + 1).value or "-",
-                    "edibility": ws.cell(row=row_idx, column=COL_EDIBILITY + 1).value or "ไม่มีข้อมูล",
+                    "family": normalize_name(ws.cell(row=row_idx, column=COL_FAMILY + 1).value) or "-",
+                    "group": [],
+                    "habitat": [],
+                    "ecologicalRole": [],
+                    "edibility": [],
                     "totalFound": 0,
                     "pointsFound": [],
                     "images": [],
@@ -244,6 +279,7 @@ def process_round(round_num, source_path, images_out_root):
                     "_soilTemps": [],
                     "_soilHumidities": [],
                     "_soilRowCount": 0,
+                    "_foundInPeriods": [],
                 }
 
             rec = species[sci_key]
@@ -252,6 +288,18 @@ def process_round(round_num, source_path, images_out_root):
                 rec["pointsFound"].append(point)
             if row_images:
                 rec["images"].extend(row_images)
+
+            for field_name, value in [
+                ("group", group_value),
+                ("habitat", habitat_value),
+                ("ecologicalRole", eco_role_value),
+                ("edibility", edibility_value),
+            ]:
+                if value and value not in rec[field_name]:
+                    rec[field_name].append(value)
+
+            if round_num not in rec["_foundInPeriods"]:
+                rec["_foundInPeriods"].append(round_num)
 
             rec["_airTemps"].append(air_temp)
             rec["_airHumidities"].append(air_humidity)
@@ -286,9 +334,15 @@ def process_round(round_num, source_path, images_out_root):
         # ลบคีย์ชั่วคราวที่ใช้คำนวณออกก่อน export
         for tmp_key in [
             "_airTemps", "_airHumidities", "_soilPHs",
-            "_soilTemps", "_soilHumidities", "_soilRowCount",
+            "_soilTemps", "_soilHumidities", "_soilRowCount", "_foundInPeriods",
         ]:
             rec.pop(tmp_key, None)
+
+        rec["group"] = rec.get("group") or ["-"]
+        rec["habitat"] = rec.get("habitat") or ["-"]
+        rec["ecologicalRole"] = rec.get("ecologicalRole") or ["-"]
+        rec["edibility"] = rec.get("edibility") or ["ไม่มีข้อมูล"]
+        rec["foundInPeriods"] = sorted(rec.get("_foundInPeriods", []))
 
         # ผสมข้อมูล "ลักษณะทั่วไป" จากไฟล์ species_descriptions.py
         # จับคู่ด้วยชื่อวิทยาศาสตร์แบบ normalize (ตัดช่องว่าง + ตัวพิมพ์เล็ก)

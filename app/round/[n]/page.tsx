@@ -1,7 +1,8 @@
 import { promises as fs } from "fs";
 import path from "path";
 import { notFound } from "next/navigation";
-import { RoundExplorer, type RoundData } from "@/components/RoundExplorer";
+import { RoundExplorer } from "@/components/RoundExplorer";
+import type { RoundData } from "@/components/types";
 
 async function getRoundData(round: number): Promise<RoundData | null> {
   const filePath = path.join(process.cwd(), "data", `round-${round}.json`);

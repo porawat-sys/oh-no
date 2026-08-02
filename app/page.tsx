@@ -2,6 +2,7 @@ import { promises as fs } from "fs";
 import path from "path";
 import { TrailMap } from "@/components/TrailMap";
 import { RoundSelector } from "@/components/RoundSelector";
+import { AllSpeciesSection } from "@/components/AllSpeciesSection";
 
 type RoundSummary = {
   round: number;
@@ -15,8 +16,15 @@ async function getSummary() {
   return JSON.parse(file) as RoundSummary[];
 }
 
+async function getRoundData(round: number) {
+  const filePath = path.join(process.cwd(), "data", `round-${round}.json`);
+  const file = await fs.readFile(filePath, "utf8");
+  return JSON.parse(file);
+}
+
 export default async function HomePage() {
   const rounds = await getSummary();
+  const roundData = await Promise.all(Array.from({ length: 7 }, (_, index) => getRoundData(index + 1)));
 
   return (
     <main className="min-h-screen bg-[radial-gradient(circle_at_top,_#f6efe1,_#f8f5ed_45%,_#eef3ea_100%)] px-4 py-10 text-stone-800 sm:px-6 lg:px-10">
@@ -53,6 +61,8 @@ export default async function HomePage() {
             <RoundSelector rounds={rounds} />
           </div>
         </section>
+
+        <AllSpeciesSection rounds={roundData} />
       </div>
     </main>
   );
