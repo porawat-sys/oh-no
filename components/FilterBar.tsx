@@ -37,7 +37,7 @@ export function FilterBar({
   const [edibilities, setEdibilities] = useState<string[]>([]);
   const [periods, setPeriods] = useState<string[]>([]);
   const [points, setPoints] = useState<string[]>([]);
-  const [mobileOpen, setMobileOpen] = useState(false);
+  const [filtersOpen, setFiltersOpen] = useState(false);
 
   const familyOptions = useMemo(() => toOptionSet(collectUniqueValues(mushrooms.map((m) => m.family))), [mushrooms]);
   const groupOptions = useMemo(() => toOptionSet(collectUniqueValues(mushrooms.map((m) => m.group))), [mushrooms]);
@@ -92,8 +92,9 @@ export function FilterBar({
     onClear();
   };
 
-  const hasActiveFilters =
-    query || families.length || groups.length || habitats.length || ecoRoles.length || edibilities.length || periods.length || points.length;
+  const activeFilterCount =
+    families.length + groups.length + habitats.length + ecoRoles.length + edibilities.length + periods.length + points.length;
+  const hasActiveFilters = query || activeFilterCount > 0;
 
   const renderSelect = (
     label: string,
@@ -147,45 +148,38 @@ export function FilterBar({
           </div>
         </div>
 
-        <label className="text-sm font-medium text-stone-700">
-          <span className="mb-2 block">ค้นหาชื่อชนิด</span>
-          <input
-            value={query}
-            onChange={(event) => handleQueryChange(event.target.value)}
-            placeholder="เช่น Amanita, เห็ดหูหนู"
-            className="w-full rounded-2xl border border-stone-300 bg-stone-50 px-4 py-3 text-sm outline-none ring-0 focus:border-emerald-700"
-          />
-        </label>
+        <div className="flex flex-col gap-3 sm:flex-row">
+          <label className="flex-1 text-sm font-medium text-stone-700">
+            <span className="mb-2 block">ค้นหาชื่อชนิด</span>
+            <input
+              value={query}
+              onChange={(event) => handleQueryChange(event.target.value)}
+              placeholder="เช่น Amanita, เห็ดหูหนู"
+              className="w-full rounded-2xl border border-stone-300 bg-stone-50 px-4 py-3 text-sm outline-none ring-0 focus:border-emerald-700"
+            />
+          </label>
 
-        <div className="hidden gap-3 lg:grid lg:grid-cols-2 xl:grid-cols-3">
-          {renderSelect("วงศ์", familyOptions, families, (value) => handleMultiSelect(value, setFamilies, "families"), "families")}
-          {renderSelect("กลุ่มเห็ด", groupOptions, groups, (value) => handleMultiSelect(value, setGroups, "groups"), "groups")}
-          {renderSelect("แหล่งกำเนิด", habitatOptions, habitats, (value) => handleMultiSelect(value, setHabitats, "habitats"), "habitats")}
-          {renderSelect("หน้าที่ในระบบนิเวศ", ecoRoleOptions, ecoRoles, (value) => handleMultiSelect(value, setEcoRoles, "ecoRoles"), "ecoRoles")}
-          {renderSelect("การรับประทาน", edibilityOptions, edibilities, (value) => handleMultiSelect(value, setEdibilities, "edibilities"), "edibilities")}
-          {includePeriodFilter ? renderSelect("ช่วงเวลาที่พบ", periodOptions, periods, (value) => handleMultiSelect(value, setPeriods, "periods"), "periods") : null}
-          {renderSelect("จุดที่พบ", pointOptions, points, (value) => handleMultiSelect(value, setPoints, "points"), "points")}
-        </div>
-
-        <div className="lg:hidden">
+          {/* ปุ่มกดเปิด/ปิดตัวกรอง ใช้ได้ทุกขนาดจอ ไม่ผูกกับ breakpoint อีกต่อไป */}
           <button
-            onClick={() => setMobileOpen((value) => !value)}
-            className="w-full rounded-2xl border border-stone-300 bg-stone-50 px-4 py-3 text-left text-sm font-medium text-stone-700"
+            onClick={() => setFiltersOpen((value) => !value)}
+            className="flex items-center justify-center gap-2 self-end rounded-2xl border border-stone-300 bg-stone-50 px-5 py-3 text-sm font-medium text-stone-700 transition hover:border-emerald-700 hover:text-emerald-700 sm:self-auto"
           >
-            {mobileOpen ? "ซ่อนตัวกรอง" : "ตัวกรอง"}
+            ตัวกรอง{activeFilterCount > 0 ? ` (${activeFilterCount})` : ""}
+            <span className={`transition-transform ${filtersOpen ? "rotate-180" : ""}`}>▾</span>
           </button>
-          {mobileOpen ? (
-            <div className="mt-3 grid gap-3">
-              {renderSelect("วงศ์", familyOptions, families, (value) => handleMultiSelect(value, setFamilies, "families"), "families")}
-              {renderSelect("กลุ่มเห็ด", groupOptions, groups, (value) => handleMultiSelect(value, setGroups, "groups"), "groups")}
-              {renderSelect("แหล่งกำเนิด", habitatOptions, habitats, (value) => handleMultiSelect(value, setHabitats, "habitats"), "habitats")}
-              {renderSelect("หน้าที่ในระบบนิเวศ", ecoRoleOptions, ecoRoles, (value) => handleMultiSelect(value, setEcoRoles, "ecoRoles"), "ecoRoles")}
-              {renderSelect("การรับประทาน", edibilityOptions, edibilities, (value) => handleMultiSelect(value, setEdibilities, "edibilities"), "edibilities")}
-              {includePeriodFilter ? renderSelect("ช่วงเวลาที่พบ", periodOptions, periods, (value) => handleMultiSelect(value, setPeriods, "periods"), "periods") : null}
-              {renderSelect("จุดที่พบ", pointOptions, points, (value) => handleMultiSelect(value, setPoints, "points"), "points")}
-            </div>
-          ) : null}
         </div>
+
+        {filtersOpen ? (
+          <div className="grid gap-3 border-t border-stone-100 pt-4 sm:grid-cols-2 lg:grid-cols-3">
+            {renderSelect("วงศ์", familyOptions, families, (value) => handleMultiSelect(value, setFamilies, "families"), "families")}
+            {renderSelect("กลุ่มเห็ด", groupOptions, groups, (value) => handleMultiSelect(value, setGroups, "groups"), "groups")}
+            {renderSelect("แหล่งกำเนิด", habitatOptions, habitats, (value) => handleMultiSelect(value, setHabitats, "habitats"), "habitats")}
+            {renderSelect("หน้าที่ในระบบนิเวศ", ecoRoleOptions, ecoRoles, (value) => handleMultiSelect(value, setEcoRoles, "ecoRoles"), "ecoRoles")}
+            {renderSelect("การรับประทาน", edibilityOptions, edibilities, (value) => handleMultiSelect(value, setEdibilities, "edibilities"), "edibilities")}
+            {includePeriodFilter ? renderSelect("ช่วงเวลาที่พบ", periodOptions, periods, (value) => handleMultiSelect(value, setPeriods, "periods"), "periods") : null}
+            {renderSelect("จุดที่พบ", pointOptions, points, (value) => handleMultiSelect(value, setPoints, "points"), "points")}
+          </div>
+        ) : null}
       </div>
     </section>
   );

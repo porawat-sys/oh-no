@@ -49,6 +49,9 @@ export default async function HomePage() {
           </div>
         </header>
 
+        {/* ช่องค้นหา + ตัวกรอง (ครอบคลุมทั้ง 7 รอบ) ย้ายมาไว้บนสุด เหนือแผนที่เส้นทาง */}
+        <AllSpeciesSection rounds={roundData} />
+
         <section className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr]">
           <TrailMap />
           <div className="space-y-5">
@@ -61,8 +64,6 @@ export default async function HomePage() {
             <RoundSelector rounds={rounds} />
           </div>
         </section>
-
-        <AllSpeciesSection rounds={roundData} />
       </div>
     </main>
   );
